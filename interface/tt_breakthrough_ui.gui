@@ -1,0 +1,1857 @@
+guiTypes = {
+	containerWindowType = {
+		name = "allow_breakthrough_ascension_perks"
+		position = { x = -900 y = -490 }
+		size = { width = 1360 height = 630 }
+		moveable = yes
+		orientation = center
+
+		background = {#背景图
+			name = "background"#"leader_pool_bg"
+			quadTextureSprite = "GFX_tile_outliner_bg"
+		}
+		iconType = {#装饰下划线
+			name = "empire_header_line"#"header_line"
+			spriteType = "GFX_line_long"
+			position = { x = 6 y = 21 }
+			alwaystransparent = yes
+		}
+		instantTextBoxType = {
+			name = "tt_reform_plane"
+			font = "malgun_goth_24"
+			text = "tt_reform_plane"
+			origo = center
+			position = { x = 10 y = 5 }
+			maxWidth = 300
+			maxHeight = 20
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		buttonType = {#关闭按钮
+			name = "close"
+			spriteType = "GFX_close"
+			position = { x = -40 y = 20 }
+			orientation = upper_right
+			shortcut = "ESCAPE"
+			clicksound = "back_click"
+			pdx_tooltip = "CLOSE_TITLE"
+		}
+		buttonType = {#黑色透明背景图
+			name = "alien_message_background"
+			origo = center
+			size = { x = 100 y = 100 }
+			position = { x = 9999 y = 9999 }
+			spriteType = "GFX_tiles_dark_area_cut_8"
+			alwaysTransparent = yes
+		}
+		@rb_y1=70
+		@rb_y2=200
+		@rb_y3=330
+		@rb_y4=460
+		@rb_x1=5
+		@rb_x2=55
+		@rb_x3=105
+		@rb_x4=155
+		@rb_x5=205
+		@rb_x6=255
+		@rb_x7=305
+		@rb_x8=355
+		@rb_x9=405
+		@rb_x10=455
+		@rb_x11=505
+		@rb_x12=555
+		@rb_x13=605
+		@rb_x14=655
+		@rb_x15=705
+		@rb_x16=755
+		@rb_x17=805
+		@rb_x18=855
+		@rb_x19=905
+		@rb_x20=955
+		@rb_x21=1005
+		@rb_x22=1055
+		@rb_x23=1105
+		@rb_x24=1155
+		@rb_x25=1205
+		@rb_x26=1255
+		@rb_x27=1305
+
+		###################################################
+		#按钮
+		###################################################
+		iconType = {
+			name = "revolution_button_0"
+			spriteType = "GFX_revolution_button"
+			position = { x = @rb_x14 y = @rb_y1 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_button_0_auxiliary" position = { x = @rb_x14 y = 120 }
+			spriteType = "GFX_button_tt_auxiliary_5" alwaystransparent = yes
+		}
+		effectButtonType = {#军事革命
+			name = "revolution_button_1"
+			position = { x = @rb_x5 y = @rb_y2 }
+			spriteType = "GFX_button_tt_military_revolution"
+			effect = "button_tt_military_revolution"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_1_auxiliary" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_1_auxiliary_0" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_1_auxiliary_1" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_1_auxiliary_2" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_1_auxiliary_3" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_1_auxiliary_4" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_1_auxiliary_5" position = { x = @rb_x5 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_auxiliary_5"
+		}
+
+		effectButtonType = {#内政革命
+			name = "revolution_button_2"
+			position = { x = @rb_x14 y = @rb_y2 }
+			spriteType = "GFX_button_tt_internal_revolution"
+			effect = "button_tt_internal_revolution"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_2_auxiliary" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_2_auxiliary_0" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_2_auxiliary_1" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_2_auxiliary_2" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_2_auxiliary_3" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_2_auxiliary_4" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_2_auxiliary_5" position = { x = @rb_x14 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_auxiliary_5"
+		}
+
+		effectButtonType = {#奥秘革命
+			name = "revolution_button_3"
+			position = { x = @rb_x23 y = @rb_y2 }
+			spriteType = "GFX_button_tt_mysterious_revolution"
+			#scale = 0.4
+			effect = "button_tt_mysterious_revolution"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_3_auxiliary" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_3_auxiliary_0" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_3_auxiliary_1" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_3_auxiliary_2" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_3_auxiliary_3" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_3_auxiliary_4" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_3_auxiliary_5" position = { x = @rb_x23 y = 250 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_auxiliary_5"
+		}
+
+		effectButtonType = {#军事进攻革命
+			name = "revolution_button_11"
+			position = { x = @rb_x2 y = @rb_y3 }
+			spriteType = "GFX_button_tt_military_revolution_attack"
+			effect = "button_tt_military_revolution_attack"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_11_auxiliary" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_11_auxiliary_0" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_attack_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_11_auxiliary_1" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_attack_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_11_auxiliary_2" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_attack_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_11_auxiliary_3" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_attack_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_11_auxiliary_4" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_attack_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_11_auxiliary_5" position = { x = @rb_x2 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_attack_auxiliary_5"
+		}
+		effectButtonType = {#军事进攻革命 火力全开
+			name = "revolution_button_111"
+			position = { x = @rb_x1 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_attack_1"
+			effect = "button_tt_military_revolution_attack_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_111_auxiliary" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_111_auxiliary_0" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_attack_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_111_auxiliary_1" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_attack_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_111_auxiliary_2" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_attack_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_111_auxiliary_3" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_attack_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_111_auxiliary_4" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_attack_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_111_auxiliary_5" position = { x = @rb_x1 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_attack_1_auxiliary_5"
+		}
+		effectButtonType = {#军事进攻革命 极速齐射
+			name = "revolution_button_112"
+			position = { x = @rb_x2 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_attack_2"
+			effect = "button_tt_military_revolution_attack_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_112_auxiliary" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_112_auxiliary_0" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_attack_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_112_auxiliary_1" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_attack_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_112_auxiliary_2" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_attack_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_112_auxiliary_3" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_attack_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_112_auxiliary_4" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_attack_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_112_auxiliary_5" position = { x = @rb_x2 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_attack_2_auxiliary_5"
+		}
+		effectButtonType = {#军事进攻革命 真理范围
+			name = "revolution_button_113"
+			position = { x = @rb_x3 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_attack_3"
+			effect = "button_tt_military_revolution_attack_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_113_auxiliary" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_113_auxiliary_0" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_attack_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_113_auxiliary_1" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_attack_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_113_auxiliary_2" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_attack_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_113_auxiliary_3" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_attack_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_113_auxiliary_4" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_attack_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_113_auxiliary_5" position = { x = @rb_x3 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_attack_3_auxiliary_5"
+		}
+
+		effectButtonType = {#军事防御革命
+			name = "revolution_button_12"
+			position = { x = @rb_x5 y = @rb_y3 }
+			spriteType = "GFX_button_tt_military_revolution_defense"
+			effect = "button_tt_military_revolution_defense"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_12_auxiliary" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_12_auxiliary_0" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_defense_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_12_auxiliary_1" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_defense_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_12_auxiliary_2" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_defense_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_12_auxiliary_3" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_defense_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_12_auxiliary_4" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_defense_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_12_auxiliary_5" position = { x = @rb_x5 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_defense_auxiliary_5"
+		}
+		effectButtonType = {#军事防御革命 长城之围
+			name = "revolution_button_121"
+			position = { x = @rb_x4 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_defense_1"
+			effect = "button_tt_military_revolution_defense_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_121_auxiliary" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_121_auxiliary_0" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_defense_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_121_auxiliary_1" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_defense_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_121_auxiliary_2" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_defense_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_121_auxiliary_3" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_defense_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_121_auxiliary_4" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_defense_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_121_auxiliary_5" position = { x = @rb_x4 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_defense_1_auxiliary_5"
+		}
+		effectButtonType = {#军事防御革命 超载火控
+			name = "revolution_button_122"
+			position = { x = @rb_x5 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_defense_2"
+			effect = "button_tt_military_revolution_defense_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_122_auxiliary" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_122_auxiliary_0" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_defense_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_122_auxiliary_1" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_defense_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_122_auxiliary_2" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_defense_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_122_auxiliary_3" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_defense_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_122_auxiliary_4" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_defense_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_122_auxiliary_5" position = { x = @rb_x5 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_defense_2_auxiliary_5"
+		}
+		effectButtonType = {#军事防御革命 固若金汤
+			name = "revolution_button_123"
+			position = { x = @rb_x6 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_defense_3"
+			effect = "button_tt_military_revolution_defense_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_123_auxiliary" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_123_auxiliary_0" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_defense_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_123_auxiliary_1" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_defense_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_123_auxiliary_2" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_defense_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_123_auxiliary_3" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_defense_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_123_auxiliary_4" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_defense_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_123_auxiliary_5" position = { x = @rb_x6 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_defense_3_auxiliary_5"
+		}
+
+		effectButtonType = {#军事支援革命
+			name = "revolution_button_13"
+			position = { x = @rb_x8 y = @rb_y3 }
+			spriteType = "GFX_button_tt_military_revolution_support"
+			effect = "button_tt_military_revolution_support"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_13_auxiliary" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_13_auxiliary_0" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_support_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_13_auxiliary_1" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_support_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_13_auxiliary_2" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_support_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_13_auxiliary_3" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_support_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_13_auxiliary_4" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_support_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_13_auxiliary_5" position = { x = @rb_x8 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_support_auxiliary_5"
+		}
+		effectButtonType = {#军事支援革命 超导护盾
+			name = "revolution_button_131"
+			position = { x = @rb_x7 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_support_1"
+			effect = "button_tt_military_revolution_support_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_131_auxiliary" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_131_auxiliary_0" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_support_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_131_auxiliary_1" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_support_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_131_auxiliary_2" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_support_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_131_auxiliary_3" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_support_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_131_auxiliary_4" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_support_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_131_auxiliary_5" position = { x = @rb_x7 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_support_1_auxiliary_5"
+		}
+		effectButtonType = {#军事支援革命 再生护甲
+			name = "revolution_button_132"
+			position = { x = @rb_x8 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_support_2"
+			effect = "button_tt_military_revolution_support_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_132_auxiliary" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_132_auxiliary_0" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_support_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_132_auxiliary_1" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_support_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_132_auxiliary_2" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_support_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_132_auxiliary_3" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_support_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_132_auxiliary_4" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_support_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_132_auxiliary_5" position = { x = @rb_x8 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_support_2_auxiliary_5"
+		}
+		effectButtonType = {#军事支援革命 极效维护
+			name = "revolution_button_133"
+			position = { x = @rb_x9 y = @rb_y4 }
+			spriteType = "GFX_button_tt_military_revolution_support_3"
+			effect = "button_tt_military_revolution_support_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_133_auxiliary" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_133_auxiliary_0" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_military_revolution_support_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_133_auxiliary_1" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_military_revolution_support_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_133_auxiliary_2" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_military_revolution_support_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_133_auxiliary_3" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_military_revolution_support_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_133_auxiliary_4" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_military_revolution_support_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_133_auxiliary_5" position = { x = @rb_x9 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_military_revolution_support_3_auxiliary_5"
+		}
+
+		effectButtonType = {#内政管理革命
+			name = "revolution_button_21"
+			position = { x = @rb_x11 y = @rb_y3 }
+			spriteType = "GFX_button_tt_internal_revolution_administration"
+			effect = "button_tt_internal_revolution_administration"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_21_auxiliary" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_21_auxiliary_0" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_administration_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_21_auxiliary_1" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_administration_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_21_auxiliary_2" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_administration_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_21_auxiliary_3" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_administration_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_21_auxiliary_4" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_administration_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_21_auxiliary_5" position = { x = @rb_x11 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_administration_auxiliary_5"
+		}
+		effectButtonType = {#内政管理革命 完型政府
+			name = "revolution_button_211"
+			position = { x = @rb_x10 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_administration_1"
+			effect = "button_tt_internal_revolution_administration_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_211_auxiliary" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_211_auxiliary_0" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_administration_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_211_auxiliary_1" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_administration_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_211_auxiliary_2" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_administration_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_211_auxiliary_3" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_administration_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_211_auxiliary_4" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_administration_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_211_auxiliary_5" position = { x = @rb_x10 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_administration_1_auxiliary_5"
+		}
+		effectButtonType = {#内政管理革命 海纳百川
+			name = "revolution_button_212"
+			position = { x = @rb_x11 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_administration_2"
+			effect = "button_tt_internal_revolution_administration_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_212_auxiliary" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_212_auxiliary_0" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_administration_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_212_auxiliary_1" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_administration_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_212_auxiliary_2" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_administration_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_212_auxiliary_3" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_administration_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_212_auxiliary_4" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_administration_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_212_auxiliary_5" position = { x = @rb_x11 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_administration_2_auxiliary_5"
+		}
+		effectButtonType = {#内政管理革命 卧虎藏龙
+			name = "revolution_button_213"
+			position = { x = @rb_x12 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_administration_3"
+			effect = "button_tt_internal_revolution_administration_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_213_auxiliary" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_213_auxiliary_0" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_administration_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_213_auxiliary_1" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_administration_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_213_auxiliary_2" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_administration_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_213_auxiliary_3" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_administration_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_213_auxiliary_4" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_administration_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_213_auxiliary_5" position = { x = @rb_x12 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_administration_3_auxiliary_5"
+		}
+
+		effectButtonType = {#内政文化革命
+			name = "revolution_button_22"
+			position = { x = @rb_x14 y = @rb_y3 }
+			spriteType = "GFX_button_tt_internal_revolution_culture"
+			effect = "button_tt_internal_revolution_culture"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_22_auxiliary" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_22_auxiliary_0" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_culture_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_22_auxiliary_1" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_culture_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_22_auxiliary_2" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_culture_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_22_auxiliary_3" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_culture_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_22_auxiliary_4" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_culture_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_22_auxiliary_5" position = { x = @rb_x14 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_culture_auxiliary_5"
+		}
+		effectButtonType = {#内政文化革命 艺术创新
+			name = "revolution_button_221"
+			position = { x = @rb_x13 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_culture_1"
+			effect = "button_tt_internal_revolution_culture_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_221_auxiliary" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_221_auxiliary_0" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_culture_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_221_auxiliary_1" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_culture_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_221_auxiliary_2" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_culture_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_221_auxiliary_3" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_culture_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_221_auxiliary_4" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_culture_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_221_auxiliary_5" position = { x = @rb_x13 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_culture_1_auxiliary_5"
+		}
+		effectButtonType = {#内政文化革命 自律自强
+			name = "revolution_button_222"
+			position = { x = @rb_x14 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_culture_2"
+			effect = "button_tt_internal_revolution_culture_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_222_auxiliary" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_222_auxiliary_0" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_culture_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_222_auxiliary_1" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_culture_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_222_auxiliary_2" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_culture_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_222_auxiliary_3" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_culture_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_222_auxiliary_4" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_culture_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_222_auxiliary_5" position = { x = @rb_x14 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_culture_2_auxiliary_5"
+		}
+		effectButtonType = {#内政文化革命 和谐稳定
+			name = "revolution_button_223"
+			position = { x = @rb_x15 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_culture_3"
+			effect = "button_tt_internal_revolution_culture_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_223_auxiliary" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_223_auxiliary_0" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_culture_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_223_auxiliary_1" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_culture_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_223_auxiliary_2" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_culture_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_223_auxiliary_3" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_culture_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_223_auxiliary_4" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_culture_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_223_auxiliary_5" position = { x = @rb_x15 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_culture_3_auxiliary_5"
+		}
+
+		effectButtonType = {#内政经济革命
+			name = "revolution_button_23"
+			position = { x = @rb_x17 y = @rb_y3 }
+			spriteType = "GFX_button_tt_internal_revolution_economics"
+			effect = "button_tt_internal_revolution_economics"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_23_auxiliary" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_23_auxiliary_0" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_economics_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_23_auxiliary_1" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_economics_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_23_auxiliary_2" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_economics_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_23_auxiliary_3" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_economics_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_23_auxiliary_4" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_economics_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_23_auxiliary_5" position = { x = @rb_x17 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_economics_auxiliary_5"
+		}
+		effectButtonType = {#内政经济革命 坚实地基
+			name = "revolution_button_231"
+			position = { x = @rb_x16 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_economics_1"
+			effect = "button_tt_internal_revolution_economics_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_231_auxiliary" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_231_auxiliary_0" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_economics_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_231_auxiliary_1" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_economics_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_231_auxiliary_2" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_economics_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_231_auxiliary_3" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_economics_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_231_auxiliary_4" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_economics_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_231_auxiliary_5" position = { x = @rb_x16 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_economics_1_auxiliary_5"
+		}
+		effectButtonType = {#内政经济革命 高精冶炼
+			name = "revolution_button_232"
+			position = { x = @rb_x17 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_economics_2"
+			effect = "button_tt_internal_revolution_economics_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_232_auxiliary" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_232_auxiliary_0" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_economics_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_232_auxiliary_1" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_economics_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_232_auxiliary_2" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_economics_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_232_auxiliary_3" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_economics_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_232_auxiliary_4" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_economics_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_232_auxiliary_5" position = { x = @rb_x17 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_economics_2_auxiliary_5"
+		}
+		effectButtonType = {#内政经济革命 精炼提纯
+			name = "revolution_button_233"
+			position = { x = @rb_x18 y = @rb_y4 }
+			spriteType = "GFX_button_tt_internal_revolution_economics_3"
+			effect = "button_tt_internal_revolution_economics_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_233_auxiliary" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_233_auxiliary_0" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_internal_revolution_economics_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_233_auxiliary_1" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_internal_revolution_economics_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_233_auxiliary_2" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_internal_revolution_economics_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_233_auxiliary_3" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_internal_revolution_economics_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_233_auxiliary_4" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_internal_revolution_economics_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_233_auxiliary_5" position = { x = @rb_x18 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_internal_revolution_economics_3_auxiliary_5"
+		}
+
+		effectButtonType = {#奥秘洞察革命
+			name = "revolution_button_31"
+			position = { x = @rb_x20 y = @rb_y3 }
+			spriteType = "GFX_button_tt_mysterious_revolution_insight"
+			effect = "button_tt_mysterious_revolution_insight"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_31_auxiliary" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_31_auxiliary_0" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_insight_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_31_auxiliary_1" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_insight_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_31_auxiliary_2" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_insight_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_31_auxiliary_3" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_insight_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_31_auxiliary_4" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_insight_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_31_auxiliary_5" position = { x = @rb_x20 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_insight_auxiliary_5"
+		}
+		effectButtonType = {#奥秘洞察革命 破解之术
+			name = "revolution_button_311"
+			position = { x = @rb_x19 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_insight_1"
+			effect = "button_tt_mysterious_revolution_insight_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_311_auxiliary" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_311_auxiliary_0" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_insight_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_311_auxiliary_1" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_insight_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_311_auxiliary_2" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_insight_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_311_auxiliary_3" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_insight_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_311_auxiliary_4" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_insight_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_311_auxiliary_5" position = { x = @rb_x19 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_insight_1_auxiliary_5"
+		}
+		effectButtonType = {#奥秘洞察革命 隐匿之术
+			name = "revolution_button_312"
+			position = { x = @rb_x20 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_insight_2"
+			effect = "button_tt_mysterious_revolution_insight_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_312_auxiliary" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_312_auxiliary_0" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_insight_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_312_auxiliary_1" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_insight_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_312_auxiliary_2" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_insight_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_312_auxiliary_3" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_insight_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_312_auxiliary_4" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_insight_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_312_auxiliary_5" position = { x = @rb_x20 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_insight_2_auxiliary_5"
+		}
+		effectButtonType = {#奥秘洞察革命 思维观察
+			name = "revolution_button_313"
+			position = { x = @rb_x21 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_insight_3"
+			effect = "button_tt_mysterious_revolution_insight_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_313_auxiliary" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_313_auxiliary_0" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_insight_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_313_auxiliary_1" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_insight_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_313_auxiliary_2" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_insight_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_313_auxiliary_3" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_insight_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_313_auxiliary_4" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_insight_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_313_auxiliary_5" position = { x = @rb_x21 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_insight_3_auxiliary_5"
+		}
+
+		effectButtonType = {#奥秘科技革命
+			name = "revolution_button_32"
+			position = { x = @rb_x23 y = @rb_y3 }
+			spriteType = "GFX_button_tt_mysterious_revolution_technology"
+			effect = "button_tt_mysterious_revolution_technology"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_32_auxiliary" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_32_auxiliary_0" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_technology_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_32_auxiliary_1" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_technology_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_32_auxiliary_2" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_technology_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_32_auxiliary_3" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_technology_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_32_auxiliary_4" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_technology_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_32_auxiliary_5" position = { x = @rb_x23 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_technology_auxiliary_5"
+		}
+		effectButtonType = {#奥秘科技革命 物理突破
+			name = "revolution_button_321"
+			position = { x = @rb_x22 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_technology_1"
+			effect = "button_tt_mysterious_revolution_technology_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_321_auxiliary" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_321_auxiliary_0" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_technology_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_321_auxiliary_1" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_technology_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_321_auxiliary_2" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_technology_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_321_auxiliary_3" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_technology_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_321_auxiliary_4" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_technology_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_321_auxiliary_5" position = { x = @rb_x22 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_technology_1_auxiliary_5"
+		}
+		effectButtonType = {#奥秘科技革命 社会理论
+			name = "revolution_button_322"
+			position = { x = @rb_x23 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_technology_2"
+			effect = "button_tt_mysterious_revolution_technology_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_322_auxiliary" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_322_auxiliary_0" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_technology_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_322_auxiliary_1" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_technology_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_322_auxiliary_2" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_technology_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_322_auxiliary_3" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_technology_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_322_auxiliary_4" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_technology_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_322_auxiliary_5" position = { x = @rb_x23 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_technology_2_auxiliary_5"
+		}
+		effectButtonType = {#奥秘科技革命 工程攀升
+			name = "revolution_button_323"
+			position = { x = @rb_x24 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_technology_3"
+			effect = "button_tt_mysterious_revolution_technology_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_323_auxiliary" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_323_auxiliary_0" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_technology_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_323_auxiliary_1" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_technology_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_323_auxiliary_2" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_technology_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_323_auxiliary_3" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_technology_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_323_auxiliary_4" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_technology_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_323_auxiliary_5" position = { x = @rb_x24 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_technology_3_auxiliary_5"
+		}
+
+		effectButtonType = {#奥秘未知革命
+			name = "revolution_button_33"
+			position = { x = @rb_x26 y = @rb_y3 }
+			spriteType = "GFX_button_tt_mysterious_revolution_unknown"
+			effect = "button_tt_mysterious_revolution_unknown"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_33_auxiliary" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_33_auxiliary_0" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_unknown_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_33_auxiliary_1" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_unknown_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_33_auxiliary_2" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_unknown_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_33_auxiliary_3" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_unknown_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_33_auxiliary_4" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_unknown_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_33_auxiliary_5" position = { x = @rb_x26 y = 380 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_unknown_auxiliary_5"
+		}
+		effectButtonType = {#奥秘未知革命 高维导航
+			name = "revolution_button_331"
+			position = { x = @rb_x25 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_unknown_1"
+			effect = "button_tt_mysterious_revolution_unknown_1"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_331_auxiliary" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_331_auxiliary_0" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_unknown_1_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_331_auxiliary_1" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_unknown_1_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_331_auxiliary_2" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_unknown_1_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_331_auxiliary_3" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_unknown_1_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_331_auxiliary_4" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_unknown_1_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_331_auxiliary_5" position = { x = @rb_x25 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_unknown_1_auxiliary_5"
+		}
+		effectButtonType = {#奥秘未知革命 时间扭曲
+			name = "revolution_button_332"
+			position = { x = @rb_x26 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_unknown_2"
+			effect = "button_tt_mysterious_revolution_unknown_2"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_332_auxiliary" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_332_auxiliary_0" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_unknown_2_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_332_auxiliary_1" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_unknown_2_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_332_auxiliary_2" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_unknown_2_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_332_auxiliary_3" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_unknown_2_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_332_auxiliary_4" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_unknown_2_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_332_auxiliary_5" position = { x = @rb_x26 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_unknown_2_auxiliary_5"
+		}
+		effectButtonType = {#奥秘未知革命 无垠星空
+			name = "revolution_button_333"
+			position = { x = @rb_x27 y = @rb_y4 }
+			spriteType = "GFX_button_tt_mysterious_revolution_unknown_3"
+			effect = "button_tt_mysterious_revolution_unknown_3"
+			clicksound = interface
+			oversound = mouse_over
+		}
+		iconType = {
+			name = "revolution_button_333_auxiliary" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary" alwaystransparent = yes
+		}
+		effectButtonType = {
+			name = "revolution_button_333_auxiliary_0" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_0" effect = "button_tt_mysterious_revolution_unknown_3_auxiliary_0"
+		}
+		effectButtonType = {
+			name = "revolution_button_333_auxiliary_1" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_1" effect = "button_tt_mysterious_revolution_unknown_3_auxiliary_1"
+		}
+		effectButtonType = {
+			name = "revolution_button_333_auxiliary_2" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_2" effect = "button_tt_mysterious_revolution_unknown_3_auxiliary_2"
+		}
+		effectButtonType = {
+			name = "revolution_button_333_auxiliary_3" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_3" effect = "button_tt_mysterious_revolution_unknown_3_auxiliary_3"
+		}
+		effectButtonType = {
+			name = "revolution_button_333_auxiliary_4" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_4" effect = "button_tt_mysterious_revolution_unknown_3_auxiliary_4"
+		}
+		effectButtonType = {
+			name = "revolution_button_333_auxiliary_5" position = { x = @rb_x27 y = 510 }
+			spriteType = "GFX_button_tt_auxiliary_5" effect = "button_tt_mysterious_revolution_unknown_3_auxiliary_5"
+		}
+		###################################################
+		#箭头
+		###################################################
+		iconType = {
+			name = "revolution_arrow_1_1"
+			spriteType = "GFX_revolution_arrow_1"
+			position = { x = 223 y = 145 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_2_1"
+			spriteType = "GFX_revolution_arrow_2"
+			position = { x = 73 y = 275 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_2_2"
+			spriteType = "GFX_revolution_arrow_2"
+			position = { x = 523 y = 275 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_2_3"
+			spriteType = "GFX_revolution_arrow_2"
+			position = { x = 973 y = 275 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_1"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 23 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_2"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 173 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_3"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 323 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_4"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 473 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_5"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 623 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_6"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 773 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_7"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 923 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_8"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 1073 y = 405 }
+			alwaystransparent = yes
+		}
+		iconType = {
+			name = "revolution_arrow_3_9"
+			spriteType = "GFX_revolution_arrow_3"
+			position = { x = 1223 y = 405 }
+			alwaystransparent = yes
+		}
+
+
+		#以下全部隐藏
+		iconType = {#透明蜂巢状飘带
+			name = "hex_bg"
+			spriteType = "GFX_hex_center_bg"
+			position = { x = 9999 y = 9999 }
+			alwaysTransparent = yes
+		}
+		buttonType = {#聚焦按钮
+			name = "focus_button"
+			position = { x = 9999 y = 9999 }
+			orientation = "UPPER_RIGHT"
+			spriteType = "GFX_fleetview_focus"
+			buttonFont = "cg_16b"
+			shortcut = "q"
+		}
+		instantTextBoxType = {#信号传输接入
+			name = "heading"
+			font = "malgun_goth_24"
+			text = "DIPLOMACY"
+			position = { x = 9999 y = 9999 }
+			maxWidth = 543
+			maxHeight = 22
+			fixedSize = yes
+			alwaysTransparent = yes
+		}
+		instantTextBoxType = {#外交信息
+			name = "alien_message"
+			font = "cg_16b"
+			position = { x = 9999 y = 9999 }
+			maxWidth = 465
+			maxHeight = 220
+			format = left
+			scrollbartype = "standardtext_slider"
+		}
+		buttonType = {#按钮特效
+			name = "confirm_button"
+			quadTextureSprite = "GFX_standard_button_142_34_button"
+			position = { x= 9999 y = 9999  }
+			Orientation = "UPPER_RIGHT"
+			font = "cg_16b"
+			text = "MESSAGE_OK"
+			clicksound = "confirmation"
+		}
+
+		###肖像 ###
+		containerWindowType = {
+			name = "portrait_background"
+			position = { x = 9999 y = 9999 }
+			size = { width = 964 height = 350 }
+			clipping = yes
+			
+			iconType = {
+				name = "event_picture"
+				spriteType = "GFX_diplomacy_portrait_frame"
+				position = { x = -6 y = -5 }
+			}
+			
+			iconType = {
+				name = "portrait"
+				position = { x = 250 y = 0 }
+				spriteType = "GFX_portrait_character"
+			}	
+		}
+		
+		containerWindowType = {
+			name = "portrait"
+			position = { x = 9999 y = 9999 }
+			size = { width = 964 height = 350 }
+			clipping = yes
+			
+			iconType = {
+				name = "portrait"
+				spriteType = "GFX_portrait_gamesetup_mask"
+				alwaysTransparent = yes
+			}	
+			iconType = {
+				name = "black_frame"
+				spriteType = "GFX_diplomacy_portrait_shadow_frame"
+				position = { x = -4 y = -5}
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "stripes_1"
+				spriteType = "GFX_diplomacy_stripes_2"
+				alwaysTransparent = yes
+			}
+			iconType = {
+				name = "city_frame"
+				spriteType = "GFX_diplomacy_portrait_frame_trader"
+				position = { x = -6 y = -5 }
+				alwaysTransparent = yes
+			}
+		}
+
+		### 帝国信息 ###
+		
+		iconType = {
+			name = "empire_info_bg"
+			spriteType = "GFX_diplomacy_dark_fade_bg"
+			position = { x = 9999 y = 9999 }
+			alwaysTransparent = yes
+		}
+
+		instantTextBoxType={
+			name = "empire_name"
+			font = "malgun_goth_24"
+			text = "Kammarian Galactic Concordat"
+			position = { x = 9999 y = 9999 }
+			maxWidth = 450
+			maxHeight = 16
+			format = LEFT
+			text_color_code = "E"
+			fixedsize = yes
+		}
+		instantTextBoxType={
+			name = "empire_government_type"
+			font = "cg_16b"
+			text = "Autocracy"
+			position = { x = 9999 y = 9999 }
+			maxWidth = 250
+			maxHeight = 16
+			format = LEFT
+			fixedsize = yes
+			text_color_code = "Y"
+		}
+		instantTextBoxType={
+			name = "empire_personality_type"
+			font = "cg_16b"
+			text = "Despicable Neutrals"
+			position = { x = 9999 y = 9999 }
+			maxWidth = 250
+			maxHeight = 16
+			format = LEFT
+			fixedsize = yes
+		}
+		OverlappingElementsBoxType = {
+			name = "empire_ethics_icons"
+			position = { x = 9999 y = 9999 }
+			size = { x = 240 y = 30 }
+			spacing = 2.0
+			format = left
+		}
+		buttonType = {
+			name = "empire_flag"
+			quadTextureSprite = "GFX_empire_flag_128_trader"
+			position = { x = 9999 y = 9999 }
+			orientation = UPPER_LEFT
+		}
+		#领袖细节
+		containerWindowType = {
+			name = "leader_details"
+			position = { x = 9999 y = 9999 }
+			containerWindowType = {
+				name = "empire_traits_box"
+				position = { x = 0 y = -5 }
+				size = { width = 210 height = 75 }
+
+				background = {
+					name = "ethics_bg"
+					spriteType = "GFX_tiles_dark_area_cut_8"
+				}
+			}
+			instantTextBoxType = {
+				name = "empire_traits_label"
+				position = { x = 214 y = 37 }
+				font = "cg_16b"
+				maxWidth = 230
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				#text_color_code = "E"
+				text = "RULER_TRAITS"
+				alwaysTransparent = yes
+			}
+			overlappingElementsBoxType = {
+				name = "leader_traits"
+				position = { x = 215 y = 55 }
+				size = { x = 125 y = 330 }
+			}
+			instantTextBoxType = {
+				name = "leader_name"
+				position = { x = 10 y = 0 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				format = left
+				text = "Leader Name"
+				text_color_code = "E"
+			}
+			instantTextBoxType = {
+				name = "leader_species"
+				position = { x = 10 y = 18 }
+				font = "cg_16b"
+				maxWidth = 330
+				maxHeight = 20
+				fixedSize = yes
+				text = "Leader Species"
+				format = left
+			}
+		}
+
+		#外交评价
+		containerWindowType = {
+			name = "opinion_window"
+			position = { x = 9999 y = 9999 }
+			size = { width = 94 height = 30 }
+			# Use this for tooltip area, picture comes from somewhere else
+			background = {
+				name = "opinion_bg"
+				spriteType = "GFX_tiled_window_transparent"
+			}
+			iconType = {
+				name = "their_opinion_icon"
+				spriteType = "GFX_diplomacy_opinion"
+				position = { x = 7 y = 4 }
+				alwaysTransparent = yes
+			}
+			instantTextBoxType = {
+				name = "their_opinion"
+				font = "cg_16b"
+				maxWidth = 40
+				position = { x = 40 y = 7 }
+				format = left
+				text = "100"
+				alwaysTransparent = yes
+			}
+		}	
+		
+		### EVENT DIPLO ###
+		
+		containerWindowType = {
+			name = "EVENT_DIPLO"
+			position = { x = 9999 y = 9999 }
+			size = { width=563 height=280 }
+			moveable = no
+			instantTextBoxType={
+				name = "action_title"
+				font = "malgun_goth_24"
+				position = { x = 20 y = 0 }
+				maxWidth = 520
+				alwaysTransparent = yes
+			}
+			instantTextBoxType={
+				name = "action_desc"
+				font = "malgun_goth_24"
+				position = { x = 490 y = 0 }
+				maxWidth = 500
+				maxHeight = 180
+				Orientation = "UPPER_LEFT"
+				format = center
+				alwaysTransparent = yes
+				text_color_code = "H"
+			}
+			listboxType = {
+				name = "option_list"
+				position = { x = 500 y = 20 }
+				backGround=""
+				size = { x = 460 y = 240 }
+				spacing = 1
+				scrollbartype = "standardlistbox_slider"
+				borderSize = { x = 0 y = 0 }
+				Orientation = "UPPER_LEFT"
+			}
+		}
+	}
+}

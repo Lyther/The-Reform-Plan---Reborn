@@ -1,0 +1,3837 @@
+#内政革命
+button_tt_internal_revolution = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution }
+				resource_stockpile_compare = { resource = unity value >= 5000 }
+			}
+			add_resource = { unity = -5000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution }
+				resource_stockpile_compare = { resource = unity value < 5000 }
+			}
+			custom_tooltip = stop_revolution_unity11
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_1
+				resource_stockpile_compare = { resource = unity value >= 10000 }
+			}
+			add_resource = { unity = -10000 }
+			remove_modifier = "mod_tt_internal_revolution_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_1
+				resource_stockpile_compare = { resource = unity value < 10000 }
+			}
+			custom_tooltip = stop_revolution_unity12
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_2
+				resource_stockpile_compare = { resource = unity value >= 15000 }
+			}
+			add_resource = { unity = -15000 }
+			remove_modifier = "mod_tt_internal_revolution_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_2
+				resource_stockpile_compare = { resource = unity value < 15000 }
+			}
+			custom_tooltip = stop_revolution_unity13
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_3
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			remove_modifier = "mod_tt_internal_revolution_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_3
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity14
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_4
+				resource_stockpile_compare = { resource = unity value >= 25000 }
+			}
+			add_resource = { unity = -25000 }
+			remove_modifier = "mod_tt_internal_revolution_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_4
+				resource_stockpile_compare = { resource = unity value < 25000 }
+			}
+			custom_tooltip = stop_revolution_unity15
+		}
+	}
+}
+#内政管理革命
+button_tt_internal_revolution_administration = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_administration
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration }
+				resource_stockpile_compare = { resource = unity value >= 10000 }
+			}
+			add_resource = { unity = -10000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_administration
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration }
+				resource_stockpile_compare = { resource = unity value < 10000 }
+			}
+			custom_tooltip = stop_revolution_unity21
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity22
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2
+				resource_stockpile_compare = { resource = unity value >= 30000 }
+			}
+			add_resource = { unity = -30000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2
+				resource_stockpile_compare = { resource = unity value < 30000 }
+			}
+			custom_tooltip = stop_revolution_unity23
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity24
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_4
+				resource_stockpile_compare = { resource = unity value >= 50000 }
+			}
+			add_resource = { unity = -50000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_4
+				resource_stockpile_compare = { resource = unity value < 50000 }
+			}
+			custom_tooltip = stop_revolution_unity25
+		}
+	}
+}
+#内政管理革命 完型政府
+button_tt_internal_revolution_administration_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_administration_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration_1 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_1_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_administration_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration_1 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_1_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_1_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_1_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_1_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_1_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政管理革命 海纳百川
+button_tt_internal_revolution_administration_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_administration_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration_2 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_2_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_administration_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration_2 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_2_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_2_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_2_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_2_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_2_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政管理革命 卧虎藏龙
+button_tt_internal_revolution_administration_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_administration_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration_3 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_3_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_administration_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_administration_3 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_3_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_3_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_3_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_administration_3_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_administration_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_administration_3_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政文化革命
+button_tt_internal_revolution_culture = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_culture
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture }
+				resource_stockpile_compare = { resource = unity value >= 10000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -10000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_culture
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture }
+				resource_stockpile_compare = { resource = unity value >= 10000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -10000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_gestalt_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_culture
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture }
+				resource_stockpile_compare = { resource = unity value < 10000 }
+			}
+			custom_tooltip = stop_revolution_unity21
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -20000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_gestalt_1
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -20000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_gestalt_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_gestalt_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_culture_1
+					has_modifier = mod_tt_internal_revolution_culture_gestalt_1
+				}
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity22
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2
+				resource_stockpile_compare = { resource = unity value >= 30000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -30000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_gestalt_2
+				resource_stockpile_compare = { resource = unity value >= 30000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -15000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_gestalt_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_gestalt_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_culture_2
+					has_modifier = mod_tt_internal_revolution_culture_gestalt_2
+				}
+				resource_stockpile_compare = { resource = unity value < 30000 }
+			}
+			custom_tooltip = stop_revolution_unity23
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_gestalt_3
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_gestalt_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_gestalt_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_culture_3
+					has_modifier = mod_tt_internal_revolution_culture_gestalt_3
+				}
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity24
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_4
+				resource_stockpile_compare = { resource = unity value >= 50000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -50000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_gestalt_4
+				resource_stockpile_compare = { resource = unity value >= 50000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -50000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_gestalt_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_gestalt_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_culture_4
+					has_modifier = mod_tt_internal_revolution_culture_gestalt_4
+				}
+				resource_stockpile_compare = { resource = unity value < 50000 }
+			}
+			custom_tooltip = stop_revolution_unity25
+		}
+	}
+}
+#内政文化革命 艺术创新
+button_tt_internal_revolution_culture_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_culture_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture_1 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_1_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_culture_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture_1 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_1_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_1_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_1_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_1_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_1_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政文化革命 自律自强
+button_tt_internal_revolution_culture_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_culture_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture_2 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_2_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_culture_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture_2 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_2_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_2_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_2_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_2_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_2_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政文化革命 和谐稳定
+button_tt_internal_revolution_culture_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_culture_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture_3 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_3_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_culture_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_culture_3 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_3_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_3_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_3_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_culture_3_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_culture_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_culture_3_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政经济革命
+button_tt_internal_revolution_economics = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_economics
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics }
+				resource_stockpile_compare = { resource = unity value >= 10000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -10000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_economics
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics }
+				resource_stockpile_compare = { resource = unity value >= 10000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -10000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_gestalt_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_economics
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics }
+				resource_stockpile_compare = { resource = unity value < 10000 }
+			}
+			custom_tooltip = stop_revolution_unity21
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -20000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_gestalt_1
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -20000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_gestalt_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_gestalt_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_economics_1
+					has_modifier = mod_tt_internal_revolution_economics_gestalt_1
+				}
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity22
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2
+				resource_stockpile_compare = { resource = unity value >= 30000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -30000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_gestalt_2
+				resource_stockpile_compare = { resource = unity value >= 30000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -30000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_gestalt_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_gestalt_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_economics_2
+					has_modifier = mod_tt_internal_revolution_economics_gestalt_2
+				}
+				resource_stockpile_compare = { resource = unity value < 30000 }
+			}
+			custom_tooltip = stop_revolution_unity23
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_gestalt_3
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_gestalt_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_gestalt_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_economics_3
+					has_modifier = mod_tt_internal_revolution_economics_gestalt_3
+				}
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity24
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_4
+				resource_stockpile_compare = { resource = unity value >= 50000 }
+				is_gestalt = no
+			}
+			add_resource = { unity = -50000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_gestalt_4
+				resource_stockpile_compare = { resource = unity value >= 50000 }
+				is_gestalt = yes
+			}
+			add_resource = { unity = -50000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_gestalt_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_gestalt_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_internal_revolution_economics_4
+					has_modifier = mod_tt_internal_revolution_economics_gestalt_4
+				}
+				resource_stockpile_compare = { resource = unity value < 50000 }
+			}
+			custom_tooltip = stop_revolution_unity25
+		}
+	}
+}
+#内政经济革命 坚实地基
+button_tt_internal_revolution_economics_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_economics_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics_1 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_1_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_economics_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics_1 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_1_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_1_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_1_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_1_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_1_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政经济革命 高精冶炼
+button_tt_internal_revolution_economics_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_economics_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics_2 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_2_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_economics_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics_2 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_2_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_2_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_2_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_2_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_2_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#内政文化革命 精炼提纯
+button_tt_internal_revolution_economics_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_internal_revolution_economics_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics_3 }
+				resource_stockpile_compare = { resource = unity value >= 20000 }
+			}
+			add_resource = { unity = -20000 }
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_3_1" days = -1 }
+			set_country_flag = flag_tt_internal_revolution_economics_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_internal_revolution_economics_3 }
+				resource_stockpile_compare = { resource = unity value < 20000 }
+			}
+			custom_tooltip = stop_revolution_unity31
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_1
+				resource_stockpile_compare = { resource = unity value >= 40000 }
+			}
+			add_resource = { unity = -40000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_3_1"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_1
+				resource_stockpile_compare = { resource = unity value < 40000 }
+			}
+			custom_tooltip = stop_revolution_unity32
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_2
+				resource_stockpile_compare = { resource = unity value >= 60000 }
+			}
+			add_resource = { unity = -60000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_3_2"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_2
+				resource_stockpile_compare = { resource = unity value < 60000 }
+			}
+			custom_tooltip = stop_revolution_unity33
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_3
+				resource_stockpile_compare = { resource = unity value >= 80000 }
+			}
+			add_resource = { unity = -80000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_3_3"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_3
+				resource_stockpile_compare = { resource = unity value < 80000 }
+			}
+			custom_tooltip = stop_revolution_unity34
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_4
+				resource_stockpile_compare = { resource = unity value >= 100000 }
+			}
+			add_resource = { unity = -100000 }
+			remove_modifier = "mod_tt_internal_revolution_economics_3_4"
+			add_modifier = { modifier = "mod_tt_internal_revolution_economics_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_internal_revolution_economics_3_4
+				resource_stockpile_compare = { resource = unity value < 100000 }
+			}
+			custom_tooltip = stop_revolution_unity35
+		}
+	}
+}
+#军事革命
+button_tt_military_revolution = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution }
+				resource_stockpile_compare = { resource = influence value >= 300 }
+			}
+			add_resource = { influence = -300 }
+			add_modifier = { modifier = "mod_tt_military_revolution_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution }
+				resource_stockpile_compare = { resource = influence value < 300 }
+			}
+			custom_tooltip = stop_revolution_influence1
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_1
+				resource_stockpile_compare = { resource = influence value >= 300 }
+			}
+			add_resource = { influence = -300 }
+			remove_modifier = "mod_tt_military_revolution_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_1
+				resource_stockpile_compare = { resource = influence value < 300 }
+			}
+			custom_tooltip = stop_revolution_influence1
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_2
+				resource_stockpile_compare = { resource = influence value >= 300 }
+			}
+			add_resource = { influence = -300 }
+			remove_modifier = "mod_tt_military_revolution_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_2
+				resource_stockpile_compare = { resource = influence value < 300 }
+			}
+			custom_tooltip = stop_revolution_influence1
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_3
+				resource_stockpile_compare = { resource = influence value >= 300 }
+			}
+			add_resource = { influence = -300 }
+			remove_modifier = "mod_tt_military_revolution_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_3
+				resource_stockpile_compare = { resource = influence value < 300 }
+			}
+			custom_tooltip = stop_revolution_influence1
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_4
+				resource_stockpile_compare = { resource = influence value >= 300 }
+			}
+			add_resource = { influence = -300 }
+			remove_modifier = "mod_tt_military_revolution_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_4
+				resource_stockpile_compare = { resource = influence value < 300 }
+			}
+			custom_tooltip = stop_revolution_influence1
+		}
+	}
+}
+#军事进攻革命
+button_tt_military_revolution_attack = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_attack
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack }
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_attack
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack }
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_attack_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_attack_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_attack_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_4
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_attack_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_4
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+	}
+}
+#军事进攻革命：火力全开
+button_tt_military_revolution_attack_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_attack_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack_1 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_1_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_attack_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack_1 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_1_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_1_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_1_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_1_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_1_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事进攻革命：极速齐射
+button_tt_military_revolution_attack_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_attack_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack_2 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_2_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_attack_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack_2 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_2_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_2_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_2_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_2_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_2_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事进攻革命：真理射程
+button_tt_military_revolution_attack_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_attack_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack_3 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_3_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_attack_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_attack_3 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_3_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_3_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_3_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_attack_3_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_attack_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_attack_3_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事防御革命
+button_tt_military_revolution_defense = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_defense
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense }
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_defense
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense }
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_defense_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_defense_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_defense_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_4
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_defense_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_4
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+	}
+}
+#军事防御革命：长城之围
+button_tt_military_revolution_defense_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_defense_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense_1 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_1_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_defense_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense_1 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_1
+				resource_stockpile_compare = { resource = influence value >=900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_1_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_1_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_1_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_1_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_1_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事防御革命：超载火控
+button_tt_military_revolution_defense_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_defense_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense_2 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_2_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_defense_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense_2 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_2_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_2_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_2_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_2_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_2_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事防御革命：固若金汤
+button_tt_military_revolution_defense_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_defense_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense_3 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_3_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_defense_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_defense_3 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_3_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_3_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_3_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_defense_3_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_defense_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_defense_3_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事支援革命
+button_tt_military_revolution_support = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_support
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support }
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			add_modifier = { modifier = "mod_tt_military_revolution_support_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_support
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support }
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_support_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_support_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_support_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_4
+				resource_stockpile_compare = { resource = influence value >= 600 }
+			}
+			add_resource = { influence = -600 }
+			remove_modifier = "mod_tt_military_revolution_support_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_4
+				resource_stockpile_compare = { resource = influence value < 600 }
+			}
+			custom_tooltip = stop_revolution_influence2
+		}
+	}
+}
+#军事支援革命：超导护盾
+button_tt_military_revolution_support_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_support_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support_1 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_support_1_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_support_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support_1 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_1_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_1_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_1_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_1_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_1_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事支援革命：再生护甲
+button_tt_military_revolution_support_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_support_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support_2 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_support_2_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_support_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support_2 }
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_2_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_2_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_2_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_2_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_2_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#军事支援革命：极效维护
+button_tt_military_revolution_support_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_military_revolution_support_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support_3 }
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			add_modifier = { modifier = "mod_tt_military_revolution_support_3_1" days = -1 }
+			set_country_flag = flag_tt_military_revolution_support_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_military_revolution_support_3 }
+				resource_stockpile_compare = { resource = influence value < 400 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_1
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_3_1"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_1
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_2
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_3_2"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_2
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_3
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_3_3"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_3
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_4
+				resource_stockpile_compare = { resource = influence value >= 900 }
+			}
+			add_resource = { influence = -900 }
+			remove_modifier = "mod_tt_military_revolution_support_3_4"
+			add_modifier = { modifier = "mod_tt_military_revolution_support_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_military_revolution_support_3_4
+				resource_stockpile_compare = { resource = influence value < 900 }
+			}
+			custom_tooltip = stop_revolution_influence3
+		}
+	}
+}
+#奥秘革命
+button_tt_mysterious_revolution = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 300 }
+			}
+			add_resource = { minor_artifacts = -300 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution }
+				resource_stockpile_compare = { resource = minor_artifacts value < 300 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts1
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 300 }
+			}
+			add_resource = { minor_artifacts = -300 }
+			remove_modifier = "mod_tt_mysterious_revolution_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 300 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts1
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 300 }
+			}
+			add_resource = { minor_artifacts = -300 }
+			remove_modifier = "mod_tt_mysterious_revolution_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 300 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts1
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 300 }
+			}
+			add_resource = { minor_artifacts = -300 }
+			remove_modifier = "mod_tt_mysterious_revolution_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 300 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts1
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 300 }
+			}
+			add_resource = { minor_artifacts = -300 }
+			remove_modifier = "mod_tt_mysterious_revolution_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 300 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts1
+		}
+	}
+}
+#奥秘洞察革命
+button_tt_mysterious_revolution_insight = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_insight
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = no
+			}
+			add_resource = { minor_artifacts = -600 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_insight
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = yes
+			}
+			add_resource = { minor_artifacts = -600 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_homicidal_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_insight
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight }
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = no
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_homicidal_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = yes
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_homicidal_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_homicidal_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_mysterious_revolution_insight_1
+					has_modifier = mod_tt_mysterious_revolution_insight_homicidal_1
+				}
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = no
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_homicidal_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = yes
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_homicidal_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_homicidal_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_mysterious_revolution_insight_2
+					has_modifier = mod_tt_mysterious_revolution_insight_homicidal_2
+				}
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = no
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_homicidal_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = yes
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_homicidal_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_homicidal_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_mysterious_revolution_insight_3
+					has_modifier = mod_tt_mysterious_revolution_insight_homicidal_3
+				}
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = no
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_homicidal_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+				is_homicidal = yes
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_homicidal_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_homicidal_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				OR = {
+					has_modifier = mod_tt_mysterious_revolution_insight_4
+					has_modifier = mod_tt_mysterious_revolution_insight_homicidal_4
+				}
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+	}
+}
+#奥秘洞察革命：破解之术
+button_tt_mysterious_revolution_insight_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_insight_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight_1 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_1_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_insight_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight_1 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_1_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_1_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_1_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_1_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_1_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘洞察革命：隐匿之术
+button_tt_mysterious_revolution_insight_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_insight_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight_2 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_2_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_insight_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight_2 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_2_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_2_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_2_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_2_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_2_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘洞察革命：思维观察
+button_tt_mysterious_revolution_insight_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_insight_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight_3 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_3_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_insight_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_insight_3 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_3_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_3_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_3_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_insight_3_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_insight_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_insight_3_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘科技革命
+button_tt_mysterious_revolution_technology = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_technology
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_technology
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology }
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+	}
+}
+#奥秘科技革命：物理突破
+button_tt_mysterious_revolution_technology_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_technology_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology_1 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_1_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_technology_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology_1 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_1_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_1_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_1_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_1_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_1_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_1_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘科技革命：社会理论
+button_tt_mysterious_revolution_technology_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_technology_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology_2 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_2_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_technology_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology_2 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_2_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_2_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_2_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_2_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_2_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_2_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘科技革命：工程攀升
+button_tt_mysterious_revolution_technology_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_technology_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology_3 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_3_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_technology_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_technology_3 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_3_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_3_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_3_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_technology_3_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_technology_3_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_technology_3_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘未知革命
+button_tt_mysterious_revolution_unknown = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_unknown
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_unknown
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown }
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 600 }
+			}
+			add_resource = { minor_artifacts = -600 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_5" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 600 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts2
+		}
+	}
+}
+#奥秘未知革命：高维导航
+button_tt_mysterious_revolution_unknown_1 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_unknown_1
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown_1 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_1_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_unknown_1
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown_1 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_1_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_1_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_1_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_1_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_1_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_1_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_1_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_1_5" days = -1 }
+			hidden_effect = {
+				country_event = { id = tt_mysterious_revolution_unknown.0 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_1_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘未知革命：时间扭曲
+button_tt_mysterious_revolution_unknown_2 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_unknown_2
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown_2 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_2_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_unknown_2
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown_2 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_2_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_2_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_2_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_2_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_2_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_2_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_2_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_2_5" days = -1 }
+			hidden_effect = {
+				country_event = { id = tt_mysterious_revolution_unknown.0 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_2_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}
+#奥秘未知革命：无垠星空
+button_tt_mysterious_revolution_unknown_3 = {
+	allow = {
+		has_ascension_perk = ap_tt_mysterious_revolution_unknown_3
+	}
+	effect = {
+		#1
+		if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown_3 }
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_3_1" days = -1 }
+			set_country_flag = flag_tt_mysterious_revolution_unknown_3
+		}
+		else_if = {
+			limit = {
+				NOT = { has_country_flag = flag_tt_mysterious_revolution_unknown_3 }
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#2
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_1
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_3_1"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_3_2" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_1
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#3
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_2
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_3_2"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_3_3" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_2
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#4
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_3
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_3_3"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_3_4" days = -1 }
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_3
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+		#5
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_4
+				resource_stockpile_compare = { resource = minor_artifacts value >= 900 }
+			}
+			add_resource = { minor_artifacts = -900 }
+			remove_modifier = "mod_tt_mysterious_revolution_unknown_3_4"
+			add_modifier = { modifier = "mod_tt_mysterious_revolution_unknown_3_5" days = -1 }
+			hidden_effect = {
+				country_event = { id = tt_mysterious_revolution_unknown.0 }
+			}
+		}
+		else_if = {
+			limit = {
+				has_modifier = mod_tt_mysterious_revolution_unknown_3_4
+				resource_stockpile_compare = { resource = minor_artifacts value < 900 }
+			}
+			custom_tooltip = stop_revolution_minor_artifacts3
+		}
+	}
+}

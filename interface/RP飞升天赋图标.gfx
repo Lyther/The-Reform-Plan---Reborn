@@ -1,0 +1,221 @@
+spriteTypes = {
+	#改革计划
+	spriteType = {
+		name = "GFX_ap_tt_reform_plane"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_reform_plane.dds"
+		alwaystransparent = yes
+	}
+	#三大革命
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution.dds"
+		alwaystransparent = yes
+	}
+####################################################################################
+	#内政
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_economics"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_economics.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_culture"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_culture.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_administration"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_administration.dds"
+		alwaystransparent = yes
+	}
+	#军事
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_attack"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_attack.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_defense"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_defense.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_support"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_support.dds"
+		alwaystransparent = yes
+	}
+	#奥秘
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_technology"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_technology.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_insight"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_insight.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_unknown"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_unknown.dds"
+		alwaystransparent = yes
+	}
+####################################################################################
+######################################
+	#内政：经济
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_economics_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_economics_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_economics_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_economics_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_economics_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_economics_3.dds"
+		alwaystransparent = yes
+	}
+	#内政：文化
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_culture_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_culture_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_culture_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_culture_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_culture_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_culture_3.dds"
+		alwaystransparent = yes
+	}
+	#内政：管理
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_administration_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_administration_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_administration_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_administration_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_internal_revolution_administration_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_internal_revolution_administration_3.dds"
+		alwaystransparent = yes
+	}
+######################################
+	#军事：进攻
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_attack_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_attack_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_attack_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_attack_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_attack_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_attack_3.dds"
+		alwaystransparent = yes
+	}
+	#军事：防御
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_defense_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_defense_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_defense_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_defense_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_defense_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_defense_3.dds"
+		alwaystransparent = yes
+	}
+	#军事：支援
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_support_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_support_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_support_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_support_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_military_revolution_support_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_military_revolution_support_3.dds"
+		alwaystransparent = yes
+	}
+######################################
+	#奥秘：科技
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_technology_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_technology_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_technology_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_technology_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_technology_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_technology_3.dds"
+		alwaystransparent = yes
+	}
+	#奥秘：洞察
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_insight_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_insight_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_insight_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_insight_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_insight_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_insight_3.dds"
+		alwaystransparent = yes
+	}
+	#奥秘：未知
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_unknown_1"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_unknown_1.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_unknown_2"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_unknown_2.dds"
+		alwaystransparent = yes
+	}
+	spriteType = {
+		name = "GFX_ap_tt_mysterious_revolution_unknown_3"
+		texturefile = "gfx/interface/icons/ascension_perks/ap_tt_mysterious_revolution_unknown_3.dds"
+		alwaystransparent = yes
+	}
+}

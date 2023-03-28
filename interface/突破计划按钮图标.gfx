@@ -1,0 +1,207 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_revolution_button"
+		textureFile = "gfx/interface/icons/buttons/revolution_button.dds"
+	}
+	spriteType = {
+		name = "GFX_revolution_arrow_1"
+		textureFile = "gfx/interface/icons/buttons/revolution_arrow_1.dds"
+	}
+	spriteType = {
+		name = "GFX_revolution_arrow_2"
+		textureFile = "gfx/interface/icons/buttons/revolution_arrow_2.dds"
+	}
+	spriteType = {
+		name = "GFX_revolution_arrow_3"
+		textureFile = "gfx/interface/icons/buttons/revolution_arrow_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_tt_auxiliary"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_auxiliary_0"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary_0.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_auxiliary_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_auxiliary_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_auxiliary_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_auxiliary_4"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary_4.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_auxiliary_5"
+		textureFile = "gfx/interface/icons/buttons/button_tt_auxiliary_5.dds"
+	}
+
+	spriteType = {#军事革命
+		name = "GFX_button_tt_military_revolution"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution.dds"
+	}
+	spriteType = {#内政革命
+		name = "GFX_button_tt_internal_revolution"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution.dds"
+	}
+	spriteType = {#奥秘革命
+		name = "GFX_button_tt_mysterious_revolution"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_attack"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_attack.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_attack_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_attack_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_attack_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_attack_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_attack_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_attack_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_defense"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_defense.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_defense_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_defense_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_defense_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_defense_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_defense_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_defense_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_support"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_support.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_support_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_support_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_support_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_support_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_military_revolution_support_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_military_revolution_support_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_administration"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_administration.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_administration_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_administration_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_administration_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_administration_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_administration_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_administration_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_culture"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_culture.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_culture_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_culture_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_culture_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_culture_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_culture_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_culture_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_economics"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_economics.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_economics_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_economics_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_economics_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_economics_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_internal_revolution_economics_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_internal_revolution_economics_3.dds"
+	}
+
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_insight"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_insight.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_insight_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_insight_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_insight_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_insight_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_insight_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_insight_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_technology"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_technology.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_technology_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_technology_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_technology_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_technology_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_technology_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_technology_3.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_unknown"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_unknown.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_unknown_1"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_unknown_1.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_unknown_2"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_unknown_2.dds"
+	}
+	spriteType = {
+		name = "GFX_button_tt_mysterious_revolution_unknown_3"
+		textureFile = "gfx/interface/icons/buttons/button_tt_mysterious_revolution_unknown_3.dds"
+	}
+}

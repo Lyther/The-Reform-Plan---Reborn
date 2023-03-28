@@ -1,0 +1,742 @@
+#内政革命
+mod_tt_internal_revolution_1 = {
+	country_unity_produces_mult = 0.1
+}
+mod_tt_internal_revolution_2 = {
+	country_unity_produces_mult = 0.2
+}
+mod_tt_internal_revolution_3 = {
+	country_unity_produces_mult = 0.3
+}
+mod_tt_internal_revolution_4 = {
+	country_unity_produces_mult = 0.4
+}
+mod_tt_internal_revolution_5 = {
+	country_unity_produces_mult = 0.5
+}
+#军事革命
+mod_tt_military_revolution_1 = {
+	country_base_influence_produces_add = 1
+}
+mod_tt_military_revolution_2 = {
+	country_base_influence_produces_add = 2
+}
+mod_tt_military_revolution_3 = {
+	country_base_influence_produces_add = 3
+}
+mod_tt_military_revolution_4 = {
+	country_base_influence_produces_add = 4
+}
+mod_tt_military_revolution_5 = {
+	country_base_influence_produces_add = 5
+}
+#奥秘革命
+mod_tt_mysterious_revolution_1 = {
+	country_base_minor_artifacts_produces_add = 3
+}
+mod_tt_mysterious_revolution_2 = {
+	country_base_minor_artifacts_produces_add = 6
+}
+mod_tt_mysterious_revolution_3 = {
+	country_base_minor_artifacts_produces_add = 9
+}
+mod_tt_mysterious_revolution_4 = {
+	country_base_minor_artifacts_produces_add = 12
+}
+mod_tt_mysterious_revolution_5 = {
+	country_base_minor_artifacts_produces_add = 15
+}
+######################################################################
+#内政革命：管理
+mod_tt_internal_revolution_administration_1 = {
+	empire_size_districts_mult = -0.1
+	empire_size_systems_mult = -0.1
+	empire_size_colonies_mult = -0.1
+	empire_size_pops_mult = -0.1
+}
+mod_tt_internal_revolution_administration_2 = {
+	empire_size_districts_mult = -0.2
+	empire_size_systems_mult = -0.2
+	empire_size_colonies_mult = -0.2
+	empire_size_pops_mult = -0.2
+}
+mod_tt_internal_revolution_administration_3 = {
+	empire_size_districts_mult = -0.3
+	empire_size_systems_mult = -0.3
+	empire_size_colonies_mult = -0.3
+	empire_size_pops_mult = -0.3
+}
+mod_tt_internal_revolution_administration_4 = {
+	empire_size_districts_mult = -0.4
+	empire_size_systems_mult = -0.4
+	empire_size_colonies_mult = -0.4
+	empire_size_pops_mult = -0.4
+}
+mod_tt_internal_revolution_administration_5 = {
+	empire_size_districts_mult = -0.5
+	empire_size_systems_mult = -0.5
+	empire_size_colonies_mult = -0.5
+	empire_size_pops_mult = -0.5
+}
+#内政革命：文化
+mod_tt_internal_revolution_culture_1 = {
+	pop_government_ethic_attraction = 0.25
+}
+mod_tt_internal_revolution_culture_2 = {
+	pop_government_ethic_attraction = 0.50
+}
+mod_tt_internal_revolution_culture_3 = {
+	pop_government_ethic_attraction = 0.75
+}
+mod_tt_internal_revolution_culture_4 = {
+	pop_government_ethic_attraction = 1
+}
+mod_tt_internal_revolution_culture_5 = {
+	pop_government_ethic_attraction = 1.25
+}
+mod_tt_internal_revolution_culture_gestalt_1 = {
+	pop_amenities_usage_mult = -0.05
+}
+mod_tt_internal_revolution_culture_gestalt_2 = {
+	pop_amenities_usage_mult = -0.10
+}
+mod_tt_internal_revolution_culture_gestalt_3 = {
+	pop_amenities_usage_mult = -0.15
+}
+mod_tt_internal_revolution_culture_gestalt_4 = {
+	pop_amenities_usage_mult = -0.20
+}
+mod_tt_internal_revolution_culture_gestalt_5 = {
+	pop_amenities_usage_mult = -0.25
+}
+#内政革命：经济
+mod_tt_internal_revolution_economics_1 = {
+	trade_value_mult = 0.2
+}
+mod_tt_internal_revolution_economics_2 = {
+	trade_value_mult = 0.4
+}
+mod_tt_internal_revolution_economics_3 = {
+	trade_value_mult = 0.6
+}
+mod_tt_internal_revolution_economics_4 = {
+	trade_value_mult = 0.8
+}
+mod_tt_internal_revolution_economics_5 = {
+	trade_value_mult = 1
+}
+mod_tt_internal_revolution_economics_gestalt_1 = {
+	planet_jobs_produces_mult = 0.1
+}
+mod_tt_internal_revolution_economics_gestalt_2 = {
+	planet_jobs_produces_mult = 0.2
+}
+mod_tt_internal_revolution_economics_gestalt_3 = {
+	planet_jobs_produces_mult = 0.3
+}
+mod_tt_internal_revolution_economics_gestalt_4 = {
+	planet_jobs_produces_mult = 0.4
+}
+mod_tt_internal_revolution_economics_gestalt_5 = {
+	planet_jobs_produces_mult = 0.5
+}
+########################################
+#军事革命：进攻
+mod_tt_military_revolution_attack_1 = {
+	army_damage_mult = 0.1
+}
+mod_tt_military_revolution_attack_2 = {
+	army_damage_mult = 0.2
+}
+mod_tt_military_revolution_attack_3 = {
+	army_damage_mult = 0.3
+}
+mod_tt_military_revolution_attack_4 = {
+	army_damage_mult = 0.4
+}
+mod_tt_military_revolution_attack_5 = {
+	army_damage_mult = 0.5
+}
+#军事革命：防御
+mod_tt_military_revolution_defense_1 = {
+	army_health = 0.1
+}
+mod_tt_military_revolution_defense_2 = {
+	army_health = 0.2
+}
+mod_tt_military_revolution_defense_3 = {
+	army_health = 0.3
+}
+mod_tt_military_revolution_defense_4 = {
+	army_health = 0.4
+}
+mod_tt_military_revolution_defense_5 = {
+	army_health = 0.5
+}
+#军事革命：支援
+mod_tt_military_revolution_support_1 = {
+	ship_speed_mult = 0.1
+}
+mod_tt_military_revolution_support_2 = {
+	ship_speed_mult = 0.2
+}
+mod_tt_military_revolution_support_3 = {
+	ship_speed_mult = 0.3
+}
+mod_tt_military_revolution_support_4 = {
+	ship_speed_mult = 0.4
+}
+mod_tt_military_revolution_support_5 = {
+	ship_speed_mult = 0.5
+}
+########################################
+#奥秘革命：洞察
+mod_tt_mysterious_revolution_insight_1 = {
+	country_trust_growth = 0.25
+}
+mod_tt_mysterious_revolution_insight_2 = {
+	country_trust_growth = 0.5
+}
+mod_tt_mysterious_revolution_insight_3 = {
+	country_trust_growth = 0.75
+}
+mod_tt_mysterious_revolution_insight_4 = {
+	country_trust_growth = 1
+}
+mod_tt_mysterious_revolution_insight_5 = {
+	country_trust_growth = 1.25
+}
+mod_tt_mysterious_revolution_insight_homicidal_1 = {
+	spy_network_daily_value_mult = 0.25
+}
+mod_tt_mysterious_revolution_insight_homicidal_2 = {
+	spy_network_daily_value_mult = 0.50
+}
+mod_tt_mysterious_revolution_insight_homicidal_3 = {
+	spy_network_daily_value_mult = 0.75
+}
+mod_tt_mysterious_revolution_insight_homicidal_4 = {
+	spy_network_daily_value_mult = 1.00
+}
+mod_tt_mysterious_revolution_insight_homicidal_5 = {
+	spy_network_daily_value_mult = 1.25
+}
+#奥秘革命：科技
+mod_tt_mysterious_revolution_technology_1 = {
+	all_technology_research_speed = 0.1
+}
+mod_tt_mysterious_revolution_technology_2 = {
+	all_technology_research_speed = 0.2
+}
+mod_tt_mysterious_revolution_technology_3 = {
+	all_technology_research_speed = 0.3
+}
+mod_tt_mysterious_revolution_technology_4 = {
+	all_technology_research_speed = 0.4
+}
+mod_tt_mysterious_revolution_technology_5 = {
+	all_technology_research_speed = 0.5
+}
+#奥秘革命：未知
+mod_tt_mysterious_revolution_unknown_1 = {
+
+}
+mod_tt_mysterious_revolution_unknown_2 = {
+
+}
+mod_tt_mysterious_revolution_unknown_3 = {
+
+}
+mod_tt_mysterious_revolution_unknown_4 = {
+
+}
+mod_tt_mysterious_revolution_unknown_5 = {
+
+}
+
+######################内政管理##########################
+#完型政府
+mod_tt_internal_revolution_administration_1_1 = {
+	country_government_civic_points_add = 1
+}
+mod_tt_internal_revolution_administration_1_2 = {
+	country_government_civic_points_add = 2
+}
+mod_tt_internal_revolution_administration_1_3 = {
+	country_government_civic_points_add = 3
+}
+mod_tt_internal_revolution_administration_1_4 = {
+	country_government_civic_points_add = 4
+}
+mod_tt_internal_revolution_administration_1_5 = {
+	country_government_civic_points_add = 5
+}
+#海纳百川
+mod_tt_internal_revolution_administration_2_1 = {
+	planet_housing_mult = 0.1
+}
+mod_tt_internal_revolution_administration_2_2 = {
+	planet_housing_mult = 0.2
+}
+mod_tt_internal_revolution_administration_2_3 = {
+	planet_housing_mult = 0.3
+}
+mod_tt_internal_revolution_administration_2_4 = {
+	planet_housing_mult = 0.4
+}
+mod_tt_internal_revolution_administration_2_5 = {
+	planet_housing_mult = 0.5
+}
+#卧虎藏龙
+mod_tt_internal_revolution_administration_3_1 = {
+	country_resource_max_add = 500000
+}
+mod_tt_internal_revolution_administration_3_2 = {
+	country_resource_max_add = 1000000
+}
+mod_tt_internal_revolution_administration_3_3 = {
+	country_resource_max_add = 1500000
+}
+mod_tt_internal_revolution_administration_3_4 = {
+	country_resource_max_add = 2000000
+}
+mod_tt_internal_revolution_administration_3_5 = {
+	country_resource_max_add = 2500000
+}
+######################内政文化##########################
+#艺术创新
+mod_tt_internal_revolution_culture_1_1 = {
+	planet_amenities_mult = 0.1
+}
+mod_tt_internal_revolution_culture_1_2 = {
+	planet_amenities_mult = 0.2
+}
+mod_tt_internal_revolution_culture_1_3 = {
+	planet_amenities_mult = 0.3
+}
+mod_tt_internal_revolution_culture_1_4 = {
+	planet_amenities_mult = 0.4
+}
+mod_tt_internal_revolution_culture_1_5 = {
+	planet_amenities_mult = 0.5
+}
+#自律自强
+mod_tt_internal_revolution_culture_2_1 = {
+	planet_crime_add = -20
+}
+mod_tt_internal_revolution_culture_2_2 = {
+	planet_crime_add = -40
+}
+mod_tt_internal_revolution_culture_2_3 = {
+	planet_crime_add = -60
+}
+mod_tt_internal_revolution_culture_2_4 = {
+	planet_crime_add = -80
+}
+mod_tt_internal_revolution_culture_2_5 = {
+	planet_crime_add = -100
+}
+#和谐稳定
+mod_tt_internal_revolution_culture_3_1 = {
+	planet_stability_add = 5
+}
+mod_tt_internal_revolution_culture_3_2 = {
+	planet_stability_add = 10
+}
+mod_tt_internal_revolution_culture_3_3 = {
+	planet_stability_add = 15
+}
+mod_tt_internal_revolution_culture_3_4 = {
+	planet_stability_add = 20
+}
+mod_tt_internal_revolution_culture_3_5 = {
+	planet_stability_add = 25
+}
+######################内政经济##########################
+#坚实地基
+mod_tt_internal_revolution_economics_1_1 = {
+	country_energy_produces_mult = 0.1
+	country_minerals_produces_mult = 0.1
+	country_food_produces_mult = 0.1
+}
+mod_tt_internal_revolution_economics_1_2 = {
+	country_energy_produces_mult = 0.2
+	country_minerals_produces_mult = 0.2
+	country_food_produces_mult = 0.2
+}
+mod_tt_internal_revolution_economics_1_3 = {
+	country_energy_produces_mult = 0.3
+	country_minerals_produces_mult = 0.3
+	country_food_produces_mult = 0.3
+}
+mod_tt_internal_revolution_economics_1_4 = {
+	country_energy_produces_mult = 0.4
+	country_minerals_produces_mult = 0.4
+	country_food_produces_mult = 0.4
+}
+mod_tt_internal_revolution_economics_1_5 = {
+	country_energy_produces_mult = 0.5
+	country_minerals_produces_mult = 0.5
+	country_food_produces_mult = 0.5
+}
+#高精冶炼
+mod_tt_internal_revolution_economics_2_1 = {
+	country_alloys_produces_mult = 0.1
+	country_consumer_goods_produces_mult = 0.1
+}
+mod_tt_internal_revolution_economics_2_2 = {
+	country_alloys_produces_mult = 0.2
+	country_consumer_goods_produces_mult = 0.2
+}
+mod_tt_internal_revolution_economics_2_3 = {
+	country_alloys_produces_mult = 0.3
+	country_consumer_goods_produces_mult = 0.3
+}
+mod_tt_internal_revolution_economics_2_4 = {
+	country_alloys_produces_mult = 0.4
+	country_consumer_goods_produces_mult = 0.4
+}
+mod_tt_internal_revolution_economics_2_5 = {
+	country_alloys_produces_mult = 0.5
+	country_consumer_goods_produces_mult = 0.5
+}
+#精炼提纯
+mod_tt_internal_revolution_economics_3_1 = {
+	country_volatile_motes_produces_mult = 0.1
+	country_exotic_gases_produces_mult = 0.1
+	country_rare_crystals_produces_mult = 0.1
+}
+mod_tt_internal_revolution_economics_3_2 = {
+	country_volatile_motes_produces_mult = 0.2
+	country_exotic_gases_produces_mult = 0.2
+	country_rare_crystals_produces_mult = 0.2
+}
+mod_tt_internal_revolution_economics_3_3 = {
+	country_volatile_motes_produces_mult = 0.3
+	country_exotic_gases_produces_mult = 0.3
+	country_rare_crystals_produces_mult = 0.3
+}
+mod_tt_internal_revolution_economics_3_4 = {
+	country_volatile_motes_produces_mult = 0.4
+	country_exotic_gases_produces_mult = 0.4
+	country_rare_crystals_produces_mult = 0.4
+}
+mod_tt_internal_revolution_economics_3_5 = {
+	country_volatile_motes_produces_mult = 0.5
+	country_exotic_gases_produces_mult = 0.5
+	country_rare_crystals_produces_mult = 0.5
+}
+######################军事进攻##########################
+#火力全开
+mod_tt_military_revolution_attack_1_1 = {
+	ship_weapon_damage = 0.1
+}
+mod_tt_military_revolution_attack_1_2 = {
+	ship_weapon_damage = 0.2
+}
+mod_tt_military_revolution_attack_1_3 = {
+	ship_weapon_damage = 0.3
+}
+mod_tt_military_revolution_attack_1_4 = {
+	ship_weapon_damage = 0.4
+}
+mod_tt_military_revolution_attack_1_5 = {
+	ship_weapon_damage = 0.5
+}
+#极速齐射
+mod_tt_military_revolution_attack_2_1 = {
+	ship_fire_rate_mult = 0.1
+}
+mod_tt_military_revolution_attack_2_2 = {
+	ship_fire_rate_mult = 0.2
+}
+mod_tt_military_revolution_attack_2_3 = {
+	ship_fire_rate_mult = 0.3
+}
+mod_tt_military_revolution_attack_2_4 = {
+	ship_fire_rate_mult = 0.4
+}
+mod_tt_military_revolution_attack_2_5 = {
+	ship_fire_rate_mult = 0.5
+}
+#真理射程
+mod_tt_military_revolution_attack_3_1 = {
+	ship_weapon_range_mult = 0.1
+}
+mod_tt_military_revolution_attack_3_2 = {
+	ship_weapon_range_mult = 0.2
+}
+mod_tt_military_revolution_attack_3_3 = {
+	ship_weapon_range_mult = 0.3
+}
+mod_tt_military_revolution_attack_3_4 = {
+	ship_weapon_range_mult = 0.4
+}
+mod_tt_military_revolution_attack_3_5 = {
+	ship_weapon_range_mult = 0.5
+}
+######################军事防御##########################
+#长城之围
+mod_tt_military_revolution_defense_1_1 = {
+	country_starbase_capacity_add = 5
+}
+mod_tt_military_revolution_defense_1_2 = {
+	country_starbase_capacity_add = 10
+}
+mod_tt_military_revolution_defense_1_3 = {
+	country_starbase_capacity_add = 15
+}
+mod_tt_military_revolution_defense_1_4 = {
+	country_starbase_capacity_add = 20
+}
+mod_tt_military_revolution_defense_1_5 = {
+	country_starbase_capacity_add = 25
+}
+#超载火控
+mod_tt_military_revolution_defense_2_1 = {
+	starbase_defense_platform_capacity_add = 25
+}
+mod_tt_military_revolution_defense_2_2 = {
+	starbase_defense_platform_capacity_add = 50
+}
+mod_tt_military_revolution_defense_2_3 = {
+	starbase_defense_platform_capacity_add = 75
+}
+mod_tt_military_revolution_defense_2_4 = {
+	starbase_defense_platform_capacity_add = 100
+}
+mod_tt_military_revolution_defense_2_5 = {
+	starbase_defense_platform_capacity_add = 125
+}
+#固若金汤
+mod_tt_military_revolution_defense_3_1 = {
+	ship_hull_mult = 0.1
+}
+mod_tt_military_revolution_defense_3_2 = {
+	ship_hull_mult = 0.2
+}
+mod_tt_military_revolution_defense_3_3 = {
+	ship_hull_mult = 0.3
+}
+mod_tt_military_revolution_defense_3_4 = {
+	ship_hull_mult = 0.4
+}
+mod_tt_military_revolution_defense_3_5 = {
+	ship_hull_mult = 0.5
+}
+######################军事支援##########################
+#超导护盾
+mod_tt_military_revolution_support_1_1 = {
+	ship_shield_regen_add_perc = 0.5
+}
+mod_tt_military_revolution_support_1_2 = {
+	ship_shield_regen_add_perc = 1
+}
+mod_tt_military_revolution_support_1_3 = {
+	ship_shield_regen_add_perc = 1.5
+}
+mod_tt_military_revolution_support_1_4 = {
+	ship_shield_regen_add_perc = 2
+}
+mod_tt_military_revolution_support_1_5 = {
+	ship_shield_regen_add_perc = 2.5
+}
+#再生护甲
+mod_tt_military_revolution_support_2_1 = {
+	ship_armor_regen_add_perc = 0.5
+}
+mod_tt_military_revolution_support_2_2 = {
+	ship_armor_regen_add_perc = 1
+}
+mod_tt_military_revolution_support_2_3 = {
+	ship_armor_regen_add_perc = 1.5
+}
+mod_tt_military_revolution_support_2_4 = {
+	ship_armor_regen_add_perc = 2
+}
+mod_tt_military_revolution_support_2_5 = {
+	ship_armor_regen_add_perc = 2.5
+}
+#极效维护
+mod_tt_military_revolution_support_3_1 = {
+	ship_hull_regen_add_perc = 0.5
+}
+mod_tt_military_revolution_support_3_2 = {
+	ship_hull_regen_add_perc = 1
+}
+mod_tt_military_revolution_support_3_3 = {
+	ship_hull_regen_add_perc = 1.5
+}
+mod_tt_military_revolution_support_3_4 = {
+	ship_hull_regen_add_perc = 2
+}
+mod_tt_military_revolution_support_3_5 = {
+	ship_hull_regen_add_perc = 2.5
+}
+######################奥秘洞察##########################
+#破解之术
+mod_tt_mysterious_revolution_insight_1_1 = {
+	intel_decryption_add = 5
+}
+mod_tt_mysterious_revolution_insight_1_2 = {
+	intel_decryption_add = 10
+}
+mod_tt_mysterious_revolution_insight_1_3 = {
+	intel_decryption_add = 15
+}
+mod_tt_mysterious_revolution_insight_1_4 = {
+	intel_decryption_add = 20
+}
+mod_tt_mysterious_revolution_insight_1_5 = {
+	intel_decryption_add = 25
+}
+#隐匿之术
+mod_tt_mysterious_revolution_insight_2_1 = {
+	intel_encryption_add = 5
+}
+mod_tt_mysterious_revolution_insight_2_2 = {
+	intel_encryption_add = 10
+}
+mod_tt_mysterious_revolution_insight_2_3 = {
+	intel_encryption_add = 15
+}
+mod_tt_mysterious_revolution_insight_2_4 = {
+	intel_encryption_add = 20
+}
+mod_tt_mysterious_revolution_insight_2_5 = {
+	intel_encryption_add = 25
+}
+#思维观察
+mod_tt_mysterious_revolution_insight_3_1 = {
+	country_trust_cap_add = 50
+}
+mod_tt_mysterious_revolution_insight_3_2 = {
+	country_trust_cap_add = 100
+}
+mod_tt_mysterious_revolution_insight_3_3 = {
+	country_trust_cap_add = 150
+}
+mod_tt_mysterious_revolution_insight_3_4 = {
+	country_trust_cap_add = 200
+}
+mod_tt_mysterious_revolution_insight_3_5 = {
+	country_trust_cap_add = 250
+}
+mod_tt_mysterious_revolution_insight_3_homicidal_1 = {
+	espionage_operation_difficulty_add = -2
+}
+mod_tt_mysterious_revolution_insight_3_homicidal_2 = {
+	espionage_operation_difficulty_add = -4
+}
+mod_tt_mysterious_revolution_insight_3_homicidal_3 = {
+	espionage_operation_difficulty_add = -6
+}
+mod_tt_mysterious_revolution_insight_3_homicidal_4 = {
+	espionage_operation_difficulty_add = -8
+}
+mod_tt_mysterious_revolution_insight_3_homicidal_5 = {
+	espionage_operation_difficulty_add = -10
+}
+######################奥秘科技##########################
+#物理突破
+mod_tt_mysterious_revolution_technology_1_1 = {
+	country_physics_research_produces_mult = 0.1
+}
+mod_tt_mysterious_revolution_technology_1_2 = {
+	country_physics_research_produces_mult = 0.2
+}
+mod_tt_mysterious_revolution_technology_1_3 = {
+	country_physics_research_produces_mult = 0.3
+}
+mod_tt_mysterious_revolution_technology_1_4 = {
+	country_physics_research_produces_mult = 0.4
+}
+mod_tt_mysterious_revolution_technology_1_5 = {
+	country_physics_research_produces_mult = 0.5
+}
+#社会理论
+mod_tt_mysterious_revolution_technology_2_1 = {
+	country_society_research_produces_mult = 0.1
+}
+mod_tt_mysterious_revolution_technology_2_2 = {
+	country_society_research_produces_mult = 0.2
+}
+mod_tt_mysterious_revolution_technology_2_3 = {
+	country_society_research_produces_mult = 0.3
+}
+mod_tt_mysterious_revolution_technology_2_4 = {
+	country_society_research_produces_mult = 0.4
+}
+mod_tt_mysterious_revolution_technology_2_5 = {
+	country_society_research_produces_mult = 0.5
+}
+#工程攀升
+mod_tt_mysterious_revolution_technology_3_1 = {
+	country_engineering_research_produces_mult = 0.1
+}
+mod_tt_mysterious_revolution_technology_3_2 = {
+	country_engineering_research_produces_mult = 0.2
+}
+mod_tt_mysterious_revolution_technology_3_3 = {
+	country_engineering_research_produces_mult = 0.3
+}
+mod_tt_mysterious_revolution_technology_3_4 = {
+	country_engineering_research_produces_mult = 0.4
+}
+mod_tt_mysterious_revolution_technology_3_5 = {
+	country_engineering_research_produces_mult = 0.5
+}
+######################奥秘未知##########################
+#高维导航
+mod_tt_mysterious_revolution_unknown_1_1 = {
+	ship_ftl_jumpdrive_range_mult = 0.2
+}
+mod_tt_mysterious_revolution_unknown_1_2 = {
+	ship_ftl_jumpdrive_range_mult = 0.4
+}
+mod_tt_mysterious_revolution_unknown_1_3 = {
+	ship_ftl_jumpdrive_range_mult = 0.6
+}
+mod_tt_mysterious_revolution_unknown_1_4 = {
+	ship_ftl_jumpdrive_range_mult = 0.8
+}
+mod_tt_mysterious_revolution_unknown_1_5 = {
+	ship_ftl_jumpdrive_range_mult = 1
+}
+#时间扭曲
+mod_tt_mysterious_revolution_unknown_2_1 = {
+	icon = "gfx/interface/icons/modifiers/mod_ship_jumpdrive_cooldown_mult.dds"
+	ship_jumpdrive_cooldown_mult = -0.2
+}
+mod_tt_mysterious_revolution_unknown_2_2 = {
+	icon = "gfx/interface/icons/modifiers/mod_ship_jumpdrive_cooldown_mult.dds"
+	ship_jumpdrive_cooldown_mult = -0.4
+}
+mod_tt_mysterious_revolution_unknown_2_3 = {
+	icon = "gfx/interface/icons/modifiers/mod_ship_jumpdrive_cooldown_mult.dds"
+	ship_jumpdrive_cooldown_mult = -0.6
+}
+mod_tt_mysterious_revolution_unknown_2_4 = {
+	icon = "gfx/interface/icons/modifiers/mod_ship_jumpdrive_cooldown_mult.dds"
+	ship_jumpdrive_cooldown_mult = -0.8
+}
+mod_tt_mysterious_revolution_unknown_2_5 = {
+	icon = "gfx/interface/icons/modifiers/mod_ship_jumpdrive_cooldown_mult.dds"
+	ship_jumpdrive_cooldown_mult = -1
+}
+#无垠星空
+mod_tt_mysterious_revolution_unknown_3_1 = {
+	planet_carry_cap_add = 10
+}
+mod_tt_mysterious_revolution_unknown_3_2 = {
+	planet_carry_cap_add = 20
+}
+mod_tt_mysterious_revolution_unknown_3_3 = {
+	planet_carry_cap_add = 30
+}
+mod_tt_mysterious_revolution_unknown_3_4 = {
+	planet_carry_cap_add = 40
+}
+mod_tt_mysterious_revolution_unknown_3_5 = {
+	planet_carry_cap_add = 50
+}

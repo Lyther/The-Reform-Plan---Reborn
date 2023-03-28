@@ -1,0 +1,8 @@
+tt_reform_plane = {
+	length = 0
+	icon = "GFX_edict_type_policy"
+
+	effect = {
+		country_event = { id = tt_reform_plane.3 }
+	}
+}
