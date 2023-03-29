@@ -16,35 +16,35 @@ mod_tt_internal_revolution_5 = {
 }
 #军事革命
 mod_tt_military_revolution_1 = {
-	country_base_influence_produces_add = 1
+	country_base_influence_produces_add = 10
 }
 mod_tt_military_revolution_2 = {
-	country_base_influence_produces_add = 2
+	country_base_influence_produces_add = 20
 }
 mod_tt_military_revolution_3 = {
-	country_base_influence_produces_add = 3
+	country_base_influence_produces_add = 30
 }
 mod_tt_military_revolution_4 = {
-	country_base_influence_produces_add = 4
+	country_base_influence_produces_add = 40
 }
 mod_tt_military_revolution_5 = {
-	country_base_influence_produces_add = 5
+	country_base_influence_produces_add = 50
 }
 #奥秘革命
 mod_tt_mysterious_revolution_1 = {
-	country_base_minor_artifacts_produces_add = 3
+	country_base_minor_artifacts_produces_add = 30
 }
 mod_tt_mysterious_revolution_2 = {
-	country_base_minor_artifacts_produces_add = 6
+	country_base_minor_artifacts_produces_add = 60
 }
 mod_tt_mysterious_revolution_3 = {
-	country_base_minor_artifacts_produces_add = 9
+	country_base_minor_artifacts_produces_add = 90
 }
 mod_tt_mysterious_revolution_4 = {
-	country_base_minor_artifacts_produces_add = 12
+	country_base_minor_artifacts_produces_add = 120
 }
 mod_tt_mysterious_revolution_5 = {
-	country_base_minor_artifacts_produces_add = 15
+	country_base_minor_artifacts_produces_add = 150
 }
 ######################################################################
 #内政革命：管理
@@ -289,19 +289,19 @@ mod_tt_internal_revolution_administration_2_5 = {
 }
 #卧虎藏龙
 mod_tt_internal_revolution_administration_3_1 = {
-	country_resource_max_add = 500000
-}
-mod_tt_internal_revolution_administration_3_2 = {
 	country_resource_max_add = 1000000
 }
+mod_tt_internal_revolution_administration_3_2 = {
+	country_resource_max_add = 5000000
+}
 mod_tt_internal_revolution_administration_3_3 = {
-	country_resource_max_add = 1500000
+	country_resource_max_add = 25000000
 }
 mod_tt_internal_revolution_administration_3_4 = {
-	country_resource_max_add = 2000000
+	country_resource_max_add = 125000000
 }
 mod_tt_internal_revolution_administration_3_5 = {
-	country_resource_max_add = 2500000
+	country_resource_max_add = 625000000
 }
 ######################内政文化##########################
 #艺术创新
@@ -726,17 +726,17 @@ mod_tt_mysterious_revolution_unknown_2_5 = {
 }
 #无垠星空
 mod_tt_mysterious_revolution_unknown_3_1 = {
-	planet_carry_cap_add = 10
+	planet_max_districts_add = 2
 }
 mod_tt_mysterious_revolution_unknown_3_2 = {
-	planet_carry_cap_add = 20
+	planet_max_districts_add = 4
 }
 mod_tt_mysterious_revolution_unknown_3_3 = {
-	planet_carry_cap_add = 30
+	planet_max_districts_add = 6
 }
 mod_tt_mysterious_revolution_unknown_3_4 = {
-	planet_carry_cap_add = 40
+	planet_max_districts_add = 8
 }
 mod_tt_mysterious_revolution_unknown_3_5 = {
-	planet_carry_cap_add = 50
+	planet_max_districts_add = 10
 }

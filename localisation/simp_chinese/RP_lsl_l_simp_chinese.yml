@@ -13,25 +13,21 @@
 #奥秘未知的后果
  tt_mysterious_revolution_unknown.1:0"§R最后的忠告§!"
  tt_mysterious_revolution_unknown.1.name:0"§R最后的忠告§!"
- tt_mysterious_revolution_unknown.1.desc:0"“唉，我们明明已经为您暗中做了那么多的警告。”研究§Y维度空间§!的科学家如是说道。\n\n“这已经是我们最后的提醒了，我们的团队预测大概在5年之后，它们将会来到这个世界。”科学家望向星空深处，在他眼中似乎星空已经被扭曲了。\n\n“我们已经尽了最后的努力，请务必保护好这个银河！”"
+ tt_mysterious_revolution_unknown.1.desc:0"“唉，我们明明已经为您暗中做了那么多的警告。”研究§Y维度空间§!的科学家如是说道。\n\n“这已经是我们最后的提醒了，我们的团队预测大概在6个月之后，它们将会来到这个世界。”科学家望向星空深处，在他眼中似乎星空已经被扭曲了。\n\n“我们已经尽了最后的努力，请务必保护好这个银河！”"
  tt_mysterious_revolution_unknown.1.a:0"好的，谢谢您的提醒。"
  tt_mysterious_revolution_unknown.1.a.tooltip:0"§L不用称我为您，毕竟，您已经成功那么多次了，不是吗？——§R维度空间§!的研究者，代号：§Y零者§!，如是说道。§!\n"
 
  tt_mysterious_revolution_unknown.2:0"§R突然的警告§!"
  tt_mysterious_revolution_unknown.2.name:0"§R突然的警告§!"
- tt_mysterious_revolution_unknown.2.desc:0"“他们...它们...干了什么？！”我们的特工显然非常惊恐。\n\n“我们刚刚得知消息，§Y[From.GetName]§!在暗中完成了某种革命，某种可能导致§R高维紊乱§!的革命...”特工正在收集整理资料，但依旧无法掩盖他的恐慌。\n\n“它们的科学团队预测可能在5年之后，那些高维...无论是啥，将会来到这个世界。”特工还顺带建议我们联系造船厂的总监，让他们加快生产战舰准备御敌。"
+ tt_mysterious_revolution_unknown.2.desc:0"“他们...它们...干了什么？！”我们的特工显然非常惊恐。\n\n“我们刚刚得知消息，§Y[From.GetName]§!在暗中完成了某种革命，某种可能导致§R高维紊乱§!的革命...”特工正在收集整理资料，但依旧无法掩盖他的恐慌。\n\n“它们的科学团队预测可能在6个月之后，那些高维...无论是啥，将会来到这个世界。”特工还顺带建议我们联系造船厂的总监，让他们加快生产战舰准备御敌。"
  tt_mysterious_revolution_unknown.2.a:0"知道了，立马下达通知，准备进行战争动员。"
- tt_mysterious_revolution_unknown.2.a.tooltip:0"§L先共同抵御那些高维的东西吧，然后再找它们算账，毕竟...只有5年的准备时间。§!"
-
-
-##################################################################################################################
+ tt_mysterious_revolution_unknown.2.a.tooltip:0"§L先共同抵御那些高维的东西吧，然后再找它们算账，毕竟...只有6个月的准备时间。§!"
 
  ap_tt_reform_plane:0"改革计划"
  ap_tt_reform_plane_desc:0"根据各方预测，我们的帝国将会有极大的概率经历一个瓶颈阶段，届时，帝国的大多数方面将会停滞不前，而想要到达更高的阶段必须得进行自我改革，哪怕需要因此消耗大量资源。"
  tt_reform_plane_desc:0"选择此飞升将启动改革计划，完成该计划需要花费大量£unity£凝聚力、£influence£影响力和£minor_artifacts£稀有文物。§R这是一个漫长且缓慢的过程，希望您能忍受并坚持下去！§!\n\n开启该界面请与外交通讯 £f1£ 处一个名为"改革计划"的国家进行"交流"，或者启用§G法令：改革计划§!进行"交流"，或者直接点上面那个青色菱形按钮。\n\n此飞升为测试版，后续会独立出来形成一个新模组。"
 
  tt_reform_plane_warning:0"§R记住：这是一个漫长且缓慢，但蕴含着丰富成果的革命过程，我们希望您能忍受并坚持下去！§!\n注：§Y改革计划§!的系列飞升将于§R7月11日之前§!全部独立出去，届时，工整传统将只剩下§Y复兴大道§!和§Y思想操作§!这两个飞升，想要继续旧存档，请提前搜索并订阅“改革计划”模组。"
-##################################################################################################################
 
  ap_tt_internal_revolution:0"内政革命"
  ap_tt_internal_revolution_desc:0"内政凝聚着我们文明各个方面的价值观，是维持帝国高效运转的核心。"
@@ -45,8 +41,6 @@
  ap_tt_mysterious_revolution_desc:0"宇宙中存在着无数晦涩难懂的奇幻事物，但这依旧无法阻挡我们对星空的不断探索，我们终将会理解过去的奥秘，拥抱崭新的未来。"
  tt_mysterious_revolution:0"§Y解锁功能：§!文物探索\n在§E改革计划§!界面中，依靠花费£minor_artifacts£§Y稀有文物§!以增加稀有文物产出。"
 
-##################################################################################################################
-
  ap_tt_internal_revolution_economics:0"内政经济革命"
  ap_tt_internal_revolution_economics_desc:0"经济基础决定上层建筑，离开了能量币，战舰、政府、国家都不能运转，真正优秀的经济体系应当可以随各方面的需求而变动，现在借助强大的监控以及调配能力，这样的经济体系已经成为可能！"
  tt_internal_revolution_economics:0"§Y解锁功能：§!经济优化\n非格式塔：在§E改革计划§!界面中，依靠花费越来越多的£unity£§Y凝聚力§!以增加贸易值+20%*5；格式塔\n在§E改革计划§!界面中，依靠花费越来越多的£unity£§Y凝聚力§!以增加岗位产出+10%*5"
@@ -58,8 +52,6 @@
  ap_tt_internal_revolution_administration:0"内政管理革命"
  ap_tt_internal_revolution_administration_desc:0"之前的改革带了了深厚的成果，有此也证明了我们的正确，为了能够贯彻最高领导人的意志，为了能彻底深化改革，让我们从管理开始改革吧！"
  tt_internal_revolution_administration:0"§Y解锁功能：§!高效管理\n在§E改革计划§!界面中，依靠花费越来越多的£unity£§Y凝聚力§!以减少帝国规模-10%*5"
-
-##################################################################################################################
 
  ap_tt_military_revolution_attack:0"军事进攻革命"
  ap_tt_military_revolution_attack_desc:0"最好的防御就是进攻，只要让敌人疲于防御他就没法发起进攻，依靠着我们近年来的征战，我们有了足够的经验对陆军进攻体系进行了全面的升级。长官，等待您的命令！"
@@ -73,8 +65,6 @@
  ap_tt_military_revolution_support_desc:0"足够的移动能力才能够让我们在每一场战斗当中获得优势，强大的机动能力将我们的进攻以及防御能力拓展到了新的层面，科研部门手中已经准备好了完善的亚光速推进器改进以及亚光速推进器技师培训计划，等待您的指令。"
  tt_military_revolution_support:0"§Y解锁功能：§!快速支援\n在§E改革计划§!界面中，依靠花费£influence£§Y影响力§!以增加亚光速航速+10%*5"
 
-##################################################################################################################
-
  ap_tt_mysterious_revolution_technology:0"奥秘科技革命"
  ap_tt_mysterious_revolution_technology_desc:0"极致的科学就是玄学，我们的科技已经达到了这样的层面，一个新的科学领域等待着我们的探索，在完全探索这个领域之后，我们的科技将会突飞猛进，银河系中的其他蛮夷是不会明白的。"
  tt_mysterious_revolution_technology:0"§Y解锁功能：§!技术飞跃\n在§E改革计划§!界面中，依靠花费£minor_artifacts£§Y稀有文物§!以增加研究速度+10%*5"
@@ -86,8 +76,6 @@
  ap_tt_mysterious_revolution_unknown:0"奥秘未知革命"
  ap_tt_mysterious_revolution_unknown_desc:0"§R警告：§!完成此革命可能导致会现实世界与§R《《数据缺失》》§!......§R最后...告：§!...可能导致...侵...请勿..."
  tt_mysterious_revolution_unknown:0"§Y解锁功能：§!§R竹篮打水§!\n§L务必阻止领导人完成此革命！\n这...不太好吧。\n这个革命的果实虽然诱人，但终究是<<数据缺失>>啊！\n懂了，我可以先设置一定的障碍...§!"
-
-######################################内政########################################
 
  ap_tt_internal_revolution_economics_1:0"坚实地基"
  ap_tt_internal_revolution_economics_1_desc:0"基础物资的生产是一切上层结构的根基，只有拥有稳固的地基，才能搭建万丈高楼。通过不断的优化基础生产效率，我们甚至可以从虚空中获取基础物质。"
@@ -123,9 +111,8 @@
 
  ap_tt_internal_revolution_administration_3:0"卧虎藏龙"
  ap_tt_internal_revolution_administration_3_desc:0"最新的科技支持我们升级自己的库存物流系统，更加小巧的无人机将接待原有的工人进行库管作业，同时，我们在星球各处修建了秘密储藏点，没有人直到我们到底储藏了多少东西，除了您。"
- tt_internal_revolution_administration_3:0"§Y解锁功能：§!卧虎藏龙\n在§E改革计划§!界面中，依靠花费越来越多的£unity£§Y凝聚力§!以增加§Y资源储存上限§!§G+500000§!*5"
+ tt_internal_revolution_administration_3:0"§Y解锁功能：§!卧虎藏龙\n在§E改革计划§!界面中，依靠花费越来越多的£unity£§Y凝聚力§!以增加§Y资源储存上限§!§G+1000000§!*(5^(5-1))"
 
-######################################军事########################################
  ap_tt_military_revolution_attack_1:0"火力全开"
  ap_tt_military_revolution_attack_1_desc:0"每多一发炮弹落到敌人身上，我们离胜利就更进一步！新的武器材料突破了开火上线，自动装弹机与超级火控相配合，我们将在最短的时间内倾泻弹药库中的所有弹药！"
  tt_military_revolution_attack_1:0"§Y解锁功能：§!火力全开\n在§E改革计划§!界面中，依靠花费£influence£§Y影响力§!以增加§Y舰船伤害§!§G+10%§!*5"
@@ -162,7 +149,6 @@
  ap_tt_military_revolution_support_3_desc:0"在工程学上的多次突破后，我们可以在船体结构中大量分布阿托（10^-18）尺度的微型机械，它们会不断为整个船体进行维护。"
  tt_military_revolution_support_3:0"§Y解锁功能：§!极效维护\n在§E改革计划§!界面中，依靠花费£influence£§Y影响力§!以增强§Y每日船体恢复§!§G+0.5%§!*5"
 
-######################################奥秘########################################
  ap_tt_mysterious_revolution_technology_1:0"物理突破"
  ap_tt_mysterious_revolution_technology_1_desc:0"科学的发展永无止境，只要我们不停下来，未来的道路就会不断延伸。"
  tt_mysterious_revolution_technology_1:0"§Y解锁功能：§!物理突破\n在§E改革计划§!界面中，依靠花费£minor_artifacts£§Y稀有文物§!以增加§Y每月物理学§!§G+10%§!*5"
@@ -197,10 +183,8 @@
 
  ap_tt_mysterious_revolution_unknown_3:0"无垠星空"
  ap_tt_mysterious_revolution_unknown_3_desc:0"...记载着一种...打通与§R<<数据缺失>>§!...链接...承载..."#一些古代文物记载着一种神秘空间的存在，他们称之为高维空间，通过在星球上打通与高维空间的稳定链接，能大幅提升该星球的人口承载力。
- tt_mysterious_revolution_unknown_3:0"§R解锁功能：§!无限星空\n在§E改革计划§!界面中，依靠花费£minor_artifacts£§Y稀有文物§!以增加§Y星球承载力§!§G+10§!*5"
+ tt_mysterious_revolution_unknown_3:0"§R解锁功能：§!无限星空\n在§E改革计划§!界面中，依靠花费£minor_artifacts£§Y稀有文物§!以增加§Y最大区划数§!§G+2§!*5"
 
-
-#################################################################################
  mod_country_base_unity_produces_add:0"每月£unity£凝聚力"
  mod_country_unity_produces_mult:0"每月£unity£凝聚力"
 
@@ -231,8 +215,6 @@
  mod_tt_mysterious_revolution_3:0"奥秘革命Ⅲ"
  mod_tt_mysterious_revolution_4:0"奥秘革命Ⅳ"
  mod_tt_mysterious_revolution_5:0"奥秘革命Ⅴ"
-
-##########################################
 
  mod_tt_internal_revolution_administration_1:0"内政管理革命Ⅰ"
  mod_tt_internal_revolution_administration_2:0"内政管理革命Ⅱ"
@@ -307,8 +289,6 @@
  mod_tt_mysterious_revolution_unknown_3_desc:0"不过竹篮打水一场空罢了。"
  mod_tt_mysterious_revolution_unknown_4_desc:0"你还不明白吗？快住手！"
  mod_tt_mysterious_revolution_unknown_5_desc:0"完了，快要完了..."
-
-##########################################
 
  mod_tt_internal_revolution_administration_1_1:0"完型政府Ⅰ"
  mod_tt_internal_revolution_administration_1_2:0"完型政府Ⅱ"

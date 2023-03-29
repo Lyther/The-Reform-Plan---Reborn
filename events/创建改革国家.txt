@@ -1,6 +1,7 @@
 namespace = tt_reform_plane
 
-country_event = {		#开局创建tt_reform_plane国家类型
+#开局创建tt_reform_plane国家类型
+country_event = {
 	id = tt_reform_plane.0
 	hide_window = yes
 
@@ -13,11 +14,11 @@ country_event = {		#开局创建tt_reform_plane国家类型
 	}
 }
 
-country_event = {		#开局创建tt_reform_plane国家类型
+#开局创建tt_reform_plane国家类型
+country_event = {
 	id = tt_reform_plane.1
 	hide_window = yes
 	is_triggered_only = yes
-
 
 	immediate = {
 		create_country = {
@@ -44,7 +45,8 @@ country_event = {		#开局创建tt_reform_plane国家类型
 	}
 }
 
-country_event = {		#检查是否为tt_reform_plane国家类型，并与其联系
+#检查是否为tt_reform_plane国家类型，并与其联系
+country_event = {
 	id = tt_reform_plane.2
 	hide_window = yes
 
@@ -64,18 +66,20 @@ country_event = {		#检查是否为tt_reform_plane国家类型，并与其联系
 	}
 }
 
-country_event = {		#与tt_reform_plane国家类型的联系界面（改革计划主界面）
+#与tt_reform_plane国家类型的联系界面（改革计划主界面）
+country_event = {
 	id = tt_reform_plane.3
 	title = tt_reform_plane.3.title
 	desc = tt_reform_plane.3.desc
-	diplomatic = yes					#似乎是外交事件才能用自制UI，蠢驴应该是这样设置的
-	custom_gui = "allow_breakthrough_ascension_perks"	#该界面的UI设置
+	diplomatic = yes #似乎是外交事件才能用自制UI，蠢驴应该是这样设置的
+	custom_gui = "allow_breakthrough_ascension_perks" #该界面的UI设置
 	is_triggered_only = yes
 	after = { remove_country_flag = flag_the_reform_plane }
 	option = { name = OK }
 }
 
-country_event = {		#点了“突破计划”后的隐藏事件，并与tt_reform_plane国家类型建立无通知的联系
+#点了“突破计划”后的隐藏事件，并与tt_reform_plane国家类型建立无通知的联系
+country_event = {
 	id = tt_reform_plane.4
 	hide_window = yes
 
@@ -86,7 +90,7 @@ country_event = {		#点了“突破计划”后的隐藏事件，并与tt_reform
 			limit = { is_country_type = tt_reform_plane }
 			save_event_target_as = the_tt_reform_plane
 		}
-		establish_communications_no_message = event_target:the_tt_reform_plane	#建立无通知的联系
-		country_event = { id = tt_reform_plane.3 }				#但会瞬间转移到与tt_breakthrough国家类型的通讯界面
+		establish_communications_no_message = event_target:the_tt_reform_plane #建立无通知的联系
+		country_event = { id = tt_reform_plane.3 } #但会瞬间转移到与tt_breakthrough国家类型的通讯界面
 	}
 }

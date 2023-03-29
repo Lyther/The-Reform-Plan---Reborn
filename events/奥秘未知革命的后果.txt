@@ -6,7 +6,6 @@ event = {
 	is_triggered_only = yes
 	trigger = {
 		any_country = {
-			is_country_type = default
 			AND = {
 				has_modifier = mod_tt_mysterious_revolution_unknown_1_5
 				has_modifier = mod_tt_mysterious_revolution_unknown_2_5
@@ -17,7 +16,7 @@ event = {
 	}
 	immediate = {
 		country_event = { id = tt_mysterious_revolution_unknown.1 }
-		country_event = { id = crisis.1000 days = 1800 random = 60 }
+		country_event = { id = crisis.1000 days = 180 random = 60 }
 		set_global_flag = galactic_crisis_happened
 	}
 }
@@ -49,6 +48,7 @@ country_event = {
 		}
 	}
 }
+
 country_event = {
 	id = tt_mysterious_revolution_unknown.2
 	title = tt_mysterious_revolution_unknown.2.name

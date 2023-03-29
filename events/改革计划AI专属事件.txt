@@ -1,6 +1,7 @@
 namespace = tt_reform_plane_ai
 
-country_event = {#内政革命
+#内政革命
+country_event = {
 	id = tt_reform_plane_ai.1
 	hide_window = yes
 	is_triggered_only = yes
@@ -60,7 +61,8 @@ country_event = {#内政革命
 	}
 }
 
-country_event = {#军事革命
+#军事革命
+country_event = {
 	id = tt_reform_plane_ai.2
 	hide_window = yes
 	is_triggered_only = yes
@@ -120,7 +122,8 @@ country_event = {#军事革命
 	}
 }
 
-country_event = {#奥秘革命
+#奥秘革命
+country_event = {
 	id = tt_reform_plane_ai.3
 	hide_window = yes
 	is_triggered_only = yes
@@ -180,7 +183,8 @@ country_event = {#奥秘革命
 	}
 }
 
-country_event = {#内政管理
+#内政管理
+country_event = {
 	id = tt_reform_plane_ai.11
 	hide_window = yes
 	is_triggered_only = yes
@@ -239,7 +243,9 @@ country_event = {#内政管理
 		}
 	}
 }
-country_event = {#内政文化
+
+#内政文化
+country_event = {
 	id = tt_reform_plane_ai.12
 	hide_window = yes
 	is_triggered_only = yes
@@ -354,7 +360,9 @@ country_event = {#内政文化
 		}
 	}
 }
-country_event = {#内政经济
+
+#内政经济
+country_event = {
 	id = tt_reform_plane_ai.13
 	hide_window = yes
 	is_triggered_only = yes
@@ -469,7 +477,9 @@ country_event = {#内政经济
 		}
 	}
 }
-country_event = {#军事进攻
+
+#军事进攻
+country_event = {
 	id = tt_reform_plane_ai.21
 	hide_window = yes
 	is_triggered_only = yes
@@ -528,7 +538,9 @@ country_event = {#军事进攻
 		}
 	}
 }
-country_event = {#军事防御
+
+#军事防御
+country_event = {
 	id = tt_reform_plane_ai.22
 	hide_window = yes
 	is_triggered_only = yes
@@ -587,7 +599,9 @@ country_event = {#军事防御
 		}
 	}
 }
-country_event = {#军事支援
+
+#军事支援
+country_event = {
 	id = tt_reform_plane_ai.23
 	hide_window = yes
 	is_triggered_only = yes
@@ -646,7 +660,9 @@ country_event = {#军事支援
 		}
 	}
 }
-country_event = {#奥秘洞察
+
+#奥秘洞察
+country_event = {
 	id = tt_reform_plane_ai.31
 	hide_window = yes
 	is_triggered_only = yes
@@ -761,7 +777,9 @@ country_event = {#奥秘洞察
 		}
 	}
 }
-country_event = {#奥秘科技
+
+#奥秘科技
+country_event = {
 	id = tt_reform_plane_ai.32
 	hide_window = yes
 	is_triggered_only = yes
@@ -820,7 +838,9 @@ country_event = {#奥秘科技
 		}
 	}
 }
-country_event = {#奥秘未知
+
+#奥秘未知
+country_event = {
 	id = tt_reform_plane_ai.33
 	hide_window = yes
 	is_triggered_only = yes
@@ -879,7 +899,9 @@ country_event = {#奥秘未知
 		}
 	}
 }
-country_event = {#内政经济1
+
+#内政经济1
+country_event = {
 	id = tt_reform_plane_ai.111
 	hide_window = yes
 	is_triggered_only = yes
@@ -938,7 +960,9 @@ country_event = {#内政经济1
 		}
 	}
 }
-country_event = {#内政经济2
+
+#内政经济2
+country_event = {
 	id = tt_reform_plane_ai.112
 	hide_window = yes
 	is_triggered_only = yes
@@ -997,7 +1021,9 @@ country_event = {#内政经济2
 		}
 	}
 }
-country_event = {#内政经济3
+
+#内政经济3
+country_event = {
 	id = tt_reform_plane_ai.113
 	hide_window = yes
 	is_triggered_only = yes
@@ -1056,7 +1082,9 @@ country_event = {#内政经济3
 		}
 	}
 }
-country_event = {#内政文化1
+
+#内政文化1
+country_event = {
 	id = tt_reform_plane_ai.121
 	hide_window = yes
 	is_triggered_only = yes
@@ -1115,7 +1143,9 @@ country_event = {#内政文化1
 		}
 	}
 }
-country_event = {#内政文化2
+
+#内政文化2
+country_event = {
 	id = tt_reform_plane_ai.122
 	hide_window = yes
 	is_triggered_only = yes
@@ -1174,7 +1204,9 @@ country_event = {#内政文化2
 		}
 	}
 }
-country_event = {#内政文化3
+
+#内政文化3
+country_event = {
 	id = tt_reform_plane_ai.123
 	hide_window = yes
 	is_triggered_only = yes
@@ -1233,7 +1265,9 @@ country_event = {#内政文化3
 		}
 	}
 }
-country_event = {#内政管理1
+
+#内政管理1
+country_event = {
 	id = tt_reform_plane_ai.131
 	hide_window = yes
 	is_triggered_only = yes
@@ -1292,7 +1326,9 @@ country_event = {#内政管理1
 		}
 	}
 }
-country_event = {#内政管理2
+
+#内政管理2
+country_event = {
 	id = tt_reform_plane_ai.132
 	hide_window = yes
 	is_triggered_only = yes
@@ -1351,7 +1387,9 @@ country_event = {#内政管理2
 		}
 	}
 }
-country_event = {#内政管理3
+
+#内政管理3
+country_event = {
 	id = tt_reform_plane_ai.133
 	hide_window = yes
 	is_triggered_only = yes
@@ -1410,7 +1448,9 @@ country_event = {#内政管理3
 		}
 	}
 }
-country_event = {#军事进攻1
+
+#军事进攻1
+country_event = {
 	id = tt_reform_plane_ai.211
 	hide_window = yes
 	is_triggered_only = yes
@@ -1469,7 +1509,9 @@ country_event = {#军事进攻1
 		}
 	}
 }
-country_event = {#军事进攻2
+
+#军事进攻2
+country_event = {
 	id = tt_reform_plane_ai.212
 	hide_window = yes
 	is_triggered_only = yes
@@ -1528,7 +1570,9 @@ country_event = {#军事进攻2
 		}
 	}
 }
-country_event = {#军事进攻3
+
+#军事进攻3
+country_event = {
 	id = tt_reform_plane_ai.213
 	hide_window = yes
 	is_triggered_only = yes
@@ -1587,7 +1631,9 @@ country_event = {#军事进攻3
 		}
 	}
 }
-country_event = {#军事防御1
+
+#军事防御1
+country_event = {
 	id = tt_reform_plane_ai.221
 	hide_window = yes
 	is_triggered_only = yes
@@ -1646,7 +1692,9 @@ country_event = {#军事防御1
 		}
 	}
 }
-country_event = {#军事防御2
+
+#军事防御2
+country_event = {
 	id = tt_reform_plane_ai.222
 	hide_window = yes
 	is_triggered_only = yes
@@ -1705,7 +1753,9 @@ country_event = {#军事防御2
 		}
 	}
 }
-country_event = {#军事防御3
+
+#军事防御3
+country_event = {
 	id = tt_reform_plane_ai.223
 	hide_window = yes
 	is_triggered_only = yes
@@ -1764,7 +1814,9 @@ country_event = {#军事防御3
 		}
 	}
 }
-country_event = {#军事支援1
+
+#军事支援1
+country_event = {
 	id = tt_reform_plane_ai.231
 	hide_window = yes
 	is_triggered_only = yes
@@ -1823,7 +1875,9 @@ country_event = {#军事支援1
 		}
 	}
 }
-country_event = {#军事支援2
+
+#军事支援2
+country_event = {
 	id = tt_reform_plane_ai.232
 	hide_window = yes
 	is_triggered_only = yes
@@ -1882,7 +1936,9 @@ country_event = {#军事支援2
 		}
 	}
 }
-country_event = {#军事支援3
+
+#军事支援3
+country_event = {
 	id = tt_reform_plane_ai.233
 	hide_window = yes
 	is_triggered_only = yes
@@ -1941,7 +1997,9 @@ country_event = {#军事支援3
 		}
 	}
 }
-country_event = {#奥秘科技1
+
+#奥秘科技1
+country_event = {
 	id = tt_reform_plane_ai.311
 	hide_window = yes
 	is_triggered_only = yes
@@ -2000,7 +2058,9 @@ country_event = {#奥秘科技1
 		}
 	}
 }
-country_event = {#奥秘科技2
+
+#奥秘科技2
+country_event = {
 	id = tt_reform_plane_ai.312
 	hide_window = yes
 	is_triggered_only = yes
@@ -2058,7 +2118,9 @@ country_event = {#奥秘科技2
 		}
 	}
 }
-country_event = {#奥秘科技3
+
+#奥秘科技3
+country_event = {
 	id = tt_reform_plane_ai.313
 	hide_window = yes
 	is_triggered_only = yes
@@ -2117,7 +2179,9 @@ country_event = {#奥秘科技3
 		}
 	}
 }
-country_event = {#奥秘洞察1
+
+#奥秘洞察1
+country_event = {
 	id = tt_reform_plane_ai.321
 	hide_window = yes
 	is_triggered_only = yes
@@ -2176,7 +2240,9 @@ country_event = {#奥秘洞察1
 		}
 	}
 }
-country_event = {#奥秘洞察2
+
+#奥秘洞察2
+country_event = {
 	id = tt_reform_plane_ai.322
 	hide_window = yes
 	is_triggered_only = yes
@@ -2235,7 +2301,9 @@ country_event = {#奥秘洞察2
 		}
 	}
 }
-country_event = {#奥秘洞察3
+
+#奥秘洞察3
+country_event = {
 	id = tt_reform_plane_ai.323
 	hide_window = yes
 	is_triggered_only = yes
@@ -2294,7 +2362,9 @@ country_event = {#奥秘洞察3
 		}
 	}
 }
-country_event = {#奥秘未知1
+
+#奥秘未知1
+country_event = {
 	id = tt_reform_plane_ai.331
 	hide_window = yes
 	is_triggered_only = yes
@@ -2353,7 +2423,9 @@ country_event = {#奥秘未知1
 		}
 	}
 }
-country_event = {#奥秘未知2
+
+#奥秘未知2
+country_event = {
 	id = tt_reform_plane_ai.332
 	hide_window = yes
 	is_triggered_only = yes
@@ -2412,7 +2484,9 @@ country_event = {#奥秘未知2
 		}
 	}
 }
-country_event = {#奥秘未知3
+
+#奥秘未知3
+country_event = {
 	id = tt_reform_plane_ai.333
 	hide_window = yes
 	is_triggered_only = yes

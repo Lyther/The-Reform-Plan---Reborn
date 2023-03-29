@@ -1,21 +1,27 @@
+#改革计划UI
 on_custom_diplomacy = {
 	events = {
-		tt_reform_plane.2		#改革计划UI
+		tt_reform_plane.2
 	}
 }
 
+#改革计划国家创建，全局标识
 on_press_begin = {
 	events = {
-		tt_reform_plane.0		#改革计划国家创建，全局标识
+		tt_reform_plane.0
 	}
 }
+
+#全局标识
 on_game_start = {
 	events = {
-		tt_reform_plan_global_flag.0	#全局标识
+		tt_reform_plan_global_flag.0
 	}
 }
+
+#全局标识
 on_single_player_save_game_load = {
 	events = {
-		tt_reform_plan_global_flag.0	#全局标识
+		tt_reform_plan_global_flag.0
 	}
 }

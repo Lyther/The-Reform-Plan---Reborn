@@ -1,7 +1,7 @@
 #内政革命
 button_tt_internal_revolution = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution
+		has_ascension_perk = ap_tt_reform_plane
 	}
 	effect = {
 		#1
@@ -94,7 +94,7 @@ button_tt_internal_revolution = {
 #内政管理革命
 button_tt_internal_revolution_administration = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_administration
+		has_modifier = mod_tt_internal_revolution_5
 	}
 	effect = {
 		#1
@@ -187,7 +187,7 @@ button_tt_internal_revolution_administration = {
 #内政管理革命 完型政府
 button_tt_internal_revolution_administration_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_administration_1
+		has_modifier = mod_tt_internal_revolution_administration_5
 	}
 	effect = {
 		#1
@@ -280,7 +280,7 @@ button_tt_internal_revolution_administration_1 = {
 #内政管理革命 海纳百川
 button_tt_internal_revolution_administration_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_administration_2
+		has_modifier = mod_tt_internal_revolution_administration_5
 	}
 	effect = {
 		#1
@@ -373,7 +373,7 @@ button_tt_internal_revolution_administration_2 = {
 #内政管理革命 卧虎藏龙
 button_tt_internal_revolution_administration_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_administration_3
+		has_modifier = mod_tt_internal_revolution_administration_5
 	}
 	effect = {
 		#1
@@ -466,7 +466,7 @@ button_tt_internal_revolution_administration_3 = {
 #内政文化革命
 button_tt_internal_revolution_culture = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_culture
+		has_modifier = mod_tt_internal_revolution_5
 	}
 	effect = {
 		#1
@@ -626,7 +626,10 @@ button_tt_internal_revolution_culture = {
 #内政文化革命 艺术创新
 button_tt_internal_revolution_culture_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_culture_1
+		OR = {
+			has_modifier = mod_tt_internal_revolution_culture_5
+			has_modifier = mod_tt_internal_revolution_culture_gestalt_5
+		}
 	}
 	effect = {
 		#1
@@ -719,7 +722,10 @@ button_tt_internal_revolution_culture_1 = {
 #内政文化革命 自律自强
 button_tt_internal_revolution_culture_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_culture_2
+		OR = {
+			has_modifier = mod_tt_internal_revolution_culture_5
+			has_modifier = mod_tt_internal_revolution_culture_gestalt_5
+		}
 	}
 	effect = {
 		#1
@@ -812,7 +818,10 @@ button_tt_internal_revolution_culture_2 = {
 #内政文化革命 和谐稳定
 button_tt_internal_revolution_culture_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_culture_3
+		OR = {
+			has_modifier = mod_tt_internal_revolution_culture_5
+			has_modifier = mod_tt_internal_revolution_culture_gestalt_5
+		}
 	}
 	effect = {
 		#1
@@ -905,7 +914,7 @@ button_tt_internal_revolution_culture_3 = {
 #内政经济革命
 button_tt_internal_revolution_economics = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_economics
+		has_modifier = mod_tt_internal_revolution_5
 	}
 	effect = {
 		#1
@@ -1065,7 +1074,10 @@ button_tt_internal_revolution_economics = {
 #内政经济革命 坚实地基
 button_tt_internal_revolution_economics_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_economics_1
+		OR = {
+			has_modifier = mod_tt_internal_revolution_economics_5
+			has_modifier = mod_tt_internal_revolution_economics_gestalt_5
+		}
 	}
 	effect = {
 		#1
@@ -1158,7 +1170,10 @@ button_tt_internal_revolution_economics_1 = {
 #内政经济革命 高精冶炼
 button_tt_internal_revolution_economics_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_economics_2
+		OR = {
+			has_modifier = mod_tt_internal_revolution_economics_5
+			has_modifier = mod_tt_internal_revolution_economics_gestalt_5
+		}
 	}
 	effect = {
 		#1
@@ -1251,7 +1266,10 @@ button_tt_internal_revolution_economics_2 = {
 #内政文化革命 精炼提纯
 button_tt_internal_revolution_economics_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_internal_revolution_economics_3
+		OR = {
+			has_modifier = mod_tt_internal_revolution_economics_5
+			has_modifier = mod_tt_internal_revolution_economics_gestalt_5
+		}
 	}
 	effect = {
 		#1
@@ -1344,7 +1362,7 @@ button_tt_internal_revolution_economics_3 = {
 #军事革命
 button_tt_military_revolution = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution
+		has_ascension_perk = ap_tt_reform_plane
 	}
 	effect = {
 		#1
@@ -1437,7 +1455,7 @@ button_tt_military_revolution = {
 #军事进攻革命
 button_tt_military_revolution_attack = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_attack
+		has_modifier = mod_tt_military_revolution_5
 	}
 	effect = {
 		#1
@@ -1530,7 +1548,7 @@ button_tt_military_revolution_attack = {
 #军事进攻革命：火力全开
 button_tt_military_revolution_attack_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_attack_1
+		has_modifier = mod_tt_military_revolution_attack_5
 	}
 	effect = {
 		#1
@@ -1623,7 +1641,7 @@ button_tt_military_revolution_attack_1 = {
 #军事进攻革命：极速齐射
 button_tt_military_revolution_attack_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_attack_2
+		has_modifier = mod_tt_military_revolution_attack_5
 	}
 	effect = {
 		#1
@@ -1716,7 +1734,7 @@ button_tt_military_revolution_attack_2 = {
 #军事进攻革命：真理射程
 button_tt_military_revolution_attack_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_attack_3
+		has_modifier = mod_tt_military_revolution_attack_5
 	}
 	effect = {
 		#1
@@ -1809,7 +1827,7 @@ button_tt_military_revolution_attack_3 = {
 #军事防御革命
 button_tt_military_revolution_defense = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_defense
+		has_modifier = mod_tt_military_revolution_5
 	}
 	effect = {
 		#1
@@ -1902,7 +1920,7 @@ button_tt_military_revolution_defense = {
 #军事防御革命：长城之围
 button_tt_military_revolution_defense_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_defense_1
+		has_modifier = mod_tt_military_revolution_defense_5
 	}
 	effect = {
 		#1
@@ -1995,7 +2013,7 @@ button_tt_military_revolution_defense_1 = {
 #军事防御革命：超载火控
 button_tt_military_revolution_defense_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_defense_2
+		has_modifier = mod_tt_military_revolution_defense_5
 	}
 	effect = {
 		#1
@@ -2088,7 +2106,7 @@ button_tt_military_revolution_defense_2 = {
 #军事防御革命：固若金汤
 button_tt_military_revolution_defense_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_defense_3
+		has_modifier = mod_tt_military_revolution_defense_5
 	}
 	effect = {
 		#1
@@ -2181,7 +2199,7 @@ button_tt_military_revolution_defense_3 = {
 #军事支援革命
 button_tt_military_revolution_support = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_support
+		has_modifier = mod_tt_military_revolution_5
 	}
 	effect = {
 		#1
@@ -2274,7 +2292,7 @@ button_tt_military_revolution_support = {
 #军事支援革命：超导护盾
 button_tt_military_revolution_support_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_support_1
+		has_modifier = mod_tt_military_revolution_support_5
 	}
 	effect = {
 		#1
@@ -2367,7 +2385,7 @@ button_tt_military_revolution_support_1 = {
 #军事支援革命：再生护甲
 button_tt_military_revolution_support_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_support_2
+		has_modifier = mod_tt_military_revolution_support_5
 	}
 	effect = {
 		#1
@@ -2460,7 +2478,7 @@ button_tt_military_revolution_support_2 = {
 #军事支援革命：极效维护
 button_tt_military_revolution_support_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_military_revolution_support_3
+		has_modifier = mod_tt_military_revolution_support_5
 	}
 	effect = {
 		#1
@@ -2553,7 +2571,7 @@ button_tt_military_revolution_support_3 = {
 #奥秘革命
 button_tt_mysterious_revolution = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution
+		has_ascension_perk = ap_tt_reform_plane
 	}
 	effect = {
 		#1
@@ -2646,7 +2664,7 @@ button_tt_mysterious_revolution = {
 #奥秘洞察革命
 button_tt_mysterious_revolution_insight = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight
+		has_modifier = mod_tt_mysterious_revolution_5
 	}
 	effect = {
 		#1
@@ -2806,7 +2824,10 @@ button_tt_mysterious_revolution_insight = {
 #奥秘洞察革命：破解之术
 button_tt_mysterious_revolution_insight_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight_1
+		OR = {
+			has_modifier = mod_tt_mysterious_revolution_insight_5
+			has_modifier = mod_tt_mysterious_revolution_insight_homicidal_5
+		}
 	}
 	effect = {
 		#1
@@ -2899,7 +2920,10 @@ button_tt_mysterious_revolution_insight_1 = {
 #奥秘洞察革命：隐匿之术
 button_tt_mysterious_revolution_insight_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight_2
+		OR = {
+			has_modifier = mod_tt_mysterious_revolution_insight_5
+			has_modifier = mod_tt_mysterious_revolution_insight_homicidal_5
+		}
 	}
 	effect = {
 		#1
@@ -2992,7 +3016,10 @@ button_tt_mysterious_revolution_insight_2 = {
 #奥秘洞察革命：思维观察
 button_tt_mysterious_revolution_insight_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight_3
+		OR = {
+			has_modifier = mod_tt_mysterious_revolution_insight_5
+			has_modifier = mod_tt_mysterious_revolution_insight_homicidal_5
+		}
 	}
 	effect = {
 		#1
@@ -3085,7 +3112,7 @@ button_tt_mysterious_revolution_insight_3 = {
 #奥秘科技革命
 button_tt_mysterious_revolution_technology = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology
+		has_modifier = mod_tt_mysterious_revolution_5
 	}
 	effect = {
 		#1
@@ -3178,7 +3205,7 @@ button_tt_mysterious_revolution_technology = {
 #奥秘科技革命：物理突破
 button_tt_mysterious_revolution_technology_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology_1
+		has_modifier = mod_tt_mysterious_revolution_technology_5
 	}
 	effect = {
 		#1
@@ -3271,7 +3298,7 @@ button_tt_mysterious_revolution_technology_1 = {
 #奥秘科技革命：社会理论
 button_tt_mysterious_revolution_technology_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology_2
+		has_modifier = mod_tt_mysterious_revolution_technology_5
 	}
 	effect = {
 		#1
@@ -3364,7 +3391,7 @@ button_tt_mysterious_revolution_technology_2 = {
 #奥秘科技革命：工程攀升
 button_tt_mysterious_revolution_technology_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology_3
+		has_modifier = mod_tt_mysterious_revolution_technology_5
 	}
 	effect = {
 		#1
@@ -3457,7 +3484,7 @@ button_tt_mysterious_revolution_technology_3 = {
 #奥秘未知革命
 button_tt_mysterious_revolution_unknown = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown
+		has_modifier = mod_tt_mysterious_revolution_5
 	}
 	effect = {
 		#1
@@ -3550,7 +3577,7 @@ button_tt_mysterious_revolution_unknown = {
 #奥秘未知革命：高维导航
 button_tt_mysterious_revolution_unknown_1 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown_1
+		has_modifier = mod_tt_mysterious_revolution_unknown_5
 	}
 	effect = {
 		#1
@@ -3646,7 +3673,7 @@ button_tt_mysterious_revolution_unknown_1 = {
 #奥秘未知革命：时间扭曲
 button_tt_mysterious_revolution_unknown_2 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown_2
+		has_modifier = mod_tt_mysterious_revolution_unknown_5
 	}
 	effect = {
 		#1
@@ -3742,7 +3769,7 @@ button_tt_mysterious_revolution_unknown_2 = {
 #奥秘未知革命：无垠星空
 button_tt_mysterious_revolution_unknown_3 = {
 	allow = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown_3
+		has_modifier = mod_tt_mysterious_revolution_unknown_5
 	}
 	effect = {
 		#1

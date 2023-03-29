@@ -13,16 +13,15 @@
 #Mystery unknown consequences
  tt_mysterious_revolution_unknown.1:0"§RLast Advice§!"
  tt_mysterious_revolution_unknown.1.name:0"§RLast Advice§!"
- tt_mysterious_revolution_unknown.1.desc:0" "Alas, we have clearly given you so many warnings in secret. "Scientists who study §Y Dimension Space§! said.\n\n"This is our last reminder. Our team predicts that they will come to this world in about 5 years. "The scientist looks into the depths of the starry sky, it seems to him that the starry sky has been distorted.\n\n"We have done our last efforts, please protect this galaxy! ""
+ tt_mysterious_revolution_unknown.1.desc:0" "Alas, we have clearly given you so many warnings in secret. "Scientists who study §Y Dimension Space§! said.\n\n"This is our last reminder. Our team predicts that they will come to this world in about 6 months. "The scientist looks into the depths of the starry sky, it seems to him that the starry sky has been distorted.\n\n"We have done our last efforts, please protect this galaxy! ""
  tt_mysterious_revolution_unknown.1.a:0 "OK, thank you for your reminder."
- tt_mysterious_revolution_unknown.1.a.tooltip:0"§L Don't thank me, after all, you’ve succeeded so many times, haven’t you?——Researcher of §Y Dimension Space§!, code name: §YLqluly§!, said so. §!\n"
+ tt_mysterious_revolution_unknown.1.a.tooltip:0"§L Don't thank me, after all, you’ve succeeded so many times, haven’t you?——Researcher of §Y Dimension Space§!, code name:§Y Lqluly§!, said so. §!\n"
 
  tt_mysterious_revolution_unknown.2:0"§RSudden warning§!"
  tt_mysterious_revolution_unknown.2.name:0"§RSudden warning§!"
- tt_mysterious_revolution_unknown.2.desc:0""They...what did they...do? ! "Our agent is obviously very frightened.\n\n"We just learned the news that §Y[From.GetName]§! has secretly completed a certain kind of revolution, a certain kind of revolution that may lead to §R high-dimensional disorder§!. .." The agent is collecting information, but still can't hide his panic.\n\n"Their scientific team predicts that in 5 years, those high-dimensional...whatever they are, they will come to this world. "The agent also suggested that we contact the director of the shipyard so that they can speed up the production of warships to prepare for the enemy."
+ tt_mysterious_revolution_unknown.2.desc:0""They...what did they...do? ! "Our agent is obviously very frightened.\n\n"We just learned the news that §Y[From.GetName]§! has secretly completed a certain kind of revolution, a certain kind of revolution that may lead to §R high-dimensional disorder§!. .." The agent is collecting information, but still can't hide his panic.\n\n"Their scientific team predicts that in 6 months, those high-dimensional...whatever they are, they will come to this world. "The agent also suggested that we contact the director of the shipyard so that they can speed up the production of warships to prepare for the enemy."
  tt_mysterious_revolution_unknown.2.a:0 "I know, I will immediately issue a notice to prepare for war mobilization."
- tt_mysterious_revolution_unknown.2.a.tooltip:0"§L Let’s resist the high-dimensional things together first, and then find them to settle accounts. After all... there is only 5 years of preparation time. §!"
-
+ tt_mysterious_revolution_unknown.2.a.tooltip:0"§L Let’s resist the high-dimensional things together first, and then find them to settle accounts. After all... there is only 6 months of preparation time. §!"
 
  ap_tt_reform_plane:0 "Reform Plan"
  ap_tt_reform_plane_desc:0"According to the predictions of all parties, our empire will have a great probability of going through a bottleneck stage. By then, most aspects of the empire will stagnate, and to reach a higher stage, it must reform itself. , Even if it needs to consume a lot of resources."
@@ -78,8 +77,6 @@
  ap_tt_mysterious_revolution_unknown_desc:0"§RWarning:§!Completing this revolution may cause real-world conflicts with §R"Data Missing"§!......§RFinally...Report: §!... may cause ...Invade... please don't..."
  tt_mysterious_revolution_unknown:0"§YUnlock function: §!§RBamboo basket to draw water§!\n§LBe sure to prevent...finishing this revolution!§!"
 
-######################################internal affairs########### ############################
-
  ap_tt_internal_revolution_economics_1:0 "Solid Foundation"
  ap_tt_internal_revolution_economics_1_desc:0 "The production of basic materials is the foundation of all superstructures. Only with a solid foundation can we build tall buildings. Through continuous optimization of basic production efficiency, we can even obtain basic materials from the void."
  tt_internal_revolution_economics_1:0"§YUnlock function: §!Solid foundation\nMonthly energy coins, food, minerals +10%*5"
@@ -114,9 +111,8 @@
 
  ap_tt_internal_revolution_administration_3:0 "Crouching Tiger, Hidden Dragon"
  ap_tt_internal_revolution_administration_3_desc:0"The latest technology supports us to upgrade our inventory logistics system. Smaller drones will receive the original workers for treasury operations. At the same time, we have built secret storage points all over the planet, and no one will wait for us. How many things are stored except you."
- tt_internal_revolution_administration_3:0"§YUnlock function:§!Crouching Tiger, Hidden Dragon\nResource storage limit+500000*5"
+ tt_internal_revolution_administration_3:0"§YUnlock function:§!Crouching Tiger, Hidden Dragon\nResource storage limit+500000*(5^(5-1))"
 
-######################################military########### ############################
  ap_tt_military_revolution_attack_1:0 "Full Firepower"
  ap_tt_military_revolution_attack_1_desc:0"Every time an extra shell falls on the enemy, we are one step closer to victory! New weapon materials break through the firing line, and the automatic loader and super fire control are matched, and we will dump the ammunition in the shortest time All the ammunition in the library!"
  tt_military_revolution_attack_1:0"§YUnlock function:§!Full firepower\nShip damage +10%*5"
@@ -153,7 +149,6 @@
  ap_tt_military_revolution_support_3_desc:0 "After several breakthroughs in engineering, we can distribute a large number of Ato (10^-18) scale micro-machines in the hull structure, and they will continue to maintain the entire hull."
  tt_military_revolution_support_3:0"§YUnlock function:§!Extremely effective maintenance\nDaily hull recovery +0.5%*5"
 
-#####################################奥秘########### ############################
  ap_tt_mysterious_revolution_technology_1:0 "Physical Breakthrough"
  ap_tt_mysterious_revolution_technology_1_desc:0 "The development of science is endless. As long as we don't stop, the road to the future will continue to extend."
  tt_mysterious_revolution_technology_1:0"§YUnlocked function:§!Physics breakthrough\nMonthly Physics+10%*5"
@@ -188,10 +183,8 @@
 
  ap_tt_mysterious_revolution_unknown_3:0 "Boundless Starry Sky"
  ap_tt_mysterious_revolution_unknown_3_desc:0"... records a kind of... get through with ""§RData Missing§!"...link...carry..."#Some ancient cultural relics record the existence of a mysterious space , They call it high-dimensional space, and by opening up a stable link with high-dimensional space on the planet, the population carrying capacity of the planet can be greatly increased. "
- tt_mysterious_revolution_unknown_3:0"§RUnlocking function: §!Boundless Starry Sky\nPlanet carrying capacity+10*5"
+ tt_mysterious_revolution_unknown_3:0"§RUnlocking function: §!Boundless Starry Sky\nPlanet max districts+2*5"
 
-
-############################################## ##############################
  mod_country_base_unity_produces_add:0 "Monthly £unity£ Unity"
  mod_country_unity_produces_mult:0 "Monthly £unity£ Unity"
 
@@ -222,8 +215,6 @@
  mod_tt_mysterious_revolution_3:0 "Mysterious Revolution III"
  mod_tt_mysterious_revolution_4:0 "Mysterious Revolution IV"
  mod_tt_mysterious_revolution_5:0 "Mysterious Revolution Ⅴ"
-
-#######################################
 
  mod_tt_internal_revolution_administration_1:0 "Internal Administration Revolution I"
  mod_tt_internal_revolution_administration_2:0 "Internal Administration Revolution II"
@@ -298,8 +289,6 @@
  mod_tt_mysterious_revolution_unknown_3_desc:0 "Draw water with a bamboo basket ─ all in vain."
  mod_tt_mysterious_revolution_unknown_4_desc:0 "Don't you understand? Stop it!"
  mod_tt_mysterious_revolution_unknown_5_desc:0 "It's over, it's almost over..."
-
-#######################################
 
  mod_tt_internal_revolution_administration_1_1:0 "Perfect Government I"
  mod_tt_internal_revolution_administration_1_2:0 "Perfect Government Ⅱ"
