@@ -456,3 +456,13 @@
  mod_tt_mysterious_revolution_unknown_3_3:0"无垠星空Ⅲ"
  mod_tt_mysterious_revolution_unknown_3_4:0"无垠星空Ⅳ"
  mod_tt_mysterious_revolution_unknown_3_5:0"无垠星空Ⅴ"
+
+ stop_revolution_unity1:0 "£unity£凝聚力不足"
+ stop_revolution_unity2:0 "£unity£凝聚力不足"
+ stop_revolution_unity3:0 "£unity£凝聚力不足"
+ stop_revolution_influence1:0 "£influence£影响力不足"
+ stop_revolution_influence2:0 "£influence£影响力不足"
+ stop_revolution_influence3:0 "£influence£影响力不足"
+ stop_revolution_minor_artifacts1:0 "£minor_artifacts£稀有文物不足"
+ stop_revolution_minor_artifacts2:0 "£minor_artifacts£稀有文物不足"
+ stop_revolution_minor_artifacts3:0 "£minor_artifacts£稀有文物不足"

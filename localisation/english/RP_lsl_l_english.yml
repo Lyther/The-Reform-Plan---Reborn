@@ -456,3 +456,13 @@
  mod_tt_mysterious_revolution_unknown_3_3:0 "Boundless Starry Sky III"
  mod_tt_mysterious_revolution_unknown_3_4:0 "Boundless Starry Sky IV"
  mod_tt_mysterious_revolution_unknown_3_5:0 "Boundless Starry Sky V"
+
+ stop_revolution_unity1:0 "£unity£ Unity unaffordable"
+ stop_revolution_unity2:0 "£unity£ Unity unaffordable"
+ stop_revolution_unity3:0 "£unity£ Unity unaffordable"
+ stop_revolution_influence1:0 "£influence£ Influence unaffordable"
+ stop_revolution_influence2:0 "£influence£ Influence unaffordable"
+ stop_revolution_influence3:0 "£influence£ Influence unaffordable"
+ stop_revolution_minor_artifacts1:0 "£minor_artifacts£ Minor artifacts unaffordable"
+ stop_revolution_minor_artifacts2:0 "£minor_artifacts£ Minor artifacts unaffordable"
+ stop_revolution_minor_artifacts3:0 "£minor_artifacts£ Minor artifacts unaffordable"
