@@ -81,7 +81,7 @@ guiTypes = {
 		###################################################
 		iconType = {
 			name = "revolution_button_0"
-			spriteType = "GFX_revolution_button"
+			spriteType = "GFX_revolution_2_button"
 			position = { x = @rb_x14 y = @rb_y1 }
 			alwaystransparent = yes
 		}
@@ -92,7 +92,7 @@ guiTypes = {
 		effectButtonType = {#军工革命
 			name = "revolution_button_1"
 			position = { x = @rb_x5 y = @rb_y2 }
-			spriteType = "GFX_button_tt_military_revolution"
+			spriteType = "GFX_button_tt_war_revolution"
 			effect = "button_tt_war_revolution"
 			clicksound = interface
 			oversound = mouse_over
@@ -129,7 +129,7 @@ guiTypes = {
 		effectButtonType = {#经贸革命
 			name = "revolution_button_2"
 			position = { x = @rb_x14 y = @rb_y2 }
-			spriteType = "GFX_button_tt_internal_revolution"
+			spriteType = "GFX_button_tt_economics_revolution"
 			effect = "button_tt_economics_revolution"
 			clicksound = interface
 			oversound = mouse_over
@@ -166,7 +166,7 @@ guiTypes = {
 		effectButtonType = {#科技革命
 			name = "revolution_button_3"
 			position = { x = @rb_x23 y = @rb_y2 }
-			spriteType = "GFX_button_tt_mysterious_revolution"
+			spriteType = "GFX_button_tt_science_revolution"
 			#scale = 0.4
 			effect = "button_tt_science_revolution"
 			clicksound = interface
@@ -204,7 +204,7 @@ guiTypes = {
 		effectButtonType = {#军工舰船革命
 			name = "revolution_button_11"
 			position = { x = @rb_x2 y = @rb_y3 }
-			spriteType = "GFX_button_tt_military_revolution_attack"
+			spriteType = "GFX_button_tt_war_revolution_fleet"
 			effect = "button_tt_war_revolution_fleet"
 			clicksound = interface
 			oversound = mouse_over
@@ -240,7 +240,7 @@ guiTypes = {
 		effectButtonType = {#军工舰船革命 无穷无尽
 			name = "revolution_button_111"
 			position = { x = @rb_x1 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_attack_1"
+			spriteType = "GFX_button_tt_war_revolution_fleet_1"
 			effect = "button_tt_war_revolution_fleet_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -276,7 +276,7 @@ guiTypes = {
 		effectButtonType = {#军工舰船革命 无坚不摧
 			name = "revolution_button_112"
 			position = { x = @rb_x2 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_attack_2"
+			spriteType = "GFX_button_tt_war_revolution_fleet_2"
 			effect = "button_tt_war_revolution_fleet_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -312,7 +312,7 @@ guiTypes = {
 		effectButtonType = {#军工舰船革命 无往不利
 			name = "revolution_button_113"
 			position = { x = @rb_x3 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_attack_3"
+			spriteType = "GFX_button_tt_war_revolution_fleet_3"
 			effect = "button_tt_war_revolution_fleet_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -349,7 +349,7 @@ guiTypes = {
 		effectButtonType = {#军工堡垒革命
 			name = "revolution_button_12"
 			position = { x = @rb_x5 y = @rb_y3 }
-			spriteType = "GFX_button_tt_military_revolution_defense"
+			spriteType = "GFX_button_tt_war_revolution_fortress"
 			effect = "button_tt_war_revolution_fortress"
 			clicksound = interface
 			oversound = mouse_over
@@ -385,7 +385,7 @@ guiTypes = {
 		effectButtonType = {#军工堡垒革命 工程奇迹
 			name = "revolution_button_121"
 			position = { x = @rb_x4 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_defense_1"
+			spriteType = "GFX_button_tt_war_revolution_fortress_1"
 			effect = "button_tt_war_revolution_fortress_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -421,7 +421,7 @@ guiTypes = {
 		effectButtonType = {#军工堡垒革命 建筑超频
 			name = "revolution_button_122"
 			position = { x = @rb_x5 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_defense_2"
+			spriteType = "GFX_button_tt_war_revolution_fortress_2"
 			effect = "button_tt_war_revolution_fortress_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -457,7 +457,7 @@ guiTypes = {
 		effectButtonType = {#军工堡垒革命 模块大师
 			name = "revolution_button_123"
 			position = { x = @rb_x6 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_defense_3"
+			spriteType = "GFX_button_tt_war_revolution_fortress_3"
 			effect = "button_tt_war_revolution_fortress_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -494,7 +494,7 @@ guiTypes = {
 		effectButtonType = {#军工战役革命
 			name = "revolution_button_13"
 			position = { x = @rb_x8 y = @rb_y3 }
-			spriteType = "GFX_button_tt_military_revolution_support"
+			spriteType = "GFX_button_tt_war_revolution_battle"
 			effect = "button_tt_war_revolution_battle"
 			clicksound = interface
 			oversound = mouse_over
@@ -530,7 +530,7 @@ guiTypes = {
 		effectButtonType = {#军工战役革命 以逸待劳
 			name = "revolution_button_131"
 			position = { x = @rb_x7 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_support_1"
+			spriteType = "GFX_button_tt_war_revolution_battle_1"
 			effect = "button_tt_war_revolution_battle_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -566,7 +566,7 @@ guiTypes = {
 		effectButtonType = {#军工战役革命 恐惧化身
 			name = "revolution_button_132"
 			position = { x = @rb_x8 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_support_2"
+			spriteType = "GFX_button_tt_war_revolution_battle_2"
 			effect = "button_tt_war_revolution_battle_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -602,7 +602,7 @@ guiTypes = {
 		effectButtonType = {#军工战役革命 银河主宰
 			name = "revolution_button_133"
 			position = { x = @rb_x9 y = @rb_y4 }
-			spriteType = "GFX_button_tt_military_revolution_support_3"
+			spriteType = "GFX_button_tt_war_revolution_battle_3"
 			effect = "button_tt_war_revolution_battle_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -639,7 +639,7 @@ guiTypes = {
 		effectButtonType = {#经济市场革命
 			name = "revolution_button_21"
 			position = { x = @rb_x11 y = @rb_y3 }
-			spriteType = "GFX_button_tt_internal_revolution_administration"
+			spriteType = "GFX_button_tt_economics_revolution_marketplace"
 			effect = "button_tt_economics_revolution_marketplace"
 			clicksound = interface
 			oversound = mouse_over
@@ -675,7 +675,7 @@ guiTypes = {
 		effectButtonType = {#经济市场革命 贸易覆盖
 			name = "revolution_button_211"
 			position = { x = @rb_x10 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_administration_1"
+			spriteType = "GFX_button_tt_economics_revolution_marketplace_1"
 			effect = "button_tt_economics_revolution_marketplace_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -711,7 +711,7 @@ guiTypes = {
 		effectButtonType = {#经济市场革命 贸易保护
 			name = "revolution_button_212"
 			position = { x = @rb_x11 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_administration_2"
+			spriteType = "GFX_button_tt_economics_revolution_marketplace_2"
 			effect = "button_tt_economics_revolution_marketplace_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -747,7 +747,7 @@ guiTypes = {
 		effectButtonType = {#经济市场革命 贸易增值
 			name = "revolution_button_213"
 			position = { x = @rb_x12 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_administration_3"
+			spriteType = "GFX_button_tt_economics_revolution_marketplace_3"
 			effect = "button_tt_economics_revolution_marketplace_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -784,7 +784,7 @@ guiTypes = {
 		effectButtonType = {#经济岗位革命
 			name = "revolution_button_22"
 			position = { x = @rb_x14 y = @rb_y3 }
-			spriteType = "GFX_button_tt_internal_revolution_culture"
+			spriteType = "GFX_button_tt_economics_revolution_job"
 			effect = "button_tt_economics_revolution_job"
 			clicksound = interface
 			oversound = mouse_over
@@ -820,7 +820,7 @@ guiTypes = {
 		effectButtonType = {#经济岗位革命 统治者振兴
 			name = "revolution_button_221"
 			position = { x = @rb_x13 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_culture_1"
+			spriteType = "GFX_button_tt_economics_revolution_job_1"
 			effect = "button_tt_economics_revolution_job_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -856,7 +856,7 @@ guiTypes = {
 		effectButtonType = {#经济岗位革命 专家振兴
 			name = "revolution_button_222"
 			position = { x = @rb_x14 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_culture_2"
+			spriteType = "GFX_button_tt_economics_revolution_job_2"
 			effect = "button_tt_economics_revolution_job_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -892,7 +892,7 @@ guiTypes = {
 		effectButtonType = {#经济岗位革命 劳工振兴
 			name = "revolution_button_223"
 			position = { x = @rb_x15 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_culture_3"
+			spriteType = "GFX_button_tt_economics_revolution_job_3"
 			effect = "button_tt_economics_revolution_job_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -929,7 +929,7 @@ guiTypes = {
 		effectButtonType = {#经济建设革命
 			name = "revolution_button_23"
 			position = { x = @rb_x17 y = @rb_y3 }
-			spriteType = "GFX_button_tt_internal_revolution_economics"
+			spriteType = "GFX_button_tt_economics_revolution_building"
 			effect = "button_tt_economics_revolution_building"
 			clicksound = interface
 			oversound = mouse_over
@@ -965,7 +965,7 @@ guiTypes = {
 		effectButtonType = {#经济建设革命 回收利用
 			name = "revolution_button_231"
 			position = { x = @rb_x16 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_economics_1"
+			spriteType = "GFX_button_tt_economics_revolution_building_1"
 			effect = "button_tt_economics_revolution_building_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -1001,7 +1001,7 @@ guiTypes = {
 		effectButtonType = {#经济建设革命 模块建设
 			name = "revolution_button_232"
 			position = { x = @rb_x17 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_economics_2"
+			spriteType = "GFX_button_tt_economics_revolution_building_2"
 			effect = "button_tt_economics_revolution_building_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -1037,7 +1037,7 @@ guiTypes = {
 		effectButtonType = {#经济建设革命 建筑维护
 			name = "revolution_button_233"
 			position = { x = @rb_x18 y = @rb_y4 }
-			spriteType = "GFX_button_tt_internal_revolution_economics_3"
+			spriteType = "GFX_button_tt_economics_revolution_building_3"
 			effect = "button_tt_economics_revolution_building_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -1074,7 +1074,7 @@ guiTypes = {
 		effectButtonType = {#科技狂热革命
 			name = "revolution_button_31"
 			position = { x = @rb_x20 y = @rb_y3 }
-			spriteType = "GFX_button_tt_mysterious_revolution_insight"
+			spriteType = "GFX_button_tt_science_revolution_fanaticism"
 			effect = "button_tt_science_revolution_fanaticism"
 			clicksound = interface
 			oversound = mouse_over
@@ -1110,7 +1110,7 @@ guiTypes = {
 		effectButtonType = {#科技狂热革命 学术之巅
 			name = "revolution_button_311"
 			position = { x = @rb_x19 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_insight_1"
+			spriteType = "GFX_button_tt_science_revolution_fanaticism_1"
 			effect = "button_tt_science_revolution_fanaticism_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -1146,7 +1146,7 @@ guiTypes = {
 		effectButtonType = {#科技狂热革命 科技强国
 			name = "revolution_button_312"
 			position = { x = @rb_x20 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_insight_2"
+			spriteType = "GFX_button_tt_science_revolution_fanaticism_2"
 			effect = "button_tt_science_revolution_fanaticism_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -1182,7 +1182,7 @@ guiTypes = {
 		effectButtonType = {#科技狂热革命 科技逆向
 			name = "revolution_button_313"
 			position = { x = @rb_x21 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_insight_3"
+			spriteType = "GFX_button_tt_science_revolution_fanaticism_3"
 			effect = "button_tt_science_revolution_fanaticism_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -1219,7 +1219,7 @@ guiTypes = {
 		effectButtonType = {#科技岗位革命
 			name = "revolution_button_32"
 			position = { x = @rb_x23 y = @rb_y3 }
-			spriteType = "GFX_button_tt_mysterious_revolution_technology"
+			spriteType = "GFX_button_tt_science_revolution_job"
 			effect = "button_tt_science_revolution_job"
 			clicksound = interface
 			oversound = mouse_over
@@ -1255,7 +1255,7 @@ guiTypes = {
 		effectButtonType = {#科技岗位革命 领袖攀升
 			name = "revolution_button_321"
 			position = { x = @rb_x22 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_technology_1"
+			spriteType = "GFX_button_tt_science_revolution_job_1"
 			effect = "button_tt_science_revolution_job_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -1291,7 +1291,7 @@ guiTypes = {
 		effectButtonType = {#科技岗位革命 自给自足
 			name = "revolution_button_322"
 			position = { x = @rb_x23 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_technology_2"
+			spriteType = "GFX_button_tt_science_revolution_job_2"
 			effect = "button_tt_science_revolution_job_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -1327,7 +1327,7 @@ guiTypes = {
 		effectButtonType = {#科技岗位革命 良性竞争
 			name = "revolution_button_323"
 			position = { x = @rb_x24 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_technology_3"
+			spriteType = "GFX_button_tt_science_revolution_job_3"
 			effect = "button_tt_science_revolution_job_3"
 			clicksound = interface
 			oversound = mouse_over
@@ -1364,7 +1364,7 @@ guiTypes = {
 		effectButtonType = {#科技维度革命
 			name = "revolution_button_33"
 			position = { x = @rb_x26 y = @rb_y3 }
-			spriteType = "GFX_button_tt_mysterious_revolution_unknown"
+			spriteType = "GFX_button_tt_science_revolution_dimension"
 			effect = "button_tt_science_revolution_dimension"
 			clicksound = interface
 			oversound = mouse_over
@@ -1400,7 +1400,7 @@ guiTypes = {
 		effectButtonType = {#科技维度革命 未知产出
 			name = "revolution_button_331"
 			position = { x = @rb_x25 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_unknown_1"
+			spriteType = "GFX_button_tt_science_revolution_dimension_1"
 			effect = "button_tt_science_revolution_dimension_1"
 			clicksound = interface
 			oversound = mouse_over
@@ -1436,7 +1436,7 @@ guiTypes = {
 		effectButtonType = {#科技维度革命 未知合成
 			name = "revolution_button_332"
 			position = { x = @rb_x26 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_unknown_2"
+			spriteType = "GFX_button_tt_science_revolution_dimension_2"
 			effect = "button_tt_science_revolution_dimension_2"
 			clicksound = interface
 			oversound = mouse_over
@@ -1472,7 +1472,7 @@ guiTypes = {
 		effectButtonType = {#科技维度革命 未知扭曲
 			name = "revolution_button_333"
 			position = { x = @rb_x27 y = @rb_y4 }
-			spriteType = "GFX_button_tt_mysterious_revolution_unknown_3"
+			spriteType = "GFX_button_tt_science_revolution_dimension_3"
 			effect = "button_tt_science_revolution_dimension_3"
 			clicksound = interface
 			oversound = mouse_over
