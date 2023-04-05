@@ -2494,7 +2494,7 @@ button_tt_military_revolution_support_3 = {
 		else_if = {
 			limit = {
 				NOT = { has_country_flag = flag_tt_military_revolution_support_3 }
-				resource_stockpile_compare = { resource = influence value < 400 }
+				resource_stockpile_compare = { resource = influence value < 900 }
 			}
 			custom_tooltip = stop_revolution_influence3
 		}

@@ -1,15 +1,15 @@
-namespace = tt_mysterious_revolution_unknown
+namespace = tt_science_revolution_dimension
 
 event = {
-	id = tt_mysterious_revolution_unknown.0
+	id = tt_science_revolution_dimension.0
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
 		any_country = {
 			AND = {
-				has_modifier = mod_tt_mysterious_revolution_unknown_1_5
-				has_modifier = mod_tt_mysterious_revolution_unknown_2_5
-				has_modifier = mod_tt_mysterious_revolution_unknown_3_5
+				has_modifier = mod_tt_science_revolution_dimension_1_5
+				has_modifier = mod_tt_science_revolution_dimension_2_5
+				has_modifier = mod_tt_science_revolution_dimension_3_5
 			}
 		}
 	}
@@ -23,21 +23,22 @@ event = {
 		remove_global_flag = extradimensional_third_portal
 		remove_global_flag = extradimensional_third_portal_destroyed
 		remove_global_flag = extradimensional_invasion_defeated
-		country_event = { id = tt_mysterious_revolution_unknown.1 }
-		country_event = { id = crisis.1000 days = 720 random = 120 }
+		country_event = { id = tt_science_revolution_dimension.1 }
+		country_event = { id = crisis.1000 days = 360 random = 60 }
+		country_event = { id = crisis.1100 days = 360 random = 60 }
 	}
 }
 
 country_event = {
-	id = tt_mysterious_revolution_unknown.1
-	title = "tt_mysterious_revolution_unknown.1.name"
-	desc = "tt_mysterious_revolution_unknown.1.desc"
+	id = tt_science_revolution_dimension.1
+	title = "tt_science_revolution_dimension.1.name"
+	desc = "tt_science_revolution_dimension.1.desc"
 	is_triggered_only = yes
 	picture = GFX_evt_physics_research
 	show_sound = event_alien_signal
 	option = {
-		name = "tt_mysterious_revolution_unknown.1.a"
-		custom_tooltip = tt_mysterious_revolution_unknown.1.a.tooltip
+		name = "tt_science_revolution_dimension.1.a"
+		custom_tooltip = tt_science_revolution_dimension.1.a.tooltip
 		hidden_effect = {
 			every_playable_country = {
 				limit = {
@@ -49,23 +50,23 @@ country_event = {
 						level >= 2
 					}
 				}
-				country_event = { id = tt_mysterious_revolution_unknown.2 }
+				country_event = { id = tt_science_revolution_dimension.2 }
 			}
 		}
 	}
 }
 
 country_event = {
-	id = tt_mysterious_revolution_unknown.2
-	title = tt_mysterious_revolution_unknown.2.name
-	desc = tt_mysterious_revolution_unknown.2.desc
+	id = tt_science_revolution_dimension.2
+	title = tt_science_revolution_dimension.2.name
+	desc = tt_science_revolution_dimension.2.desc
 	picture = GFX_evt_physics_research
 	show_sound = event_alien_signal
 	location = from.capital_scope
 
 	is_triggered_only = yes
 	option = {
-		name = tt_mysterious_revolution_unknown.2.a
-		custom_tooltip = tt_mysterious_revolution_unknown.2.a.tooltip
+		name = tt_science_revolution_dimension.2.a
+		custom_tooltip = tt_science_revolution_dimension.2.a.tooltip
 	}
 }

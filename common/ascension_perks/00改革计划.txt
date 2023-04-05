@@ -39,3 +39,76 @@ ap_tt_reform_plane = {
 		}
 	}
 }
+
+#改革计划：第二阶段
+ap_tt_reform_plane_2 = {
+	on_enabled = {
+		custom_tooltip = "tt_reform_plane_2_desc"
+		hidden_effect = {
+			country_event = { id = tt_reform_plane.4 }
+			set_country_flag = flag_the_reform_plane
+		}
+	}
+	possible = {
+		has_ascension_perk = ap_tt_reform_plane
+		has_modifier = mod_tt_internal_revolution_administration_1_5
+		has_modifier = mod_tt_internal_revolution_administration_2_5
+		has_modifier = mod_tt_internal_revolution_administration_3_5
+		has_modifier = mod_tt_internal_revolution_culture_1_5
+		has_modifier = mod_tt_internal_revolution_culture_2_5
+		has_modifier = mod_tt_internal_revolution_culture_3_5
+		has_modifier = mod_tt_internal_revolution_economics_1_5
+		has_modifier = mod_tt_internal_revolution_economics_2_5
+		has_modifier = mod_tt_internal_revolution_economics_3_5
+		has_modifier = mod_tt_military_revolution_attack_1_5
+		has_modifier = mod_tt_military_revolution_attack_2_5
+		has_modifier = mod_tt_military_revolution_attack_3_5
+		has_modifier = mod_tt_military_revolution_defense_1_5
+		has_modifier = mod_tt_military_revolution_defense_2_5
+		has_modifier = mod_tt_military_revolution_defense_3_5
+		has_modifier = mod_tt_military_revolution_support_1_5
+		has_modifier = mod_tt_military_revolution_support_2_5
+		has_modifier = mod_tt_military_revolution_support_3_5
+		has_modifier = mod_tt_mysterious_revolution_insight_1_5
+		has_modifier = mod_tt_mysterious_revolution_insight_2_5
+		has_modifier = mod_tt_mysterious_revolution_insight_3_5
+		has_modifier = mod_tt_mysterious_revolution_technology_1_5
+		has_modifier = mod_tt_mysterious_revolution_technology_2_5
+		has_modifier = mod_tt_mysterious_revolution_technology_3_5
+		has_modifier = mod_tt_mysterious_revolution_unknown_1_5
+		has_modifier = mod_tt_mysterious_revolution_unknown_2_5
+		has_modifier = mod_tt_mysterious_revolution_unknown_3_5
+		custom_tooltip = {
+			fail_text = "requires_ascension_perks_3"
+			num_ascension_perks > 2
+		}
+	}
+	potential = {
+		NOT = {
+			has_ascension_perk = ap_tt_reform_plane_2
+		}
+	}
+	modifier = {
+		country_base_sr_living_metal_produces_add = 10
+		country_sr_living_metal_produces_mult = 0.25
+		country_base_sr_zro_produces_add = 10
+		country_sr_zro_produces_mult = 0.25
+		country_base_sr_dark_matter_produces_add = 10
+		country_sr_dark_matter_produces_mult = 0.25
+	}
+	ai_weight = {
+		factor = 1
+		modifier = {
+			factor = 2
+			years_passed >= 100
+		}
+		modifier = {
+			factor = 2
+			mid_game_years_passed >= 0
+		}
+		modifier = {
+			factor = 2
+			end_game_years_passed >= 0
+		}
+	}
+}

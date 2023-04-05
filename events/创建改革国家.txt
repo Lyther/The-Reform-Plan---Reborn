@@ -69,13 +69,19 @@ country_event = {
 #与tt_reform_plane国家类型的联系界面（改革计划主界面）
 country_event = {
 	id = tt_reform_plane.3
-	title = tt_reform_plane.3.title
-	desc = tt_reform_plane.3.desc
-	diplomatic = yes #似乎是外交事件才能用自制UI，蠢驴应该是这样设置的
-	custom_gui = "allow_breakthrough_ascension_perks" #该界面的UI设置
+	hide_window = yes
 	is_triggered_only = yes
-	after = { remove_country_flag = flag_the_reform_plane }
-	option = { name = OK }
+	immediate = {
+		if = {
+			limit = {
+				has_ascension_perk = ap_tt_reform_plane_2
+			}
+			country_event = { id = tt_reform_plane.6 }
+		}
+		else = {
+			country_event = { id = tt_reform_plane.5 }
+		}
+	}
 }
 
 #点了“突破计划”后的隐藏事件，并与tt_reform_plane国家类型建立无通知的联系
@@ -93,4 +99,28 @@ country_event = {
 		establish_communications_no_message = event_target:the_tt_reform_plane #建立无通知的联系
 		country_event = { id = tt_reform_plane.3 } #但会瞬间转移到与tt_breakthrough国家类型的通讯界面
 	}
+}
+
+#判断改革计划应该打开哪一个面板：主面板
+country_event = {
+	id = tt_reform_plane.5
+	title = tt_reform_plane.3.title
+	desc = tt_reform_plane.3.desc
+	diplomatic = yes #似乎是外交事件才能用自制UI，蠢驴应该是这样设置的
+	custom_gui = "allow_breakthrough_ascension_perks" #该界面的UI设置
+	is_triggered_only = yes
+	after = { remove_country_flag = flag_the_reform_plane }
+	option = { name = OK }
+}
+
+#判断改革计划应该打开哪一个面板：第二部分
+country_event = {
+	id = tt_reform_plane.6
+	title = tt_reform_plane.3.title
+	desc = tt_reform_plane.3.desc
+	diplomatic = yes #似乎是外交事件才能用自制UI，蠢驴应该是这样设置的
+	custom_gui = "allow_breakthrough_ascension_2_perks" #该界面的UI设置
+	is_triggered_only = yes
+	after = { remove_country_flag = flag_the_reform_plane }
+	option = { name = OK }
 }

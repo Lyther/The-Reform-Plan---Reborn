@@ -1,8 +1,8 @@
 #内政革命
 button_tt_internal_revolution_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution
 		NOT = { has_modifier = mod_tt_internal_revolution_1 }
+		has_ascension_perk = ap_tt_reform_plane
 	}
 }
 button_tt_internal_revolution_auxiliary_1 = {
@@ -23,8 +23,8 @@ button_tt_internal_revolution_auxiliary_5 = {
 #军事革命
 button_tt_military_revolution_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution
 		NOT = { has_modifier = mod_tt_military_revolution_1 }
+		has_ascension_perk = ap_tt_reform_plane
 	}
 }
 button_tt_military_revolution_auxiliary_1 = {
@@ -45,8 +45,8 @@ button_tt_military_revolution_auxiliary_5 = {
 #奥秘革命
 button_tt_mysterious_revolution_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution
 		NOT = { has_modifier = mod_tt_mysterious_revolution_1 }
+		has_ascension_perk = ap_tt_reform_plane
 	}
 }
 button_tt_mysterious_revolution_auxiliary_1 = {
@@ -67,8 +67,8 @@ button_tt_mysterious_revolution_auxiliary_5 = {
 #内政管理革命
 button_tt_internal_revolution_administration_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_administration
 		NOT = { has_modifier = mod_tt_internal_revolution_administration_1 }
+		has_modifier = mod_tt_internal_revolution_5
 	}
 }
 button_tt_internal_revolution_administration_auxiliary_1 = {
@@ -89,8 +89,8 @@ button_tt_internal_revolution_administration_auxiliary_5 = {
 #内政管理革命 完型政府
 button_tt_internal_revolution_administration_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_administration_1
 		NOT = { has_modifier = mod_tt_internal_revolution_administration_1_1 }
+		has_modifier = mod_tt_internal_revolution_administration_5
 	}
 }
 button_tt_internal_revolution_administration_1_auxiliary_1 = {
@@ -111,8 +111,8 @@ button_tt_internal_revolution_administration_1_auxiliary_5 = {
 #内政管理革命 海纳百川
 button_tt_internal_revolution_administration_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_administration_2
 		NOT = { has_modifier = mod_tt_internal_revolution_administration_2_1 }
+		has_modifier = mod_tt_internal_revolution_administration_5
 	}
 }
 button_tt_internal_revolution_administration_2_auxiliary_1 = {
@@ -133,8 +133,8 @@ button_tt_internal_revolution_administration_2_auxiliary_5 = {
 #内政管理革命 卧虎藏龙
 button_tt_internal_revolution_administration_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_administration_3
 		NOT = { has_modifier = mod_tt_internal_revolution_administration_3_1 }
+		has_modifier = mod_tt_internal_revolution_administration_5
 	}
 }
 button_tt_internal_revolution_administration_3_auxiliary_1 = {
@@ -155,8 +155,8 @@ button_tt_internal_revolution_administration_3_auxiliary_5 = {
 #内政文化革命
 button_tt_internal_revolution_culture_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_culture
 		NOT = { has_modifier = mod_tt_internal_revolution_culture_1 }
+		has_modifier = mod_tt_internal_revolution_5
 	}
 }
 button_tt_internal_revolution_culture_auxiliary_1 = {
@@ -202,8 +202,11 @@ button_tt_internal_revolution_culture_auxiliary_5 = {
 #内政文化革命 艺术创新
 button_tt_internal_revolution_culture_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_culture_1
 		NOT = { has_modifier = mod_tt_internal_revolution_culture_1_1 }
+		OR = {
+			has_modifier = mod_tt_internal_revolution_culture_5
+			has_modifier = mod_tt_internal_revolution_culture_gestalt_5
+		}
 	}
 }
 button_tt_internal_revolution_culture_1_auxiliary_1 = {
@@ -224,8 +227,11 @@ button_tt_internal_revolution_culture_1_auxiliary_5 = {
 #内政文化革命 自律自强
 button_tt_internal_revolution_culture_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_culture_2
 		NOT = { has_modifier = mod_tt_internal_revolution_culture_2_1 }
+		OR = {
+			has_modifier = mod_tt_internal_revolution_culture_5
+			has_modifier = mod_tt_internal_revolution_culture_gestalt_5
+		}
 	}
 }
 button_tt_internal_revolution_culture_2_auxiliary_1 = {
@@ -246,8 +252,11 @@ button_tt_internal_revolution_culture_2_auxiliary_5 = {
 #内政文化革命 和谐稳定
 button_tt_internal_revolution_culture_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_culture_3
 		NOT = { has_modifier = mod_tt_internal_revolution_culture_3_1 }
+		OR = {
+			has_modifier = mod_tt_internal_revolution_culture_5
+			has_modifier = mod_tt_internal_revolution_culture_gestalt_5
+		}
 	}
 }
 button_tt_internal_revolution_culture_3_auxiliary_1 = {
@@ -268,8 +277,8 @@ button_tt_internal_revolution_culture_3_auxiliary_5 = {
 #内政经济革命
 button_tt_internal_revolution_economics_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_economics
 		NOT = { has_modifier = mod_tt_internal_revolution_economics_1 }
+		has_modifier = mod_tt_internal_revolution_5
 	}
 }
 button_tt_internal_revolution_economics_auxiliary_1 = {
@@ -315,8 +324,11 @@ button_tt_internal_revolution_economics_auxiliary_5 = {
 #内政经济革命 坚实地基
 button_tt_internal_revolution_economics_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_economics_1
 		NOT = { has_modifier = mod_tt_internal_revolution_economics_1_1 }
+		OR = {
+			has_modifier = mod_tt_internal_revolution_economics_5
+			has_modifier = mod_tt_internal_revolution_economics_gestalt_5
+		}
 	}
 }
 button_tt_internal_revolution_economics_1_auxiliary_1 = {
@@ -337,8 +349,11 @@ button_tt_internal_revolution_economics_1_auxiliary_5 = {
 #内政经济革命 高精冶炼
 button_tt_internal_revolution_economics_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_economics_2
 		NOT = { has_modifier = mod_tt_internal_revolution_economics_2_1 }
+		OR = {
+			has_modifier = mod_tt_internal_revolution_economics_5
+			has_modifier = mod_tt_internal_revolution_economics_gestalt_5
+		}
 	}
 }
 button_tt_internal_revolution_economics_2_auxiliary_1 = {
@@ -359,8 +374,11 @@ button_tt_internal_revolution_economics_2_auxiliary_5 = {
 #内政经济革命 精炼提纯
 button_tt_internal_revolution_economics_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_internal_revolution_economics_3
 		NOT = { has_modifier = mod_tt_internal_revolution_economics_3_1 }
+		OR = {
+			has_modifier = mod_tt_internal_revolution_economics_5
+			has_modifier = mod_tt_internal_revolution_economics_gestalt_5
+		}
 	}
 }
 button_tt_internal_revolution_economics_3_auxiliary_1 = {
@@ -381,8 +399,8 @@ button_tt_internal_revolution_economics_3_auxiliary_5 = {
 #军事进攻革命
 button_tt_military_revolution_attack_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_attack
 		NOT = { has_modifier = mod_tt_military_revolution_attack_1 }
+		has_modifier = mod_tt_military_revolution_5
 	}
 }
 button_tt_military_revolution_attack_auxiliary_1 = {
@@ -403,8 +421,8 @@ button_tt_military_revolution_attack_auxiliary_5 = {
 #军事进攻革命 火力全开
 button_tt_military_revolution_attack_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_attack_1
 		NOT = { has_modifier = mod_tt_military_revolution_attack_1_1 }
+		has_modifier = mod_tt_military_revolution_attack_5
 	}
 }
 button_tt_military_revolution_attack_1_auxiliary_1 = {
@@ -425,8 +443,8 @@ button_tt_military_revolution_attack_1_auxiliary_5 = {
 #军事进攻革命 极速齐射
 button_tt_military_revolution_attack_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_attack_2
 		NOT = { has_modifier = mod_tt_military_revolution_attack_2_1 }
+		has_modifier = mod_tt_military_revolution_attack_5
 	}
 }
 button_tt_military_revolution_attack_2_auxiliary_1 = {
@@ -447,8 +465,8 @@ button_tt_military_revolution_attack_2_auxiliary_5 = {
 #军事进攻革命 真理范围
 button_tt_military_revolution_attack_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_attack_3
 		NOT = { has_modifier = mod_tt_military_revolution_attack_3_1 }
+		has_modifier = mod_tt_military_revolution_attack_5
 	}
 }
 button_tt_military_revolution_attack_3_auxiliary_1 = {
@@ -469,8 +487,8 @@ button_tt_military_revolution_attack_3_auxiliary_5 = {
 #军事防御革命
 button_tt_military_revolution_defense_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_defense
 		NOT = { has_modifier = mod_tt_military_revolution_defense_1 }
+		has_modifier = mod_tt_military_revolution_5
 	}
 }
 button_tt_military_revolution_defense_auxiliary_1 = {
@@ -491,8 +509,8 @@ button_tt_military_revolution_defense_auxiliary_5 = {
 #军事防御革命 长城之围
 button_tt_military_revolution_defense_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_defense_1
 		NOT = { has_modifier = mod_tt_military_revolution_defense_1_1 }
+		has_modifier = mod_tt_military_revolution_defense_5
 	}
 }
 button_tt_military_revolution_defense_1_auxiliary_1 = {
@@ -513,8 +531,8 @@ button_tt_military_revolution_defense_1_auxiliary_5 = {
 #军事防御革命 超载火控
 button_tt_military_revolution_defense_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_defense_2
 		NOT = { has_modifier = mod_tt_military_revolution_defense_2_1 }
+		has_modifier = mod_tt_military_revolution_defense_5
 	}
 }
 button_tt_military_revolution_defense_2_auxiliary_1 = {
@@ -535,8 +553,8 @@ button_tt_military_revolution_defense_2_auxiliary_5 = {
 #军事防御革命 固若金汤
 button_tt_military_revolution_defense_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_defense_3
 		NOT = { has_modifier = mod_tt_military_revolution_defense_3_1 }
+		has_modifier = mod_tt_military_revolution_defense_5
 	}
 }
 button_tt_military_revolution_defense_3_auxiliary_1 = {
@@ -557,8 +575,8 @@ button_tt_military_revolution_defense_3_auxiliary_5 = {
 #军事支援革命
 button_tt_military_revolution_support_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_support
 		NOT = { has_modifier = mod_tt_military_revolution_support_1 }
+		has_modifier = mod_tt_military_revolution_5
 	}
 }
 button_tt_military_revolution_support_auxiliary_1 = {
@@ -579,8 +597,8 @@ button_tt_military_revolution_support_auxiliary_5 = {
 #军事支援革命 超导护盾
 button_tt_military_revolution_support_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_support_1
 		NOT = { has_modifier = mod_tt_military_revolution_support_1_1 }
+		has_modifier = mod_tt_military_revolution_support_5
 	}
 }
 button_tt_military_revolution_support_1_auxiliary_1 = {
@@ -601,8 +619,8 @@ button_tt_military_revolution_support_1_auxiliary_5 = {
 #军事支援革命 再生护甲
 button_tt_military_revolution_support_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_support_2
 		NOT = { has_modifier = mod_tt_military_revolution_support_2_1 }
+		has_modifier = mod_tt_military_revolution_support_5
 	}
 }
 button_tt_military_revolution_support_2_auxiliary_1 = {
@@ -623,8 +641,8 @@ button_tt_military_revolution_support_2_auxiliary_5 = {
 #军事支援革命 极效维护
 button_tt_military_revolution_support_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_military_revolution_support_3
 		NOT = { has_modifier = mod_tt_military_revolution_support_3_1 }
+		has_modifier = mod_tt_military_revolution_support_5
 	}
 }
 button_tt_military_revolution_support_3_auxiliary_1 = {
@@ -645,8 +663,8 @@ button_tt_military_revolution_support_3_auxiliary_5 = {
 #奥秘洞察革命
 button_tt_mysterious_revolution_insight_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight
 		NOT = { has_modifier = mod_tt_mysterious_revolution_insight_1 }
+		has_modifier = mod_tt_mysterious_revolution_5
 	}
 }
 button_tt_mysterious_revolution_insight_auxiliary_1 = {
@@ -692,8 +710,11 @@ button_tt_mysterious_revolution_insight_auxiliary_5 = {
 #奥秘洞察革命 破解之术
 button_tt_mysterious_revolution_insight_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight_1
 		NOT = { has_modifier = mod_tt_mysterious_revolution_insight_1_1 }
+		OR = {
+			has_modifier = mod_tt_mysterious_revolution_insight_5
+			has_modifier = mod_tt_mysterious_revolution_insight_homicidal_5
+		}
 	}
 }
 button_tt_mysterious_revolution_insight_1_auxiliary_1 = {
@@ -714,8 +735,11 @@ button_tt_mysterious_revolution_insight_1_auxiliary_5 = {
 #奥秘洞察革命 隐匿之术
 button_tt_mysterious_revolution_insight_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight_2
 		NOT = { has_modifier = mod_tt_mysterious_revolution_insight_2_1 }
+		OR = {
+			has_modifier = mod_tt_mysterious_revolution_insight_5
+			has_modifier = mod_tt_mysterious_revolution_insight_homicidal_5
+		}
 	}
 }
 button_tt_mysterious_revolution_insight_2_auxiliary_1 = {
@@ -736,8 +760,11 @@ button_tt_mysterious_revolution_insight_2_auxiliary_5 = {
 #奥秘洞察革命 思维观察
 button_tt_mysterious_revolution_insight_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_insight_3
 		NOT = { has_modifier = mod_tt_mysterious_revolution_insight_3_1 }
+		OR = {
+			has_modifier = mod_tt_mysterious_revolution_insight_5
+			has_modifier = mod_tt_mysterious_revolution_insight_homicidal_5
+		}
 	}
 }
 button_tt_mysterious_revolution_insight_3_auxiliary_1 = {
@@ -783,8 +810,8 @@ button_tt_mysterious_revolution_insight_3_auxiliary_5 = {
 #奥秘科技革命
 button_tt_mysterious_revolution_technology_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology
 		NOT = { has_modifier = mod_tt_mysterious_revolution_technology_1 }
+		has_modifier = mod_tt_mysterious_revolution_5
 	}
 }
 button_tt_mysterious_revolution_technology_auxiliary_1 = {
@@ -805,8 +832,8 @@ button_tt_mysterious_revolution_technology_auxiliary_5 = {
 #奥秘科技革命 物理突破
 button_tt_mysterious_revolution_technology_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology_1
 		NOT = { has_modifier = mod_tt_mysterious_revolution_technology_1_1 }
+		has_modifier = mod_tt_mysterious_revolution_technology_5
 	}
 }
 button_tt_mysterious_revolution_technology_1_auxiliary_1 = {
@@ -827,8 +854,8 @@ button_tt_mysterious_revolution_technology_1_auxiliary_5 = {
 #奥秘科技革命 社会理论
 button_tt_mysterious_revolution_technology_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology_2
 		NOT = { has_modifier = mod_tt_mysterious_revolution_technology_2_1 }
+		has_modifier = mod_tt_mysterious_revolution_technology_5
 	}
 }
 button_tt_mysterious_revolution_technology_2_auxiliary_1 = {
@@ -849,8 +876,8 @@ button_tt_mysterious_revolution_technology_2_auxiliary_5 = {
 #奥秘科技革命 工程攀升
 button_tt_mysterious_revolution_technology_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_technology_3
 		NOT = { has_modifier = mod_tt_mysterious_revolution_technology_3_1 }
+		has_modifier = mod_tt_mysterious_revolution_technology_5
 	}
 }
 button_tt_mysterious_revolution_technology_3_auxiliary_1 = {
@@ -871,8 +898,8 @@ button_tt_mysterious_revolution_technology_3_auxiliary_5 = {
 #奥秘未知革命
 button_tt_mysterious_revolution_unknown_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown
 		NOT = { has_modifier = mod_tt_mysterious_revolution_unknown_1 }
+		has_modifier = mod_tt_mysterious_revolution_5
 	}
 }
 button_tt_mysterious_revolution_unknown_auxiliary_1 = {
@@ -893,8 +920,8 @@ button_tt_mysterious_revolution_unknown_auxiliary_5 = {
 #奥秘未知革命 高维导航
 button_tt_mysterious_revolution_unknown_1_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown_1
 		NOT = { has_modifier = mod_tt_mysterious_revolution_unknown_1_1 }
+		has_modifier = mod_tt_mysterious_revolution_unknown_5
 	}
 }
 button_tt_mysterious_revolution_unknown_1_auxiliary_1 = {
@@ -915,8 +942,8 @@ button_tt_mysterious_revolution_unknown_1_auxiliary_5 = {
 #奥秘未知革命 时间扭曲
 button_tt_mysterious_revolution_unknown_2_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown_2
 		NOT = { has_modifier = mod_tt_mysterious_revolution_unknown_2_1 }
+		has_modifier = mod_tt_mysterious_revolution_unknown_5
 	}
 }
 button_tt_mysterious_revolution_unknown_2_auxiliary_1 = {
@@ -937,8 +964,8 @@ button_tt_mysterious_revolution_unknown_2_auxiliary_5 = {
 #奥秘未知革命 无垠星空
 button_tt_mysterious_revolution_unknown_3_auxiliary_0 = {
 	potential = {
-		has_ascension_perk = ap_tt_mysterious_revolution_unknown_3
 		NOT = { has_modifier = mod_tt_mysterious_revolution_unknown_3_1 }
+		has_modifier = mod_tt_mysterious_revolution_unknown_5
 	}
 }
 button_tt_mysterious_revolution_unknown_3_auxiliary_1 = {

@@ -1,0 +1,858 @@
+#经济革命
+button_tt_economics_revolution_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_1 }
+		has_ascension_perk = ap_tt_reform_plane_2
+	}
+}
+button_tt_economics_revolution_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_1 }
+}
+button_tt_economics_revolution_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_2 }
+}
+button_tt_economics_revolution_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_3 }
+}
+button_tt_economics_revolution_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_4 }
+}
+button_tt_economics_revolution_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_5 }
+}
+#军工革命
+button_tt_war_revolution_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_1 }
+		has_ascension_perk = ap_tt_reform_plane_2
+	}
+}
+button_tt_war_revolution_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_1 }
+}
+button_tt_war_revolution_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_2 }
+}
+button_tt_war_revolution_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_3 }
+}
+button_tt_war_revolution_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_4 }
+}
+button_tt_war_revolution_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_5 }
+}
+#科技革命
+button_tt_science_revolution_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_1 }
+		has_ascension_perk = ap_tt_reform_plane_2
+	}
+}
+button_tt_science_revolution_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_1 }
+}
+button_tt_science_revolution_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_2 }
+}
+button_tt_science_revolution_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_3 }
+}
+button_tt_science_revolution_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_4 }
+}
+button_tt_science_revolution_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_5 }
+}
+#经济市场革命
+button_tt_economics_revolution_marketplace_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_marketplace_1 }
+		has_modifier = mod_tt_economics_revolution_5
+	}
+}
+button_tt_economics_revolution_marketplace_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_1 }
+}
+button_tt_economics_revolution_marketplace_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_2 }
+}
+button_tt_economics_revolution_marketplace_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_3 }
+}
+button_tt_economics_revolution_marketplace_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_4 }
+}
+button_tt_economics_revolution_marketplace_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_5 }
+}
+#经济市场革命 贸易覆盖
+button_tt_economics_revolution_marketplace_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_marketplace_1_1 }
+		has_modifier = mod_tt_economics_revolution_marketplace_5
+	}
+}
+button_tt_economics_revolution_marketplace_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_1_1 }
+}
+button_tt_economics_revolution_marketplace_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_1_2 }
+}
+button_tt_economics_revolution_marketplace_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_1_3 }
+}
+button_tt_economics_revolution_marketplace_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_1_4 }
+}
+button_tt_economics_revolution_marketplace_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_1_5 }
+}
+#经济市场革命 贸易保护
+button_tt_economics_revolution_marketplace_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_marketplace_2_1 }
+		has_modifier = mod_tt_economics_revolution_marketplace_5
+	}
+}
+button_tt_economics_revolution_marketplace_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_2_1 }
+}
+button_tt_economics_revolution_marketplace_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_2_2 }
+}
+button_tt_economics_revolution_marketplace_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_2_3 }
+}
+button_tt_economics_revolution_marketplace_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_2_4 }
+}
+button_tt_economics_revolution_marketplace_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_2_5 }
+}
+#经济市场革命 贸易增值
+button_tt_economics_revolution_marketplace_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_marketplace_3_1 }
+		has_modifier = mod_tt_economics_revolution_marketplace_5
+	}
+}
+button_tt_economics_revolution_marketplace_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_3_1 }
+}
+button_tt_economics_revolution_marketplace_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_3_2 }
+}
+button_tt_economics_revolution_marketplace_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_3_3 }
+}
+button_tt_economics_revolution_marketplace_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_3_4 }
+}
+button_tt_economics_revolution_marketplace_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_marketplace_3_5 }
+}
+#经济岗位革命
+button_tt_economics_revolution_job_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_job_1 }
+		has_modifier = mod_tt_economics_revolution_5
+	}
+}
+button_tt_economics_revolution_job_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_1 }
+}
+button_tt_economics_revolution_job_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_2 }
+}
+button_tt_economics_revolution_job_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_3 }
+}
+button_tt_economics_revolution_job_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_4 }
+}
+button_tt_economics_revolution_job_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_5 }
+}
+#经济岗位革命 统治者振兴
+button_tt_economics_revolution_job_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_job_1_1 }
+		has_modifier = mod_tt_economics_revolution_job_5
+	}
+}
+button_tt_economics_revolution_job_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_1_1 }
+}
+button_tt_economics_revolution_job_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_1_2 }
+}
+button_tt_economics_revolution_job_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_1_3 }
+}
+button_tt_economics_revolution_job_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_1_4 }
+}
+button_tt_economics_revolution_job_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_1_5 }
+}
+#经济岗位革命 专家振兴
+button_tt_economics_revolution_job_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_job_2_1 }
+		has_modifier = mod_tt_economics_revolution_job_5
+	}
+}
+button_tt_economics_revolution_job_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_2_1 }
+}
+button_tt_economics_revolution_job_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_2_2 }
+}
+button_tt_economics_revolution_job_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_2_3 }
+}
+button_tt_economics_revolution_job_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_2_4 }
+}
+button_tt_economics_revolution_job_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_2_5 }
+}
+#经济岗位革命 劳工振兴
+button_tt_economics_revolution_job_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_job_3_1 }
+		has_modifier = mod_tt_economics_revolution_job_5
+	}
+}
+button_tt_economics_revolution_job_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_3_1 }
+}
+button_tt_economics_revolution_job_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_3_2 }
+}
+button_tt_economics_revolution_job_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_3_3 }
+}
+button_tt_economics_revolution_job_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_3_4 }
+}
+button_tt_economics_revolution_job_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_job_3_5 }
+}
+#经济建设革命
+button_tt_economics_revolution_building_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_building_1 }
+		has_modifier = mod_tt_economics_revolution_5
+	}
+}
+button_tt_economics_revolution_building_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_1 }
+}
+button_tt_economics_revolution_building_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_2 }
+}
+button_tt_economics_revolution_building_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_3 }
+}
+button_tt_economics_revolution_building_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_4 }
+}
+button_tt_economics_revolution_building_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_5 }
+}
+#经济建设革命 回收利用
+button_tt_economics_revolution_building_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_building_1_1 }
+		has_modifier = mod_tt_economics_revolution_building_5
+	}
+}
+button_tt_economics_revolution_building_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_1_1 }
+}
+button_tt_economics_revolution_building_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_1_2 }
+}
+button_tt_economics_revolution_building_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_1_3 }
+}
+button_tt_economics_revolution_building_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_1_4 }
+}
+button_tt_economics_revolution_building_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_1_5 }
+}
+#经济建设革命 模块建设
+button_tt_economics_revolution_building_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_building_2_1 }
+		has_modifier = mod_tt_economics_revolution_building_5
+	}
+}
+button_tt_economics_revolution_building_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_2_1 }
+}
+button_tt_economics_revolution_building_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_2_2 }
+}
+button_tt_economics_revolution_building_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_2_3 }
+}
+button_tt_economics_revolution_building_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_2_4 }
+}
+button_tt_economics_revolution_building_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_2_5 }
+}
+#经济建设革命 建筑维护
+button_tt_economics_revolution_building_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_economics_revolution_building_3_1 }
+		has_modifier = mod_tt_economics_revolution_building_5
+	}
+}
+button_tt_economics_revolution_building_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_3_1 }
+}
+button_tt_economics_revolution_building_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_3_2 }
+}
+button_tt_economics_revolution_building_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_3_3 }
+}
+button_tt_economics_revolution_building_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_3_4 }
+}
+button_tt_economics_revolution_building_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_economics_revolution_building_3_5 }
+}
+#军工舰船革命
+button_tt_war_revolution_fleet_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fleet_1 }
+		has_modifier = mod_tt_war_revolution_5
+	}
+}
+button_tt_war_revolution_fleet_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_1 }
+}
+button_tt_war_revolution_fleet_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_2 }
+}
+button_tt_war_revolution_fleet_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_3 }
+}
+button_tt_war_revolution_fleet_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_4 }
+}
+button_tt_war_revolution_fleet_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_5 }
+}
+#军工舰船革命 无穷无尽
+button_tt_war_revolution_fleet_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fleet_1_1 }
+		has_modifier = mod_tt_war_revolution_fleet_5
+	}
+}
+button_tt_war_revolution_fleet_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_1_1 }
+}
+button_tt_war_revolution_fleet_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_1_2 }
+}
+button_tt_war_revolution_fleet_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_1_3 }
+}
+button_tt_war_revolution_fleet_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_1_4 }
+}
+button_tt_war_revolution_fleet_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_1_5 }
+}
+#军工舰船革命 无坚不摧
+button_tt_war_revolution_fleet_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fleet_2_1 }
+		has_modifier = mod_tt_war_revolution_fleet_5
+	}
+}
+button_tt_war_revolution_fleet_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_2_1 }
+}
+button_tt_war_revolution_fleet_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_2_2 }
+}
+button_tt_war_revolution_fleet_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_2_3 }
+}
+button_tt_war_revolution_fleet_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_2_4 }
+}
+button_tt_war_revolution_fleet_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_2_5 }
+}
+#军工舰船革命 无往不利
+button_tt_war_revolution_fleet_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fleet_3_1 }
+		has_modifier = mod_tt_war_revolution_fleet_5
+	}
+}
+button_tt_war_revolution_fleet_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_3_1 }
+}
+button_tt_war_revolution_fleet_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_3_2 }
+}
+button_tt_war_revolution_fleet_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_3_3 }
+}
+button_tt_war_revolution_fleet_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_3_4 }
+}
+button_tt_war_revolution_fleet_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fleet_3_5 }
+}
+#军工堡垒革命
+button_tt_war_revolution_fortress_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fortress_1 }
+		has_modifier = mod_tt_war_revolution_5
+	}
+}
+button_tt_war_revolution_fortress_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_1 }
+}
+button_tt_war_revolution_fortress_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_2 }
+}
+button_tt_war_revolution_fortress_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_3 }
+}
+button_tt_war_revolution_fortress_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_4 }
+}
+button_tt_war_revolution_fortress_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_5 }
+}
+#军工堡垒革命 工程奇迹
+button_tt_war_revolution_fortress_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fortress_1_1 }
+		has_modifier = mod_tt_war_revolution_fortress_5
+	}
+}
+button_tt_war_revolution_fortress_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_1_1 }
+}
+button_tt_war_revolution_fortress_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_1_2 }
+}
+button_tt_war_revolution_fortress_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_1_3 }
+}
+button_tt_war_revolution_fortress_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_1_4 }
+}
+button_tt_war_revolution_fortress_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_1_5 }
+}
+#军工堡垒革命 建筑超频
+button_tt_war_revolution_fortress_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fortress_2_1 }
+		has_modifier = mod_tt_war_revolution_fortress_5
+	}
+}
+button_tt_war_revolution_fortress_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_2_1 }
+}
+button_tt_war_revolution_fortress_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_2_2 }
+}
+button_tt_war_revolution_fortress_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_2_3 }
+}
+button_tt_war_revolution_fortress_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_2_4 }
+}
+button_tt_war_revolution_fortress_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_2_5 }
+}
+#军工堡垒革命 模块大师
+button_tt_war_revolution_fortress_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_fortress_3_1 }
+		has_modifier = mod_tt_war_revolution_fortress_5
+	}
+}
+button_tt_war_revolution_fortress_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_3_1 }
+}
+button_tt_war_revolution_fortress_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_3_2 }
+}
+button_tt_war_revolution_fortress_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_3_3 }
+}
+button_tt_war_revolution_fortress_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_3_4 }
+}
+button_tt_war_revolution_fortress_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_fortress_3_5 }
+}
+#军工战役革命
+button_tt_war_revolution_battle_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_battle_1 }
+		has_modifier = mod_tt_war_revolution_5
+	}
+}
+button_tt_war_revolution_battle_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_1 }
+}
+button_tt_war_revolution_battle_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_2 }
+}
+button_tt_war_revolution_battle_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_3 }
+}
+button_tt_war_revolution_battle_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_4 }
+}
+button_tt_war_revolution_battle_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_5 }
+}
+#军工战役革命 以逸待劳
+button_tt_war_revolution_battle_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_battle_1_1 }
+		has_modifier = mod_tt_war_revolution_battle_5
+	}
+}
+button_tt_war_revolution_battle_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_1_1 }
+}
+button_tt_war_revolution_battle_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_1_2 }
+}
+button_tt_war_revolution_battle_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_1_3 }
+}
+button_tt_war_revolution_battle_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_1_4 }
+}
+button_tt_war_revolution_battle_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_1_5 }
+}
+#军工战役革命 恐惧化身
+button_tt_war_revolution_battle_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_battle_2_1 }
+		has_modifier = mod_tt_war_revolution_battle_5
+	}
+}
+button_tt_war_revolution_battle_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_2_1 }
+}
+button_tt_war_revolution_battle_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_2_2 }
+}
+button_tt_war_revolution_battle_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_2_3 }
+}
+button_tt_war_revolution_battle_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_2_4 }
+}
+button_tt_war_revolution_battle_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_2_5 }
+}
+#军工战役革命 银河主宰
+button_tt_war_revolution_battle_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_war_revolution_battle_3_1 }
+		has_modifier = mod_tt_war_revolution_battle_5
+	}
+}
+button_tt_war_revolution_battle_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_3_1 }
+}
+button_tt_war_revolution_battle_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_3_2 }
+}
+button_tt_war_revolution_battle_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_3_3 }
+}
+button_tt_war_revolution_battle_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_3_4 }
+}
+button_tt_war_revolution_battle_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_war_revolution_battle_3_5 }
+}
+#科技狂热革命
+button_tt_science_revolution_fanaticism_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_fanaticism_1 }
+		has_modifier = mod_tt_science_revolution_5
+	}
+}
+button_tt_science_revolution_fanaticism_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_1 }
+}
+button_tt_science_revolution_fanaticism_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_2 }
+}
+button_tt_science_revolution_fanaticism_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_3 }
+}
+button_tt_science_revolution_fanaticism_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_4 }
+}
+button_tt_science_revolution_fanaticism_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_5 }
+}
+#科技狂热革命 学术之巅
+button_tt_science_revolution_fanaticism_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_fanaticism_1_1 }
+		has_modifier = mod_tt_science_revolution_fanaticism_5
+	}
+}
+button_tt_science_revolution_fanaticism_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_1_1 }
+}
+button_tt_science_revolution_fanaticism_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_1_2 }
+}
+button_tt_science_revolution_fanaticism_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_1_3 }
+}
+button_tt_science_revolution_fanaticism_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_1_4 }
+}
+button_tt_science_revolution_fanaticism_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_1_5 }
+}
+#科技狂热革命 科技强国
+button_tt_science_revolution_fanaticism_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_fanaticism_2_1 }
+		has_modifier = mod_tt_science_revolution_fanaticism_5
+	}
+}
+button_tt_science_revolution_fanaticism_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_2_1 }
+}
+button_tt_science_revolution_fanaticism_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_2_2 }
+}
+button_tt_science_revolution_fanaticism_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_2_3 }
+}
+button_tt_science_revolution_fanaticism_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_2_4 }
+}
+button_tt_science_revolution_fanaticism_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_2_5 }
+}
+#科技狂热革命 科技逆向
+button_tt_science_revolution_fanaticism_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_fanaticism_3_1 }
+		has_modifier = mod_tt_science_revolution_fanaticism_5
+	}
+}
+button_tt_science_revolution_fanaticism_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_3_1 }
+}
+button_tt_science_revolution_fanaticism_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_3_2 }
+}
+button_tt_science_revolution_fanaticism_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_3_3 }
+}
+button_tt_science_revolution_fanaticism_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_3_4 }
+}
+button_tt_science_revolution_fanaticism_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_fanaticism_3_5 }
+}
+#科技岗位革命
+button_tt_science_revolution_job_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_job_1 }
+		has_modifier = mod_tt_science_revolution_5
+	}
+}
+button_tt_science_revolution_job_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_1 }
+}
+button_tt_science_revolution_job_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_2 }
+}
+button_tt_science_revolution_job_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_3 }
+}
+button_tt_science_revolution_job_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_4 }
+}
+button_tt_science_revolution_job_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_5 }
+}
+#科技岗位革命 领袖攀升
+button_tt_science_revolution_job_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_job_1_1 }
+		has_modifier = mod_tt_science_revolution_job_5
+	}
+}
+button_tt_science_revolution_job_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_1_1 }
+}
+button_tt_science_revolution_job_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_1_2 }
+}
+button_tt_science_revolution_job_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_1_3 }
+}
+button_tt_science_revolution_job_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_1_4 }
+}
+button_tt_science_revolution_job_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_1_5 }
+}
+#科技岗位革命 自给自足
+button_tt_science_revolution_job_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_job_2_1 }
+		has_modifier = mod_tt_science_revolution_job_5
+	}
+}
+button_tt_science_revolution_job_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_2_1 }
+}
+button_tt_science_revolution_job_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_2_2 }
+}
+button_tt_science_revolution_job_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_2_3 }
+}
+button_tt_science_revolution_job_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_2_4 }
+}
+button_tt_science_revolution_job_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_2_5 }
+}
+#科技岗位革命 良性竞争
+button_tt_science_revolution_job_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_job_3_1 }
+		has_modifier = mod_tt_science_revolution_job_5
+	}
+}
+button_tt_science_revolution_job_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_3_1 }
+}
+button_tt_science_revolution_job_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_3_2 }
+}
+button_tt_science_revolution_job_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_3_3 }
+}
+button_tt_science_revolution_job_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_3_4 }
+}
+button_tt_science_revolution_job_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_job_3_5 }
+}
+#科技维度革命
+button_tt_science_revolution_dimension_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_dimension_1 }
+		has_modifier = mod_tt_science_revolution_5
+	}
+}
+button_tt_science_revolution_dimension_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_1 }
+}
+button_tt_science_revolution_dimension_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_2 }
+}
+button_tt_science_revolution_dimension_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_3 }
+}
+button_tt_science_revolution_dimension_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_4 }
+}
+button_tt_science_revolution_dimension_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_5 }
+}
+#科技维度革命 未知产出
+button_tt_science_revolution_dimension_1_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_dimension_1_1 }
+		has_modifier = mod_tt_science_revolution_dimension_5
+	}
+}
+button_tt_science_revolution_dimension_1_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_1_1 }
+}
+button_tt_science_revolution_dimension_1_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_1_2 }
+}
+button_tt_science_revolution_dimension_1_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_1_3 }
+}
+button_tt_science_revolution_dimension_1_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_1_4 }
+}
+button_tt_science_revolution_dimension_1_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_1_5 }
+}
+#科技维度革命 未知合成
+button_tt_science_revolution_dimension_2_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_dimension_2_1 }
+		has_modifier = mod_tt_science_revolution_dimension_5
+	}
+}
+button_tt_science_revolution_dimension_2_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_2_1 }
+}
+button_tt_science_revolution_dimension_2_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_2_2 }
+}
+button_tt_science_revolution_dimension_2_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_2_3 }
+}
+button_tt_science_revolution_dimension_2_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_2_4 }
+}
+button_tt_science_revolution_dimension_2_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_2_5 }
+}
+#科技维度革命 未知扭曲
+button_tt_science_revolution_dimension_3_auxiliary_0 = {
+	potential = {
+		NOT = { has_modifier = mod_tt_science_revolution_dimension_3_1 }
+		has_modifier = mod_tt_science_revolution_dimension_5
+	}
+}
+button_tt_science_revolution_dimension_3_auxiliary_1 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_3_1 }
+}
+button_tt_science_revolution_dimension_3_auxiliary_2 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_3_2 }
+}
+button_tt_science_revolution_dimension_3_auxiliary_3 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_3_3 }
+}
+button_tt_science_revolution_dimension_3_auxiliary_4 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_3_4 }
+}
+button_tt_science_revolution_dimension_3_auxiliary_5 = {
+	potential = { has_modifier = mod_tt_science_revolution_dimension_3_5 }
+}

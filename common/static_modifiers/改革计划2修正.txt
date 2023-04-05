@@ -1,0 +1,737 @@
+#经济革命
+mod_tt_economics_revolution_1 = {
+	country_base_sr_zro_produces_add = 5
+	country_sr_zro_produces_mult = 0.10
+}
+mod_tt_economics_revolution_2 = {
+	country_base_sr_zro_produces_add = 10
+	country_sr_zro_produces_mult = 0.20
+}
+mod_tt_economics_revolution_3 = {
+	country_base_sr_zro_produces_add = 15
+	country_sr_zro_produces_mult = 0.30
+}
+mod_tt_economics_revolution_4 = {
+	country_base_sr_zro_produces_add = 20
+	country_sr_zro_produces_mult = 0.40
+}
+mod_tt_economics_revolution_5 = {
+	country_base_sr_zro_produces_add = 25
+	country_sr_zro_produces_mult = 0.50
+}
+#军工革命
+mod_tt_war_revolution_1 = {
+	country_base_sr_living_metal_produces_add = 5
+	country_sr_living_metal_produces_mult = 0.10
+}
+mod_tt_war_revolution_2 = {
+	country_base_sr_living_metal_produces_add = 10
+	country_sr_living_metal_produces_mult = 0.20
+}
+mod_tt_war_revolution_3 = {
+	country_base_sr_living_metal_produces_add = 15
+	country_sr_living_metal_produces_mult = 0.30
+}
+mod_tt_war_revolution_4 = {
+	country_base_sr_living_metal_produces_add = 20
+	country_sr_living_metal_produces_mult = 0.40
+}
+mod_tt_war_revolution_5 = {
+	country_base_sr_living_metal_produces_add = 25
+	country_sr_living_metal_produces_mult = 0.50
+}
+#科技革命
+mod_tt_science_revolution_1 = {
+	country_base_sr_dark_matter_produces_add = 5
+	country_sr_dark_matter_produces_mult = 0.10
+}
+mod_tt_science_revolution_2 = {
+	country_base_sr_dark_matter_produces_add = 10
+	country_sr_dark_matter_produces_mult = 0.20
+}
+mod_tt_science_revolution_3 = {
+	country_base_sr_dark_matter_produces_add = 15
+	country_sr_dark_matter_produces_mult = 0.30
+}
+mod_tt_science_revolution_4 = {
+	country_base_sr_dark_matter_produces_add = 20
+	country_sr_dark_matter_produces_mult = 0.40
+}
+mod_tt_science_revolution_5 = {
+	country_base_sr_dark_matter_produces_add = 25
+	country_sr_dark_matter_produces_mult = 0.50
+}
+######################################################################
+#经济革命：市场
+mod_tt_economics_revolution_marketplace_1 = {
+	country_trade_fee = -0.05
+}
+mod_tt_economics_revolution_marketplace_2 = {
+	country_trade_fee = -0.10
+}
+mod_tt_economics_revolution_marketplace_3 = {
+	country_trade_fee = -0.15
+}
+mod_tt_economics_revolution_marketplace_4 = {
+	country_trade_fee = -0.20
+}
+mod_tt_economics_revolution_marketplace_5 = {
+	country_trade_fee = -0.25
+}
+#经济革命：岗位
+mod_tt_economics_revolution_job_1 = {
+	planet_jobs_produces_mult = 0.05
+	planet_jobs_upkeep_mult = -0.10
+}
+mod_tt_economics_revolution_job_2 = {
+	planet_jobs_produces_mult = 0.10
+	planet_jobs_upkeep_mult = -0.20
+}
+mod_tt_economics_revolution_job_3 = {
+	planet_jobs_produces_mult = 0.15
+	planet_jobs_upkeep_mult = -0.30
+}
+mod_tt_economics_revolution_job_4 = {
+	planet_jobs_produces_mult = 0.20
+	planet_jobs_upkeep_mult = -0.40
+}
+mod_tt_economics_revolution_job_5 = {
+	planet_jobs_produces_mult = 0.25
+	planet_jobs_upkeep_mult = -0.50
+}
+#经济革命：建设
+mod_tt_economics_revolution_building_1 = {
+	planet_building_build_speed_mult = 0.50
+}
+mod_tt_economics_revolution_building_2 = {
+	planet_building_build_speed_mult = 1.00
+}
+mod_tt_economics_revolution_building_3 = {
+	planet_building_build_speed_mult = 1.50
+}
+mod_tt_economics_revolution_building_4 = {
+	planet_building_build_speed_mult = 2.00
+}
+mod_tt_economics_revolution_building_5 = {
+	planet_building_build_speed_mult = 2.50
+}
+########################################
+#军工革命：舰船
+mod_tt_war_revolution_fleet_1 = {
+	starbase_shipyard_build_cost_mult = -0.05
+}
+mod_tt_war_revolution_fleet_2 = {
+	starbase_shipyard_build_cost_mult = -0.10
+}
+mod_tt_war_revolution_fleet_3 = {
+	starbase_shipyard_build_cost_mult = -0.15
+}
+mod_tt_war_revolution_fleet_4 = {
+	starbase_shipyard_build_cost_mult = -0.20
+}
+mod_tt_war_revolution_fleet_5 = {
+	starbase_shipyard_build_cost_mult = -0.25
+}
+#军工革命：堡垒
+mod_tt_war_revolution_fortress_1 = {
+	starbase_upgrade_cost_mult = -0.20
+}
+mod_tt_war_revolution_fortress_2 = {
+	starbase_upgrade_cost_mult = -0.40
+}
+mod_tt_war_revolution_fortress_3 = {
+	starbase_upgrade_cost_mult = -0.60
+}
+mod_tt_war_revolution_fortress_4 = {
+	starbase_upgrade_cost_mult = -0.80
+}
+mod_tt_war_revolution_fortress_5 = {
+	starbase_upgrade_cost_mult = -1.00
+}
+#军工革命：战役
+mod_tt_war_revolution_battle_1 = {
+	country_war_exhaustion_mult = -0.15
+}
+mod_tt_war_revolution_battle_2 = {
+	country_war_exhaustion_mult = -0.30
+}
+mod_tt_war_revolution_battle_3 = {
+	country_war_exhaustion_mult = -0.45
+}
+mod_tt_war_revolution_battle_4 = {
+	country_war_exhaustion_mult = -0.60
+}
+mod_tt_war_revolution_battle_5 = {
+	country_war_exhaustion_mult = -0.75
+}
+########################################
+#科技革命：狂热
+mod_tt_science_revolution_fanaticism_1 = {
+	num_tech_alternatives_add = 1
+}
+mod_tt_science_revolution_fanaticism_2 = {
+	num_tech_alternatives_add = 2
+}
+mod_tt_science_revolution_fanaticism_3 = {
+	num_tech_alternatives_add = 3
+}
+mod_tt_science_revolution_fanaticism_4 = {
+	num_tech_alternatives_add = 4
+}
+mod_tt_science_revolution_fanaticism_5 = {
+	num_tech_alternatives_add = 5
+}
+#科技革命：岗位
+mod_tt_science_revolution_job_1 = {
+	job_researcher_add = 1
+}
+mod_tt_science_revolution_job_2 = {
+	job_researcher_add = 2
+}
+mod_tt_science_revolution_job_3 = {
+	job_researcher_add = 3
+}
+mod_tt_science_revolution_job_4 = {
+	job_researcher_add = 4
+}
+mod_tt_science_revolution_job_5 = {
+	job_researcher_add = 5
+}
+#科技革命：维度
+mod_tt_science_revolution_dimension_1 = {
+
+}
+mod_tt_science_revolution_dimension_2 = {
+
+}
+mod_tt_science_revolution_dimension_3 = {
+
+}
+mod_tt_science_revolution_dimension_4 = {
+
+}
+mod_tt_science_revolution_dimension_5 = {
+
+}
+
+######################经济市场##########################
+#贸易覆盖
+mod_tt_economics_revolution_marketplace_1_1 = {
+	starbase_trade_collection_range_add = 1
+	starbase_trade_protection_range_add = 1
+}
+mod_tt_economics_revolution_marketplace_1_2 = {
+	starbase_trade_collection_range_add = 2
+	starbase_trade_protection_range_add = 2
+}
+mod_tt_economics_revolution_marketplace_1_3 = {
+	starbase_trade_collection_range_add = 3
+	starbase_trade_protection_range_add = 3
+}
+mod_tt_economics_revolution_marketplace_1_4 = {
+	starbase_trade_collection_range_add = 4
+	starbase_trade_protection_range_add = 4
+}
+mod_tt_economics_revolution_marketplace_1_5 = {
+	starbase_trade_collection_range_add = 5
+	starbase_trade_protection_range_add = 5
+}
+#贸易保护
+mod_tt_economics_revolution_marketplace_2_1 = {
+	starbase_trade_protection_add = 50
+	local_trade_protection_add = 10
+}
+mod_tt_economics_revolution_marketplace_2_2 = {
+	starbase_trade_protection_add = 100
+	local_trade_protection_add = 20
+}
+mod_tt_economics_revolution_marketplace_2_3 = {
+	starbase_trade_protection_add = 150
+	local_trade_protection_add = 30
+}
+mod_tt_economics_revolution_marketplace_2_4 = {
+	starbase_trade_protection_add = 200
+	local_trade_protection_add = 40
+}
+mod_tt_economics_revolution_marketplace_2_5 = {
+	starbase_trade_protection_add = 250
+	local_trade_protection_add = 50
+}
+#贸易增值
+mod_tt_economics_revolution_marketplace_3_1 = {
+	country_trade_attractiveness = 0.50
+}
+mod_tt_economics_revolution_marketplace_3_2 = {
+	country_trade_attractiveness = 1.00
+}
+mod_tt_economics_revolution_marketplace_3_3 = {
+	country_trade_attractiveness = 1.50
+}
+mod_tt_economics_revolution_marketplace_3_4 = {
+	country_trade_attractiveness = 2.00
+}
+mod_tt_economics_revolution_marketplace_3_5 = {
+	country_trade_attractiveness = 2.50
+}
+######################经济岗位##########################
+#统治者振兴
+mod_tt_economics_revolution_marketplace_1_1 = {
+	planet_jobs_ruler_produces_mult = 0.20
+}
+mod_tt_economics_revolution_marketplace_1_2 = {
+	planet_jobs_ruler_produces_mult = 0.40
+}
+mod_tt_economics_revolution_marketplace_1_3 = {
+	planet_jobs_ruler_produces_mult = 0.60
+}
+mod_tt_economics_revolution_marketplace_1_4 = {
+	planet_jobs_ruler_produces_mult = 0.80
+}
+mod_tt_economics_revolution_marketplace_1_5 = {
+	planet_jobs_ruler_produces_mult = 1.00
+}
+#专家振兴
+mod_tt_economics_revolution_marketplace_2_1 = {
+	planet_jobs_specialist_produces_mult = 0.20
+}
+mod_tt_economics_revolution_marketplace_2_2 = {
+	planet_jobs_specialist_produces_mult = 0.40
+}
+mod_tt_economics_revolution_marketplace_2_3 = {
+	planet_jobs_specialist_produces_mult = 0.60
+}
+mod_tt_economics_revolution_marketplace_2_4 = {
+	planet_jobs_specialist_produces_mult = 0.80
+}
+mod_tt_economics_revolution_marketplace_2_5 = {
+	planet_jobs_specialist_produces_mult = 1.00
+}
+#劳工振兴
+mod_tt_economics_revolution_marketplace_3_1 = {
+	planet_jobs_worker_produces_mult = 0.20
+}
+mod_tt_economics_revolution_marketplace_3_2 = {
+	planet_jobs_worker_produces_mult = 0.40
+}
+mod_tt_economics_revolution_marketplace_3_3 = {
+	planet_jobs_worker_produces_mult = 0.60
+}
+mod_tt_economics_revolution_marketplace_3_4 = {
+	planet_jobs_worker_produces_mult = 0.80
+}
+mod_tt_economics_revolution_marketplace_3_5 = {
+	planet_jobs_worker_produces_mult = 1.00
+}
+######################经济建设##########################
+#回收利用
+mod_tt_economics_revolution_building_1_1 = {
+	planet_building_refund_mult = 0.20
+}
+mod_tt_economics_revolution_building_1_2 = {
+	planet_building_refund_mult = 0.40
+}
+mod_tt_economics_revolution_building_1_3 = {
+	planet_building_refund_mult = 0.60
+}
+mod_tt_economics_revolution_building_1_4 = {
+	planet_building_refund_mult = 0.80
+}
+mod_tt_economics_revolution_building_1_5 = {
+	planet_building_refund_mult = 1.00
+}
+#模块建设
+mod_tt_economics_revolution_building_2_1 = {
+	planet_buildings_cost_mult = -0.10
+}
+mod_tt_economics_revolution_building_2_2 = {
+	planet_buildings_cost_mult = -0.20
+}
+mod_tt_economics_revolution_building_2_3 = {
+	planet_buildings_cost_mult = -0.30
+}
+mod_tt_economics_revolution_building_2_4 = {
+	planet_buildings_cost_mult = -0.40
+}
+mod_tt_economics_revolution_building_2_5 = {
+	planet_buildings_cost_mult = -0.50
+}
+#建筑维护
+mod_tt_economics_revolution_building_3_1 = {
+	planet_buildings_upkeep_mult = -0.20
+}
+mod_tt_economics_revolution_building_3_2 = {
+	planet_buildings_upkeep_mult = -0.40
+}
+mod_tt_economics_revolution_building_3_3 = {
+	planet_buildings_upkeep_mult = -0.60
+}
+mod_tt_economics_revolution_building_3_4 = {
+	planet_buildings_upkeep_mult = -0.80
+}
+mod_tt_economics_revolution_building_3_5 = {
+	planet_buildings_upkeep_mult = -1.00
+}
+######################军工舰船##########################
+#无穷无尽
+mod_tt_war_revolution_fleet_1_1 = {
+	starbase_shipyard_build_speed_mult = 1.00
+}
+mod_tt_war_revolution_fleet_1_2 = {
+	starbase_shipyard_build_speed_mult = 2.00
+}
+mod_tt_war_revolution_fleet_1_3 = {
+	starbase_shipyard_build_speed_mult = 3.00
+}
+mod_tt_war_revolution_fleet_1_4 = {
+	starbase_shipyard_build_speed_mult = 4.00
+}
+mod_tt_war_revolution_fleet_1_5 = {
+	starbase_shipyard_build_speed_mult = 5.00
+}
+#无坚不摧
+mod_tt_war_revolution_fleet_2_1 = {
+	ship_shield_penetration_mult = 0.10
+	ship_armor_penetration_mult = 0.10
+}
+mod_tt_war_revolution_fleet_2_2 = {
+	ship_shield_penetration_mult = 0.20
+	ship_armor_penetration_mult = 0.20
+}
+mod_tt_war_revolution_fleet_2_3 = {
+	ship_shield_penetration_mult = 0.30
+	ship_armor_penetration_mult = 0.30
+}
+mod_tt_war_revolution_fleet_2_4 = {
+	ship_shield_penetration_mult = 0.40
+	ship_armor_penetration_mult = 0.40
+}
+mod_tt_war_revolution_fleet_2_5 = {
+	ship_shield_penetration_mult = 0.50
+	ship_armor_penetration_mult = 0.50
+}
+#无往不利
+mod_tt_war_revolution_fleet_3_1 = {
+	ship_shield_hardening_add = 0.10
+	ship_armor_hardening_add = 0.10
+}
+mod_tt_war_revolution_fleet_3_2 = {
+	ship_shield_hardening_add = 0.20
+	ship_armor_hardening_add = 0.20
+}
+mod_tt_war_revolution_fleet_3_3 = {
+	ship_shield_hardening_add = 0.30
+	ship_armor_hardening_add = 0.30
+}
+mod_tt_war_revolution_fleet_3_4 = {
+	ship_shield_hardening_add = 0.40
+	ship_armor_hardening_add = 0.40
+}
+mod_tt_war_revolution_fleet_3_5 = {
+	ship_shield_hardening_add = 0.50
+	ship_armor_hardening_add = 0.50
+}
+######################军工堡垒##########################
+#工程奇迹
+mod_tt_war_revolution_fortress_1_1 = {
+	starbase_upgrade_speed_mult = 1.00
+}
+mod_tt_war_revolution_fortress_1_2 = {
+	starbase_upgrade_speed_mult = 2.00
+}
+mod_tt_war_revolution_fortress_1_3 = {
+	starbase_upgrade_speed_mult = 3.00
+}
+mod_tt_war_revolution_fortress_1_4 = {
+	starbase_upgrade_speed_mult = 4.00
+}
+mod_tt_war_revolution_fortress_1_5 = {
+	starbase_upgrade_speed_mult = 5.00
+}
+#建筑超频
+mod_tt_war_revolution_fortress_2_1 = {
+	starbase_building_build_speed_mult = 1.00
+}
+mod_tt_war_revolution_fortress_2_2 = {
+	starbase_building_build_speed_mult = 2.00
+}
+mod_tt_war_revolution_fortress_2_3 = {
+	starbase_building_build_speed_mult = 3.00
+}
+mod_tt_war_revolution_fortress_2_4 = {
+	starbase_building_build_speed_mult = 4.00
+}
+mod_tt_war_revolution_fortress_2_5 = {
+	starbase_building_build_speed_mult = 5.00
+}
+#模块大师
+mod_tt_war_revolution_fortress_3_1 = {
+	starbase_module_build_speed_mult = 1.00
+}
+mod_tt_war_revolution_fortress_3_2 = {
+	starbase_module_build_speed_mult = 2.00
+}
+mod_tt_war_revolution_fortress_3_3 = {
+	starbase_module_build_speed_mult = 3.00
+}
+mod_tt_war_revolution_fortress_3_4 = {
+	starbase_module_build_speed_mult = 4.00
+}
+mod_tt_war_revolution_fortress_3_5 = {
+	starbase_module_build_speed_mult = 5.00
+}
+######################军工战役##########################
+#以逸待劳
+mod_tt_war_revolution_battle_1_1 = {
+	starbase_defensive_war_ship_build_speed_mult = 1.00
+}
+mod_tt_war_revolution_battle_1_2 = {
+	starbase_defensive_war_ship_build_speed_mult = 2.00
+}
+mod_tt_war_revolution_battle_1_3 = {
+	starbase_defensive_war_ship_build_speed_mult = 3.00
+}
+mod_tt_war_revolution_battle_1_4 = {
+	starbase_defensive_war_ship_build_speed_mult = 4.00
+}
+mod_tt_war_revolution_battle_1_5 = {
+	starbase_defensive_war_ship_build_speed_mult = 5.00
+}
+#恐惧化身
+mod_tt_war_revolution_battle_2_1 = {
+	planet_orbital_bombardment_damage = 0.50
+}
+mod_tt_war_revolution_battle_2_2 = {
+	planet_orbital_bombardment_damage = 1.00
+}
+mod_tt_war_revolution_battle_2_3 = {
+	planet_orbital_bombardment_damage = 1.50
+}
+mod_tt_war_revolution_battle_2_4 = {
+	planet_orbital_bombardment_damage = 2.00
+}
+mod_tt_war_revolution_battle_2_5 = {
+	planet_orbital_bombardment_damage = 2.50
+}
+#银河主宰
+mod_tt_war_revolution_battle_3_1 = {
+	damage_vs_rival_mult = 0.15
+	damage_vs_superior_empires_mult = 0.25
+}
+mod_tt_war_revolution_battle_3_2 = {
+	damage_vs_rival_mult = 0.30
+	damage_vs_superior_empires_mult = 0.50
+}
+mod_tt_war_revolution_battle_3_3 = {
+	damage_vs_rival_mult = 0.45
+	damage_vs_superior_empires_mult = 0.75
+}
+mod_tt_war_revolution_battle_3_4 = {
+	damage_vs_rival_mult = 0.60
+	damage_vs_superior_empires_mult = 1.00
+}
+mod_tt_war_revolution_battle_3_5 = {
+	damage_vs_rival_mult = 0.75
+	damage_vs_superior_empires_mult = 1.25
+}
+######################科技狂热##########################
+#学术之巅
+mod_tt_science_revolution_fanaticism_1_1 = {
+	tech_cost_empire_size_mult = -0.20
+}
+mod_tt_science_revolution_fanaticism_1_2 = {
+	tech_cost_empire_size_mult = -0.40
+}
+mod_tt_science_revolution_fanaticism_1_3 = {
+	tech_cost_empire_size_mult = -0.60
+}
+mod_tt_science_revolution_fanaticism_1_4 = {
+	tech_cost_empire_size_mult = -0.80
+}
+mod_tt_science_revolution_fanaticism_1_5 = {
+	tech_cost_empire_size_mult = -1.00
+}
+#科技强国
+mod_tt_science_revolution_fanaticism_2_1 = {
+	diplo_weight_technology_mult = 0.75
+}
+mod_tt_science_revolution_fanaticism_2_2 = {
+	diplo_weight_technology_mult = 1.50
+}
+mod_tt_science_revolution_fanaticism_2_3 = {
+	diplo_weight_technology_mult = 2.25
+}
+mod_tt_science_revolution_fanaticism_2_4 = {
+	diplo_weight_technology_mult = 3.00
+}
+mod_tt_science_revolution_fanaticism_2_5 = {
+	diplo_weight_technology_mult = 3.75
+}
+#科技逆向
+mod_tt_science_revolution_fanaticism_3_1 = {
+	op_cat_technology_difficulty_add = -1
+	hostile_op_cat_technology_difficulty_add = 1
+}
+mod_tt_science_revolution_fanaticism_3_2 = {
+	op_cat_technology_difficulty_add = -2
+	hostile_op_cat_technology_difficulty_add = 2
+}
+mod_tt_science_revolution_fanaticism_3_3 = {
+	op_cat_technology_difficulty_add = -3
+	hostile_op_cat_technology_difficulty_add = 3
+}
+mod_tt_science_revolution_fanaticism_3_4 = {
+	op_cat_technology_difficulty_add = -4
+	hostile_op_cat_technology_difficulty_add = 4
+}
+mod_tt_science_revolution_fanaticism_3_5 = {
+	op_cat_technology_difficulty_add = -5
+	hostile_op_cat_technology_difficulty_add = 5
+}
+######################科技岗位##########################
+#领袖攀升
+mod_tt_science_revolution_job_1_1 = {
+	job_researcher_per_pop = 0.01
+}
+mod_tt_science_revolution_job_1_2 = {
+	job_researcher_per_pop = 0.02
+}
+mod_tt_science_revolution_job_1_3 = {
+	job_researcher_per_pop = 0.03
+}
+mod_tt_science_revolution_job_1_4 = {
+	job_researcher_per_pop = 0.04
+}
+mod_tt_science_revolution_job_1_5 = {
+	job_researcher_per_pop = 0.05
+}
+#自给自足
+mod_tt_science_revolution_job_2_1 = {
+	planet_researchers_upkeep_mult = -0.10
+}
+mod_tt_science_revolution_job_2_2 = {
+	planet_researchers_upkeep_mult = -0.20
+}
+mod_tt_science_revolution_job_2_3 = {
+	planet_researchers_upkeep_mult = -0.30
+}
+mod_tt_science_revolution_job_2_4 = {
+	planet_researchers_upkeep_mult = -0.40
+}
+mod_tt_science_revolution_job_2_5 = {
+	planet_researchers_upkeep_mult = -0.50
+}
+#良性竞争
+mod_tt_science_revolution_job_3_1 = {
+	planet_researchers_produces_mult = 0.25
+}
+mod_tt_science_revolution_job_3_2 = {
+	planet_researchers_produces_mult = 0.50
+}
+mod_tt_science_revolution_job_3_3 = {
+	planet_researchers_produces_mult = 0.75
+}
+mod_tt_science_revolution_job_3_4 = {
+	planet_researchers_produces_mult = 1.00
+}
+mod_tt_science_revolution_job_3_5 = {
+	planet_researchers_produces_mult = 1.25
+}
+######################科技维度##########################
+#未知产出
+mod_tt_science_revolution_dimension_1_1 = {
+	planet_researchers_energy_produces_add = 2.00
+	planet_researchers_minerals_produces_add = 2.00
+	planet_researchers_food_produces_add = 2.00
+}
+mod_tt_science_revolution_dimension_1_2 = {
+	planet_researchers_energy_produces_add = 4.00
+	planet_researchers_minerals_produces_add = 4.00
+	planet_researchers_food_produces_add = 4.00
+}
+mod_tt_science_revolution_dimension_1_3 = {
+	planet_researchers_energy_produces_add = 6.00
+	planet_researchers_minerals_produces_add = 6.00
+	planet_researchers_food_produces_add = 6.00
+}
+mod_tt_science_revolution_dimension_1_4 = {
+	planet_researchers_energy_produces_add = 8.00
+	planet_researchers_minerals_produces_add = 8.00
+	planet_researchers_food_produces_add = 8.00
+}
+mod_tt_science_revolution_dimension_1_5 = {
+	planet_researchers_energy_produces_add = 10.00
+	planet_researchers_minerals_produces_add = 10.00
+	planet_researchers_food_produces_add = 10.00
+}
+#未知合成
+mod_tt_science_revolution_dimension_2_1 = {
+	planet_researchers_consumer_goods_produces_add = 1.50
+	planet_researchers_alloys_produces_add = 1.00
+	planet_researchers_volatile_motes_produces_add = 0.50
+	planet_researchers_exotic_gases_produces_add = 0.50
+	planet_researchers_rare_crystals_produces_add = 0.50
+}
+mod_tt_science_revolution_dimension_2_2 = {
+	planet_researchers_consumer_goods_produces_add = 3.00
+	planet_researchers_alloys_produces_add = 2.00
+	planet_researchers_volatile_motes_produces_add = 1.00
+	planet_researchers_exotic_gases_produces_add = 1.00
+	planet_researchers_rare_crystals_produces_add = 1.00
+}
+mod_tt_science_revolution_dimension_2_3 = {
+	planet_researchers_consumer_goods_produces_add = 4.50
+	planet_researchers_alloys_produces_add = 3.00
+	planet_researchers_volatile_motes_produces_add = 1.50
+	planet_researchers_exotic_gases_produces_add = 1.50
+	planet_researchers_rare_crystals_produces_add = 1.50
+}
+mod_tt_science_revolution_dimension_2_4 = {
+	planet_researchers_consumer_goods_produces_add = 6.00
+	planet_researchers_alloys_produces_add = 4.00
+	planet_researchers_volatile_motes_produces_add = 2.00
+	planet_researchers_exotic_gases_produces_add = 2.00
+	planet_researchers_rare_crystals_produces_add = 2.00
+}
+mod_tt_science_revolution_dimension_2_5 = {
+	planet_researchers_consumer_goods_produces_add = 7.50
+	planet_researchers_alloys_produces_add = 5.00
+	planet_researchers_volatile_motes_produces_add = 2.50
+	planet_researchers_exotic_gases_produces_add = 2.50
+	planet_researchers_rare_crystals_produces_add = 2.50
+}
+#未知扭曲
+mod_tt_science_revolution_dimension_3_1 = {
+	planet_researchers_sr_living_metal_produces_add = 0.25
+	planet_researchers_sr_zro_produces_add = 0.25
+	planet_researchers_sr_dark_matter_produces_add = 0.25
+	planet_researchers_nanites_produces_add = 0.10
+	planet_researchers_minor_artifacts_produces_add = 0.10
+}
+mod_tt_science_revolution_dimension_3_2 = {
+	planet_researchers_sr_living_metal_produces_add = 0.50
+	planet_researchers_sr_zro_produces_add = 0.50
+	planet_researchers_sr_dark_matter_produces_add = 0.50
+	planet_researchers_nanites_produces_add = 0.20
+	planet_researchers_minor_artifacts_produces_add = 0.20
+}
+mod_tt_science_revolution_dimension_3_3 = {
+	planet_researchers_sr_living_metal_produces_add = 0.75
+	planet_researchers_sr_zro_produces_add = 0.75
+	planet_researchers_sr_dark_matter_produces_add = 0.75
+	planet_researchers_nanites_produces_add = 0.30
+	planet_researchers_minor_artifacts_produces_add = 0.30
+}
+mod_tt_science_revolution_dimension_3_4 = {
+	planet_researchers_sr_living_metal_produces_add = 1.00
+	planet_researchers_sr_zro_produces_add = 1.00
+	planet_researchers_sr_dark_matter_produces_add = 1.00
+	planet_researchers_nanites_produces_add = 0.40
+	planet_researchers_minor_artifacts_produces_add = 0.40
+}
+mod_tt_science_revolution_dimension_3_5 = {
+	planet_researchers_sr_living_metal_produces_add = 1.25
+	planet_researchers_sr_zro_produces_add = 1.25
+	planet_researchers_sr_dark_matter_produces_add = 1.25
+	planet_researchers_nanites_produces_add = 0.50
+	planet_researchers_minor_artifacts_produces_add = 0.50
+}
