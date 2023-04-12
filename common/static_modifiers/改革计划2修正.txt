@@ -275,51 +275,51 @@ mod_tt_economics_revolution_marketplace_3_5 = {
 }
 ######################经济岗位##########################
 #统治者振兴
-mod_tt_economics_revolution_marketplace_1_1 = {
+mod_tt_economics_revolution_job_1_1 = {
 	planet_jobs_ruler_produces_mult = 0.20
 }
-mod_tt_economics_revolution_marketplace_1_2 = {
+mod_tt_economics_revolution_job_1_2 = {
 	planet_jobs_ruler_produces_mult = 0.40
 }
-mod_tt_economics_revolution_marketplace_1_3 = {
+mod_tt_economics_revolution_job_1_3 = {
 	planet_jobs_ruler_produces_mult = 0.60
 }
-mod_tt_economics_revolution_marketplace_1_4 = {
+mod_tt_economics_revolution_job_1_4 = {
 	planet_jobs_ruler_produces_mult = 0.80
 }
-mod_tt_economics_revolution_marketplace_1_5 = {
+mod_tt_economics_revolution_job_1_5 = {
 	planet_jobs_ruler_produces_mult = 1.00
 }
 #专家振兴
-mod_tt_economics_revolution_marketplace_2_1 = {
+mod_tt_economics_revolution_job_2_1 = {
 	planet_jobs_specialist_produces_mult = 0.20
 }
-mod_tt_economics_revolution_marketplace_2_2 = {
+mod_tt_economics_revolution_job_2_2 = {
 	planet_jobs_specialist_produces_mult = 0.40
 }
-mod_tt_economics_revolution_marketplace_2_3 = {
+mod_tt_economics_revolution_job_2_3 = {
 	planet_jobs_specialist_produces_mult = 0.60
 }
-mod_tt_economics_revolution_marketplace_2_4 = {
+mod_tt_economics_revolution_job_2_4 = {
 	planet_jobs_specialist_produces_mult = 0.80
 }
-mod_tt_economics_revolution_marketplace_2_5 = {
+mod_tt_economics_revolution_job_2_5 = {
 	planet_jobs_specialist_produces_mult = 1.00
 }
 #劳工振兴
-mod_tt_economics_revolution_marketplace_3_1 = {
+mod_tt_economics_revolution_job_3_1 = {
 	planet_jobs_worker_produces_mult = 0.20
 }
-mod_tt_economics_revolution_marketplace_3_2 = {
+mod_tt_economics_revolution_job_3_2 = {
 	planet_jobs_worker_produces_mult = 0.40
 }
-mod_tt_economics_revolution_marketplace_3_3 = {
+mod_tt_economics_revolution_job_3_3 = {
 	planet_jobs_worker_produces_mult = 0.60
 }
-mod_tt_economics_revolution_marketplace_3_4 = {
+mod_tt_economics_revolution_job_3_4 = {
 	planet_jobs_worker_produces_mult = 0.80
 }
-mod_tt_economics_revolution_marketplace_3_5 = {
+mod_tt_economics_revolution_job_3_5 = {
 	planet_jobs_worker_produces_mult = 1.00
 }
 ######################经济建设##########################
@@ -498,19 +498,19 @@ mod_tt_war_revolution_battle_1_5 = {
 }
 #恐惧化身
 mod_tt_war_revolution_battle_2_1 = {
-	planet_orbital_bombardment_damage = 0.50
+	ship_orbital_bombardment_mult = 0.50
 }
 mod_tt_war_revolution_battle_2_2 = {
-	planet_orbital_bombardment_damage = 1.00
+	ship_orbital_bombardment_mult = 1.00
 }
 mod_tt_war_revolution_battle_2_3 = {
-	planet_orbital_bombardment_damage = 1.50
+	ship_orbital_bombardment_mult = 1.50
 }
 mod_tt_war_revolution_battle_2_4 = {
-	planet_orbital_bombardment_damage = 2.00
+	ship_orbital_bombardment_mult = 2.00
 }
 mod_tt_war_revolution_battle_2_5 = {
-	planet_orbital_bombardment_damage = 2.50
+	ship_orbital_bombardment_mult = 2.50
 }
 #银河主宰
 mod_tt_war_revolution_battle_3_1 = {

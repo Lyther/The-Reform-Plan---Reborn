@@ -14,6 +14,17 @@ event = {
 		}
 	}
 	immediate = {
+		country_event = { id = tt_science_revolution_dimension.1 }
+		country_event = { id = tt_science_revolution_dimension.10 }
+	}
+}
+
+country_event = {
+	id = tt_science_revolution_dimension.10
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
 		remove_global_flag = extradimensional_invasion_happened
 		remove_global_flag = galactic_crisis_happened
 		remove_global_flag = extradimensional_first_portal_destroyed
@@ -23,9 +34,27 @@ event = {
 		remove_global_flag = extradimensional_third_portal
 		remove_global_flag = extradimensional_third_portal_destroyed
 		remove_global_flag = extradimensional_invasion_defeated
-		country_event = { id = tt_science_revolution_dimension.1 }
-		country_event = { id = crisis.1000 days = 360 random = 60 }
-		country_event = { id = crisis.1100 days = 360 random = 60 }
+		country_event = { id = crisis.1000 }
+		country_event = { id = tt_science_revolution_dimension.11 days = 1 }
+	}
+}
+
+country_event = {
+	id = tt_science_revolution_dimension.11
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		remove_global_flag = extradimensional_invasion_happened
+		remove_global_flag = galactic_crisis_happened
+		remove_global_flag = extradimensional_first_portal_destroyed
+		remove_global_flag = extradimensional_second_portal
+		remove_global_flag = extradimensionals_fight
+		remove_global_flag = extradimensional_second_portal_destroyed
+		remove_global_flag = extradimensional_third_portal
+		remove_global_flag = extradimensional_third_portal_destroyed
+		remove_global_flag = extradimensional_invasion_defeated
+		country_event = { id = crisis.1000 }
 	}
 }
 
