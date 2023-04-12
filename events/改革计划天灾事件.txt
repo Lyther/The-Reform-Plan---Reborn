@@ -1,0 +1,1075 @@
+namespace = tt_crisis
+
+# Non Endgame Crisis Extradimensional Invasion Begins (HIDDEN)
+country_event = {
+	id = tt_crisis.1000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_Portal_Holder_1"
+			type = portal_holder
+			flag = {
+				icon= {
+					category = "special"
+					file = "extradimensional_01.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = portal_holder_1
+				every_playable_country = {
+					establish_communications_no_message = event_target:portal_holder_1
+				}
+			}
+		}
+
+		random_system = {
+			limit = {
+				NOR = {
+					is_star_class = sc_pulsar
+					is_star_class = sc_binary_1
+					AND = {
+						exists = owner
+						owner = {
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = extradimensional_origin_system
+			save_event_target_as = extradimensional_system
+			random_system_planet = {
+				create_species = {
+					name = "NAME_Unbidden"
+					class = EXD
+					namelist = Extradimensional
+					portrait = exd1
+					traits = random
+					effect = { save_event_target_as = extradimensional_species }
+				}
+				create_country = {
+					name = "NAME_Unbidden"
+					type = "extradimensional"
+					species = event_target:extradimensional_species
+					name_list = "Extradimensional"
+					effect = { set_country_flag = unbidden }
+					flag = {
+						icon= {
+							category = "special"
+							file = "extradimensional_01.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "circle.dds"
+						}
+						colors={
+							"indigo"
+							"blue"
+							"null"
+							"null"
+						}
+					}
+					effect = {
+						create_ship_design = { design = "NAME_Void_Shaper" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Anchor" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Starbase" }
+						add_ship_design = last_created_design
+						save_global_event_target_as = extradimensionals
+						establish_communications_no_message = event_target:portal_holder_1
+						set_faction_hostility = {
+							target = event_target:portal_holder_1
+							set_hostile = no
+						}
+						set_graphical_culture = extra_dimensional_01
+						save_event_target_as = extradimensionals
+					}
+				}
+				event_target:extradimensionals = {
+					create_fleet = {
+						name = "NAME_Dimensional_Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "NAME_Unbidden_Portal"
+								graphical_culture = "extra_dimensional_01"
+								effect = { set_ship_flag = unbidden_portal }
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 40
+								angle = random
+							}
+							save_event_target_as = dimensional_portal
+							fleet_event = { id = crisis.1003 days = 15 } # Second Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 30 } # Third Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 55 } # Fourth Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 90 } # Fifth Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 180 } # Sixth Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 265 } # Seventh Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 340 } # Eight Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 425 } # Ninth Fleet Arrives
+							fleet_event = { id = crisis.1003 days = 550 } # Tenth Fleet Arrives
+							fleet_event = { id = crisis.1006 days = 20 } # First Constructor Arrives
+							fleet_event = { id = crisis.1006 days = 25 } # Second Constructor Arrives
+							fleet_event = { id = crisis.1006 days = 160 } # Third Constructor Arrives
+							fleet_event = { id = crisis.1006 days = 310 } # Fourth Constructor Arrives
+							event_target:extradimensionals = { country_event = { id = crisis.1260 days = 350 } } # Spawn Cycle starts
+							#set_owner = event_target:portal_holder_1 #when first anchor built
+						}
+					}
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 3
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+					create_fleet = {
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "NAME_Revenant"
+								graphical_culture = "extra_dimensional_01"
+							}
+							assign_leader = last_created_leader
+							while = {
+								count = 20
+								create_ship = {
+									name = random
+									design = "NAME_Revenant"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							while = {
+								count = 30
+								create_ship = {
+									name = random
+									design = "NAME_Phantom"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							while = {
+								count = 45
+								create_ship = {
+									name = random
+									design = "NAME_Wraith"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							set_location = {
+								target = event_target:dimensional_portal
+								distance = 5
+								angle = random
+							}
+							set_fleet_stance = aggressive
+							set_aggro_range = 500
+							set_aggro_range_measure_from = self
+							set_fleet_bombardment_stance = armageddon
+						}
+					}
+				}
+			}
+			if = {
+				limit = { exists = starbase }
+				starbase = { fleet = { destroy_fleet = this } }
+			}
+			create_starbase = {
+				size = starbase_exd
+				owner = event_target:extradimensionals
+			}
+			star = {
+				create_ambient_object = {
+					type = "extradimensional_2"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = extradimensional_system_effect_2
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+			}
+		}
+		observer_event = { id = observer.34 }
+		# make portal invincible
+		event_target:extradimensionals = {
+			random_controlled_ship = { ship_event = { id = crisis.1280 } }
+		}
+
+		# Custodian/Emperor Announcements
+		event_target:extradimensionals = { save_event_target_as = crisis_country }
+		if = {
+			limit = { has_galactic_custodian = yes }
+			random_playable_country = {
+				limit = { is_galactic_custodian = yes }
+				country_event = { id = custodian.50 days = 30 }
+			}
+		}
+		if = {
+			limit = { has_galactic_emperor = yes }
+			random_playable_country = {
+				limit = { is_galactic_emperor = yes }
+				country_event = { id = emperor.90 days = 30 }
+			}
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				intel_level = {
+					level = high
+					system = event_target:extradimensional_system
+				}
+			}
+			country_event = { id = crisis.1007 }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = {
+					intel_level = {
+						level = high
+						system = event_target:extradimensional_system
+					}
+				}
+			}
+			country_event = { id = crisis.1008 }
+		}
+	}
+}
+
+# Fleet Reinforcements - Plus
+fleet_event = {
+	id = tt_crisis.1003
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		event_target:extradimensionals = {
+			random_list = {
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+					}
+				}
+			}
+			create_fleet = {
+				effect = {
+					set_owner = PREV
+					create_ship = {
+						name = random
+						design = "NAME_Revenant"
+						graphical_culture = "extra_dimensional_01"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 16
+						create_ship = {
+							name = random
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 24
+						create_ship = {
+							name = random
+							design = "NAME_Phantom"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 40
+						create_ship = {
+							name = random
+							design = "NAME_Wraith"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					set_location = {
+						target = ROOT
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+					set_fleet_bombardment_stance = armageddon
+				}
+			}
+		}
+	}
+}
+
+# Non Endgame Crisis Extradimensional Invasion Begins (HIDDEN) - Plus
+country_event = {
+	id = tt_crisis.2000
+	hide_window = yes
+	is_triggered_only = yes
+
+	immediate = {
+		create_country = {
+			name = "NAME_Portal_Holder_1"
+			type = portal_holder
+			flag = {
+				icon= {
+					category = "special"
+					file = "extradimensional_01.dds"
+				}
+				background= {
+					category = "backgrounds"
+					file = "circle.dds"
+				}
+				colors={
+					"black"
+					"black"
+					"null"
+					"null"
+				}
+			}
+			effect = {
+				save_global_event_target_as = portal_holder_1
+				every_playable_country = {
+					establish_communications_no_message = event_target:portal_holder_1
+				}
+			}
+		}
+
+		random_system = {
+			limit = {
+				NOR = {
+					is_star_class = sc_pulsar
+					is_star_class = sc_binary_1
+					AND = {
+						exists = owner
+						owner = {
+							OR = {
+								is_country_type = fallen_empire
+								is_country_type = awakened_fallen_empire
+							}
+						}
+					}
+				}
+			}
+			set_star_flag = extradimensional_origin_system
+			save_event_target_as = extradimensional_system
+			random_system_planet = {
+				create_species = {
+					name = "NAME_Unbidden"
+					class = EXD
+					namelist = Extradimensional
+					portrait = exd1
+					traits = random
+					effect = { save_event_target_as = extradimensional_species }
+				}
+				create_country = {
+					name = "NAME_Unbidden"
+					type = "extradimensional"
+					species = event_target:extradimensional_species
+					name_list = "Extradimensional"
+					effect = { set_country_flag = unbidden }
+					flag = {
+						icon= {
+							category = "special"
+							file = "extradimensional_01.dds"
+						}
+						background= {
+							category = "backgrounds"
+							file = "circle.dds"
+						}
+						colors={
+							"indigo"
+							"blue"
+							"null"
+							"null"
+						}
+					}
+					effect = {
+						create_ship_design = { design = "NAME_Void_Shaper" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Anchor" }
+						add_ship_design = last_created_design
+						create_ship_design = { design = "NAME_Unbidden_Starbase" }
+						add_ship_design = last_created_design
+						save_global_event_target_as = extradimensionals
+						establish_communications_no_message = event_target:portal_holder_1
+						set_faction_hostility = {
+							target = event_target:portal_holder_1
+							set_hostile = no
+						}
+						set_graphical_culture = extra_dimensional_01
+						save_event_target_as = extradimensionals
+					}
+				}
+				event_target:extradimensionals = {
+					create_fleet = {
+						name = "NAME_Dimensional_Portal"
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "NAME_Unbidden_Portal"
+								graphical_culture = "extra_dimensional_01"
+								effect = { set_ship_flag = unbidden_portal }
+							}
+							set_location = {
+								target = PREVPREV
+								distance = 40
+								angle = random
+							}
+							save_event_target_as = dimensional_portal
+							fleet_event = { id = tt_crisis.1003 days = 7 } # Second Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 15 } # Third Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 27 } # Fourth Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 45 } # Fifth Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 90 } # Sixth Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 132 } # Seventh Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 170 } # Eight Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 212 } # Ninth Fleet Arrives
+							fleet_event = { id = tt_crisis.1003 days = 225 } # Tenth Fleet Arrives
+							fleet_event = { id = crisis.1006 days = 10 } # First Constructor Arrives
+							fleet_event = { id = crisis.1006 days = 12 } # Second Constructor Arrives
+							fleet_event = { id = crisis.1006 days = 80 } # Third Constructor Arrives
+							fleet_event = { id = crisis.1006 days = 165 } # Fourth Constructor Arrives
+							event_target:extradimensionals = { country_event = { id = tt_crisis.1260 days = 175 } } # Spawn Cycle starts
+							#set_owner = event_target:portal_holder_1 #when first anchor built
+						}
+					}
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+					create_fleet = {
+						effect = {
+							set_owner = PREV
+							create_ship = {
+								name = random
+								design = "NAME_Revenant"
+								graphical_culture = "extra_dimensional_01"
+							}
+							assign_leader = last_created_leader
+							while = {
+								count = 40
+								create_ship = {
+									name = random
+									design = "NAME_Revenant"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							while = {
+								count = 60
+								create_ship = {
+									name = random
+									design = "NAME_Phantom"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							while = {
+								count = 90
+								create_ship = {
+									name = random
+									design = "NAME_Wraith"
+									graphical_culture = "extra_dimensional_01"
+								}
+							}
+							set_location = {
+								target = event_target:dimensional_portal
+								distance = 5
+								angle = random
+							}
+							set_fleet_stance = aggressive
+							set_aggro_range = 500
+							set_aggro_range_measure_from = self
+							set_fleet_bombardment_stance = armageddon
+						}
+					}
+				}
+			}
+			if = {
+				limit = { exists = starbase }
+				starbase = { fleet = { destroy_fleet = this } }
+			}
+			create_starbase = {
+				size = starbase_exd
+				owner = event_target:extradimensionals
+			}
+			star = {
+				create_ambient_object = {
+					type = "extradimensional_2"
+					location = this
+				}
+				last_created_ambient_object = {
+					set_ambient_object_flag = extradimensional_system_effect_2
+					set_location = {
+						target = prev
+						distance = 0
+						angle = random
+					}
+				}
+			}
+		}
+		observer_event = { id = observer.34 }
+		# make portal invincible
+		event_target:extradimensionals = {
+			random_controlled_ship = { ship_event = { id = crisis.1280 } }
+		}
+
+		# Custodian/Emperor Announcements
+		event_target:extradimensionals = { save_event_target_as = crisis_country }
+		if = {
+			limit = { has_galactic_custodian = yes }
+			random_playable_country = {
+				limit = { is_galactic_custodian = yes }
+				country_event = { id = custodian.50 days = 30 }
+			}
+		}
+		if = {
+			limit = { has_galactic_emperor = yes }
+			random_playable_country = {
+				limit = { is_galactic_emperor = yes }
+				country_event = { id = emperor.90 days = 30 }
+			}
+		}
+
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				intel_level = {
+					level = high
+					system = event_target:extradimensional_system
+				}
+			}
+			country_event = { id = crisis.1007 }
+		}
+		every_country = {
+			limit = {
+				OR = {
+					is_country_type = default
+					is_country_type = fallen_empire
+					is_country_type = awakened_fallen_empire
+				}
+				NOT = {
+					intel_level = {
+						level = high
+						system = event_target:extradimensional_system
+					}
+				}
+			}
+			country_event = { id = crisis.1008 }
+		}
+	}
+}
+
+# Extradimensionals: Military Reinforcements Spawn Cycle (HIDDEN) - Plus
+country_event = {
+	id = tt_crisis.1260
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		OR = {
+			is_country_type = extradimensional
+			is_country_type = extradimensional_2
+			is_country_type = extradimensional_3
+		}
+		OR = {
+			count_controlled_ship = {
+				limit = { is_ship_size = dimensional_portal_ed }
+				count > 0
+			}
+			any_country = {
+				is_country_type = portal_holder
+				count_controlled_ship = {
+					limit = {
+						is_ship_size = dimensional_portal_ed
+						is_within_borders_of = root
+					}
+					count > 0
+				}
+			}
+		}
+	}
+
+
+	immediate = {
+		# Spawn Construction Ships if needed
+		country_event = { id = crisis.1266 days = 3 }
+		# If at fleet cap
+		if = {
+			limit = {
+				num_ships > 4000
+			}
+			country_event = { id = crisis.1260 days = 300 random = 100 } # Check again later
+		}
+		# If no Anchors
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count < 1
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 750 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 1
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 650 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 2
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 550 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 3
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 450 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 4
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 300 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 5
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 200 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 6
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 200 random = 100 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 7
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 150 random = 50 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 8
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 125 random = 25 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count = 9
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 100 random = 25 }
+		}
+		else_if = {
+			limit = {
+				count_controlled_ship = {
+					limit = { is_ship_size = starbase_exd }
+					count > 9
+				}
+			}
+			country_event = { id = tt_crisis.1265 days = 75 random = 25 }
+		}
+	}
+}
+
+# Reinforcements Arrive (HIDDEN) - Plus
+country_event = {
+	id = tt_crisis.1265
+	hide_window = yes
+
+	is_triggered_only = yes
+
+	trigger = {
+		# Must only trigger if portal is still alive
+		OR = {
+			count_controlled_ship = {
+				limit = { is_ship_size = dimensional_portal_ed }
+				count > 0
+			}
+			any_country = {
+				AND = {
+					is_country_type = portal_holder
+					count_controlled_ship = {
+						limit = {
+							is_ship_size = dimensional_portal_ed
+							is_within_borders_of = root
+						}
+						count > 0
+					}
+				}
+			}
+		}
+	}
+
+	immediate = {
+		random_country = {
+			limit = { is_country_type = portal_holder }
+			random_controlled_ship = {
+				limit = {
+					is_ship_size = dimensional_portal_ed
+					is_within_borders_of = root
+				}
+				save_event_target_as = dimensional_portal
+			}
+		}
+		random_controlled_ship = {
+			limit = { is_ship_size = dimensional_portal_ed }
+			save_event_target_as = dimensional_portal
+		}
+		owner_species = { save_event_target_as = extradimensional_species }
+		country_event = { id = tt_crisis.1260 } # Restart spawn cycle
+
+		# Extradimensionals 1
+		if = {
+			limit = { is_country_type = extradimensional }
+
+			# Create Admiral
+			random_list = {
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+					}
+				}
+			}
+
+			# Create Fleet
+			create_fleet = {
+				effect = {
+					set_owner = ROOT
+					create_ship = {
+						name = random
+						design = "NAME_Revenant"
+						graphical_culture = "extra_dimensional_01"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 10
+						create_ship = {
+							name = random
+							design = "NAME_Revenant"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 16
+						create_ship = {
+							name = random
+							design = "NAME_Phantom"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					while = {
+						count = 30
+						create_ship = {
+							name = random
+							design = "NAME_Wraith"
+							graphical_culture = "extra_dimensional_01"
+						}
+					}
+					set_location = {
+						target = event_target:dimensional_portal
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+					set_fleet_bombardment_stance = armageddon
+				}
+			}
+		}
+
+		# Extradimensionals 2
+		else_if = {
+			limit = { is_country_type = extradimensional_2 }
+
+			# Create Admiral
+			random_list = {
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+					}
+				}
+			}
+
+			# Create Fleet
+			create_fleet = {
+				effect = {
+					set_owner = ROOT
+					create_ship = {
+						name = random
+						design = "NAME_Huntress"
+						graphical_culture = "extra_dimensional_02"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 10
+						create_ship = {
+							name = random
+							design = "NAME_Huntress"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+					while = {
+						count = 16
+						create_ship = {
+							name = random
+							design = "NAME_Assassin"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+					while = {
+						count = 30
+						create_ship = {
+							name = random
+							design = "NAME_Predator"
+							graphical_culture = "extra_dimensional_02"
+						}
+					}
+					set_location = {
+						target = event_target:dimensional_portal
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+					set_fleet_bombardment_stance = armageddon
+				}
+			}
+		}
+
+		# Extradimensionals 3
+		else_if = {
+			limit = { is_country_type = extradimensional_3 }
+
+			# Create Admiral
+			random_list = {
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_ethereal
+						}
+					}
+				}
+				25 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+						traits = {
+							trait = leader_trait_dimensional_stutter
+						}
+					}
+				}
+				50 = {
+					create_leader = {
+						class = admiral
+						species = event_target:extradimensional_species
+						name = random
+						skill = 6
+					}
+				}
+			}
+
+			# Create Fleet
+			create_fleet = {
+				effect = {
+					set_owner = ROOT
+					create_ship = {
+						name = random
+						design = "NAME_Eradicator"
+						graphical_culture = "extra_dimensional_03"
+					}
+					assign_leader = last_created_leader
+					while = {
+						count = 10
+						create_ship = {
+							name = random
+							design = "NAME_Eradicator"
+							graphical_culture = "extra_dimensional_03"
+						}
+					}
+					while = {
+						count = 16
+						create_ship = {
+							name = random
+							design = "NAME_Annihilator"
+							graphical_culture = "extra_dimensional_03"
+						}
+					}
+					while = {
+						count = 30
+						create_ship = {
+							name = random
+							design = "NAME_Obliterator"
+							graphical_culture = "extra_dimensional_03"
+						}
+					}
+					set_location = {
+						target = event_target:dimensional_portal
+						distance = 5
+						angle = random
+					}
+					set_fleet_stance = aggressive
+					set_aggro_range = 500
+					set_aggro_range_measure_from = self
+					set_fleet_bombardment_stance = armageddon
+				}
+			}
+		}
+	}
+}

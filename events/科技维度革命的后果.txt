@@ -1,16 +1,14 @@
 namespace = tt_science_revolution_dimension
 
-event = {
+country_event = {
 	id = tt_science_revolution_dimension.0
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		any_country = {
-			AND = {
-				has_modifier = mod_tt_science_revolution_dimension_1_5
-				has_modifier = mod_tt_science_revolution_dimension_2_5
-				has_modifier = mod_tt_science_revolution_dimension_3_5
-			}
+		AND = {
+			has_modifier = mod_tt_science_revolution_dimension_1_5
+			has_modifier = mod_tt_science_revolution_dimension_2_5
+			has_modifier = mod_tt_science_revolution_dimension_3_5
 		}
 	}
 	immediate = {
@@ -34,7 +32,7 @@ country_event = {
 		remove_global_flag = extradimensional_third_portal
 		remove_global_flag = extradimensional_third_portal_destroyed
 		remove_global_flag = extradimensional_invasion_defeated
-		country_event = { id = crisis.1000 }
+		country_event = { id = tt_crisis.2000 days = 180 random = 30 }
 		country_event = { id = tt_science_revolution_dimension.11 days = 1 }
 	}
 }
@@ -54,7 +52,7 @@ country_event = {
 		remove_global_flag = extradimensional_third_portal
 		remove_global_flag = extradimensional_third_portal_destroyed
 		remove_global_flag = extradimensional_invasion_defeated
-		country_event = { id = crisis.1000 }
+		country_event = { id = tt_crisis.2000 days = 180 random = 30 }
 	}
 }
 

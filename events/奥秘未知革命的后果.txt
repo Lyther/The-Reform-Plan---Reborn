@@ -1,16 +1,14 @@
 namespace = tt_mysterious_revolution_unknown
 
-event = {
+country_event = {
 	id = tt_mysterious_revolution_unknown.0
 	hide_window = yes
 	is_triggered_only = yes
 	trigger = {
-		any_country = {
-			AND = {
-				has_modifier = mod_tt_mysterious_revolution_unknown_1_5
-				has_modifier = mod_tt_mysterious_revolution_unknown_2_5
-				has_modifier = mod_tt_mysterious_revolution_unknown_3_5
-			}
+		AND = {
+			has_modifier = mod_tt_mysterious_revolution_unknown_1_5
+			has_modifier = mod_tt_mysterious_revolution_unknown_2_5
+			has_modifier = mod_tt_mysterious_revolution_unknown_3_5
 		}
 	}
 	immediate = {
@@ -24,7 +22,7 @@ event = {
 		remove_global_flag = extradimensional_third_portal_destroyed
 		remove_global_flag = extradimensional_invasion_defeated
 		country_event = { id = tt_mysterious_revolution_unknown.1 }
-		country_event = { id = crisis.1000 days = 720 random = 120 }
+		country_event = { id = tt_crisis.1000 days = 720 random = 120 }
 	}
 }
 
