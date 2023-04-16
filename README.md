@@ -1,4 +1,4 @@
-# The Reform Plan - Reborn
+# The Reform Project
 
 After completing three ascensions, you will be able to choose a new reform plan ascension. In the reform plan panel, there are a total of 39 reform plans in three major categories, which correspond to various scenarios designed in the game. This is a long and slow process, but the benefits are equally great.
 
@@ -62,7 +62,7 @@ The development version of this mod would post on [GitHub](https://github.com/Ly
 
 The Reform Project MOD only modifies the original version's influence cap. If other mods modify the initial material storage cap, the lower one in the sorted list will prevail, otherwise, the Reform Project MOD can be compatible with any mod. Note, however, that the achievements of the original version will not be unlocked due to the checksum modification.
 
-# 改革计划 - 重制版
+# 改革计划
 
 在完成三个飞升之后，将可以选择全新的改革计划飞升，在改革计划面板中，拥有三个大类共计39项改革方案，分别对应游戏中的各种不同的情境设计。这是一个漫长且缓慢的过程，但收益同样巨大。
 
