@@ -17,44 +17,34 @@ mod_tt_internal_revolution_5 = {
 #军事革命
 mod_tt_military_revolution_1 = {
 	country_base_influence_produces_add = 10
-	country_resource_max_influence_add = 1000
 }
 mod_tt_military_revolution_2 = {
 	country_base_influence_produces_add = 20
-	country_resource_max_influence_add = 2000
 }
 mod_tt_military_revolution_3 = {
 	country_base_influence_produces_add = 30
-	country_resource_max_influence_add = 3000
 }
 mod_tt_military_revolution_4 = {
 	country_base_influence_produces_add = 40
-	country_resource_max_influence_add = 4000
 }
 mod_tt_military_revolution_5 = {
 	country_base_influence_produces_add = 50
-	country_resource_max_influence_add = 5000
 }
 #奥秘革命
 mod_tt_mysterious_revolution_1 = {
 	country_base_minor_artifacts_produces_add = 30
-	country_resource_max_minor_artifacts_add = 3000
 }
 mod_tt_mysterious_revolution_2 = {
 	country_base_minor_artifacts_produces_add = 60
-	country_resource_max_minor_artifacts_add = 6000
 }
 mod_tt_mysterious_revolution_3 = {
 	country_base_minor_artifacts_produces_add = 90
-	country_resource_max_minor_artifacts_add = 9000
 }
 mod_tt_mysterious_revolution_4 = {
 	country_base_minor_artifacts_produces_add = 120
-	country_resource_max_minor_artifacts_add = 12000
 }
 mod_tt_mysterious_revolution_5 = {
 	country_base_minor_artifacts_produces_add = 150
-	country_resource_max_minor_artifacts_add = 15000
 }
 ######################################################################
 #内政革命：管理
