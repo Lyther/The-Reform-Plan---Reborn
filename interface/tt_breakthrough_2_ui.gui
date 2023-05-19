@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "allow_breakthrough_ascension_2_perks"
 		position = { x = -900 y = -490 }
-		size = { width = 1360 height = 630 }
+		size = { width = 1360 height = 620 }
 		moveable = yes
 		orientation = center
 

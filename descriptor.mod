@@ -3,5 +3,5 @@ tags={
 	"Gameplay"
 }
 name="The Reform Project"
-supported_version="3.7.*"
+supported_version="3.8.*"
 remote_file_id="2533518533"
