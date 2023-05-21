@@ -2,13 +2,14 @@ guiTypes = {
 	containerWindowType = {
 		name = "allow_breakthrough_ascension_2_perks"
 		position = { x = -900 y = -490 }
-		size = { width = 1360 height = 620 }
+		size = { width = 1360 height = 600 }
 		moveable = yes
 		orientation = center
 
 		background = {#背景图
-			name = "background"#"leader_pool_bg"
-			quadTextureSprite = "GFX_tile_outliner_bg"
+			name = "background"
+			quadTextureSprite = "GFX_council_room_corporate_1360_600"
+			alwaysTransparent = yes
 		}
 		iconType = {#装饰下划线
 			name = "empire_header_line"#"header_line"
@@ -30,7 +31,7 @@ guiTypes = {
 		buttonType = {#关闭按钮
 			name = "close"
 			spriteType = "GFX_close"
-			position = { x = -40 y = 20 }
+			position = { x = -50 y = 20 }
 			orientation = upper_right
 			shortcut = "ESCAPE"
 			clicksound = "back_click"

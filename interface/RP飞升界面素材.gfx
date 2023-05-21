@@ -1,0 +1,14 @@
+spriteTypes = {
+	#改革计划
+	spriteType = {
+		name = "GFX_council_room_common_1360_600"
+		texturefile = "gfx/interface/council_view/council_rooms/council_room_common_1360_600.dds"
+		alwaystransparent = yes
+	}
+	#改革计划：第二部分
+	spriteType = {
+		name = "GFX_council_room_corporate_1360_600"
+		texturefile = "gfx/interface/council_view/council_rooms/council_room_corporate_1360_600.dds"
+		alwaystransparent = yes
+	}
+}

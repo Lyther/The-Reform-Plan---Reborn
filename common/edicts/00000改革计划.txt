@@ -1,5 +1,5 @@
 tt_reform_plane = {
-	length = 0
+	length = 1
 	icon = "GFX_edict_type_policy"
 
 	effect = {
