@@ -1,3 +1,18 @@
+#翻页
+button_tt_previous_plane = {
+	allow = {
+		always = no
+	}
+	effect = {}
+}
+button_tt_next_plane = {
+	allow = {
+		has_ascension_perk = ap_tt_reform_plane_2
+	}
+	effect = {
+		country_event = { id = tt_reform_plane.6 }
+	}
+}
 #内政革命
 button_tt_internal_revolution = {
 	allow = {

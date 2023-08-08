@@ -1,0 +1,6 @@
+NGameplay = {
+	LEADER_BASE_SKILL_CAP	= 10
+	LEADER_MAX_SKILL_CAP	= 100
+	MAX_BASIC_TRAITS = 8 		# How many basic traits you can have before you only get the option to level them up
+	MAX_VETERAN_TRAITS = 9 		# How many veteran traits you can have before you only get the option to level them up
+}

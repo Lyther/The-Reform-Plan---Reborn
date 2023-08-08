@@ -46,6 +46,20 @@
  tt_reform_plane_2_desc:0"Choosing this ascension will initiate the Reform Plan - Second Phase, the completion of which will cost a lot of £sr_zro£ zero, £sr_living_metal£ living metal and £sr_dark_matter£ dark matter. §RIt's a long and slow process, so I hope you can endure and stick with it!§!\n\nTo open this interface, please communication with a country called Reform Plan at the place of Diplomatic Communication £f1£, or activate §G Decree: Reform Plan§! to Communicate."
  tt_reform_plane_2_warning:0"§R Remember: This is a long and slow but fruitful revolutionary process. We hope you can bear it and stick to it! §!"
 
+ requires_ascension_perks_4:1 "$TRIGGER_FAIL$Requires four other Ascension Perks to be selected first."
+ requires_reform_plane_one_path:1 "§RAt least one reform path in internal, military, and mysteries needs to be completed to fulfill the reform plan.§!"
+
+ ap_tt_reform_plane_3:0"Reform Plan - Third Phase"
+ ap_tt_reform_plane_3_desc:0"When the power of the leader is recognized, a brand new path of reform will lead us towards a true future. At that time, the current stagnation and bottleneck period will be overcome, although it will be another long and slow process of reform."
+ tt_reform_plane_3_desc:0"Choosing this ascension will initiate the Reform Plan - Third Phase, the completion of which will cost a lot of £physics£ physics research, £society£ society research and £engineering£ engineering research. §RIt's a long and slow process, so I hope you can endure and stick with it!§!\n\nTo open this interface, please communication with a country called Reform Plan at the place of Diplomatic Communication £f1£, or activate §G Decree: Reform Plan§! to Communicate."
+ tt_reform_plane_3_warning:0"§R Remember: This is a long and slow but fruitful revolutionary process. We hope you can bear it and stick to it! §!"
+
+ requires_ascension_perks_5:1 "$TRIGGER_FAIL$Requires five other Ascension Perks to be selected first."
+ requires_reform_plane_2_one_path:1 "§RAt least one reform path in economics, war, and science needs to be completed to fulfill the reform plan - second phase.§!"
+
+ tt_reform_plane_3_chain_title:0 "Reform Plan - Third Phase"
+ tt_reform_plane_3_chain_desc:0 "When the power of the leader is recognized, a brand new path of reform will lead us towards a true future. At that time, the current stagnation and bottleneck period will be overcome, although it will be another long and slow process of reform. §RIt's a long and slow process, so I hope you can endure and stick with it!§!\n\nTo open this interface, please communication with a country called Reform Plan at the place of Diplomatic Communication £f1£, or activate §G Decree: Reform Plan§! to Communicate."
+
  tt_internal_revolution_desc:0 "Internal affairs embodies the values of all aspects of our civilization and are the core of maintaining the efficient operation of the empire."
  tt_internal_revolution:0"§Y unlock function: §!Explosion of cohesion\nRely on spending more and more £unity£§YUnity§! to continuously increase Unity output."
 

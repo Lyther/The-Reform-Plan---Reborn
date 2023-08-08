@@ -2,7 +2,7 @@ guiTypes = {
 	containerWindowType = {
 		name = "allow_breakthrough_ascension_2_perks"
 		position = { x = -900 y = -490 }
-		size = { width = 1360 height = 600 }
+		size = { width = 1360 height = 560 }
 		moveable = yes
 		orientation = center
 
@@ -27,6 +27,22 @@ guiTypes = {
 			maxHeight = 20
 			fixedSize = yes
 			alwaysTransparent = yes
+		}
+		effectButtonType = {
+			name = "previous_plane"
+			quadTextureSprite = "GFX_button_left"
+			position = { x = 140 y = 75 }
+			orientation = upper_left
+			effect = "button_tt2_previous_plane"
+			clicksound = "click"
+		}
+		effectButtonType = {
+			name = "next_plane"
+			quadTextureSprite = "GFX_button_right"
+			position = { x = -178 y = 75 }
+			orientation = upper_right
+			effect = "button_tt2_next_plane"
+			clicksound = "click"
 		}
 		buttonType = {#关闭按钮
 			name = "close"

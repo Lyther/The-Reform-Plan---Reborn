@@ -527,51 +527,51 @@ mod_tt_military_revolution_defense_3_5 = {
 ######################军事支援##########################
 #超导护盾
 mod_tt_military_revolution_support_1_1 = {
-	ship_shield_regen_add_perc = 0.5
+	ship_shield_regen_add_static = 500
 }
 mod_tt_military_revolution_support_1_2 = {
-	ship_shield_regen_add_perc = 1
+	ship_shield_regen_add_static = 1000
 }
 mod_tt_military_revolution_support_1_3 = {
-	ship_shield_regen_add_perc = 1.5
+	ship_shield_regen_add_static = 1500
 }
 mod_tt_military_revolution_support_1_4 = {
-	ship_shield_regen_add_perc = 2
+	ship_shield_regen_add_static = 2000
 }
 mod_tt_military_revolution_support_1_5 = {
-	ship_shield_regen_add_perc = 2.5
+	ship_shield_regen_add_static = 2500
 }
 #再生护甲
 mod_tt_military_revolution_support_2_1 = {
-	ship_armor_regen_add_perc = 0.5
+	ship_armor_regen_add_static = 500
 }
 mod_tt_military_revolution_support_2_2 = {
-	ship_armor_regen_add_perc = 1
+	ship_armor_regen_add_static = 1000
 }
 mod_tt_military_revolution_support_2_3 = {
-	ship_armor_regen_add_perc = 1.5
+	ship_armor_regen_add_static = 1500
 }
 mod_tt_military_revolution_support_2_4 = {
-	ship_armor_regen_add_perc = 2
+	ship_armor_regen_add_static = 2000
 }
 mod_tt_military_revolution_support_2_5 = {
-	ship_armor_regen_add_perc = 2.5
+	ship_armor_regen_add_static = 2500
 }
 #极效维护
 mod_tt_military_revolution_support_3_1 = {
-	ship_hull_regen_add_perc = 0.5
+	ship_hull_regen_add_static = 500
 }
 mod_tt_military_revolution_support_3_2 = {
-	ship_hull_regen_add_perc = 1
+	ship_hull_regen_add_static = 1000
 }
 mod_tt_military_revolution_support_3_3 = {
-	ship_hull_regen_add_perc = 1.5
+	ship_hull_regen_add_static = 1500
 }
 mod_tt_military_revolution_support_3_4 = {
-	ship_hull_regen_add_perc = 2
+	ship_hull_regen_add_static = 2000
 }
 mod_tt_military_revolution_support_3_5 = {
-	ship_hull_regen_add_perc = 2.5
+	ship_hull_regen_add_static = 2500
 }
 ######################奥秘洞察##########################
 #破解之术

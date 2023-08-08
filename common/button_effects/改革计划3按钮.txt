@@ -1,13 +1,13 @@
 #翻页
-button_tt2_previous_plane = {
+button_tt_previous_plane = {
 	allow = {
 		has_ascension_perk = ap_tt_reform_plane
 	}
 	effect = {
-		country_event = { id = tt_reform_plane.5 }
+		country_event = { id = tt_reform_plane.6 }
 	}
 }
-button_tt2_next_plane = {
+button_tt_next_plane = {
 	allow = {
 		always = no
 	}

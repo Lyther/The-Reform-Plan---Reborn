@@ -1,0 +1,4 @@
+tt_reform_plane_3_chain = {
+	picture = GFX_evt_happy_reunion
+	icon = "gfx/interface/icons/situation_log/situation_log_main_quest.dds"
+}
